@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Tangshan Yueding Qiangsheng Metal Materials Co., Ltd.</title>
+    <meta name="description" content="Learn about Tangshan Yueding Qiangsheng Metal Materials Co., Ltd. (YQ Steel) - a reliable steel supplier of H beams, I beams, plates and structural steel sections since 2022. Located in Tangshan, China's steel capital.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yqsteel.com/about.html">
+    <meta property="og:title" content="About Us | Tangshan Yueding Qiangsheng Metal Materials Co., Ltd.">
+    <meta property="og:description" content="Learn about YQ Steel - a reliable steel supplier of H beams, I beams, plates and structural steel sections since 2022. Located in Tangshan, China's steel capital.">
+    <meta property="og:image" content="https://yqsteel.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yqsteel.com/about.html">
+    <meta property="twitter:title" content="About Us | Tangshan Yueding Qiangsheng Metal Materials Co., Ltd.">
+    <meta property="twitter:description" content="Learn about YQ Steel - a reliable steel supplier of H beams, I beams, plates and structural steel sections since 2022.">
+    <meta property="twitter:image" content="https://yqsteel.com/images/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yqsteel.com/about.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=1">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <style>
+        /* About Page Specific Styles */
+        .about-hero {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+            padding: 140px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        
+        .about-hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .about-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+        
+        .about-hero h1 span {
+            color: #f97316;
+        }
+        
+        .about-hero .subtitle {
+            font-size: 1.25rem;
+            color: #64748b;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Mission Vision Values Section */
+        .mv-section {
+            padding: 100px 0;
+            background: #ffffff;
+        }
+        
+        .mv-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        
+        .mv-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 48px 32px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mv-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #f97316);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .mv-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .mv-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mv-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .mv-card:nth-child(2) .mv-icon {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        }
+        
+        .mv-card:nth-child(3) .mv-icon {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        
+        .mv-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 16px;
+        }
+        
+        .mv-card p {
+            color: #64748b;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        
+        /* Company Profile Section */
+        .profile-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+        
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        
+        .profile-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 24px;
+        }
+        
+        .profile-content h2 span {
+            color: #f97316;
+        }
+        
+        .profile-content p {
+            color: #475569;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+        
+        .profile-highlight {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f97316;
+            padding: 24px 28px;
+            border-radius: 0 16px 16px 0;
+            margin: 32px 0;
+        }
+        
+        .profile-highlight p {
+            margin: 0;
+            color: #92400e;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .profile-image {
+            position: relative;
+        }
+        
+        .profile-image-main {
+            background: linear-gradient(145deg, #e2e8f0 0%, #cbd5e1 100%);
+            border-radius: 24px;
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .profile-image-main::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .profile-stats {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+        
+        .stat-item {
+            background: white;
+            padding: 24px 32px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            min-width: 120px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #f97316;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+        /* Products Range Section */
+        .products-range-section {
+            padding: 100px 0;
+            background: #ffffff;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 16px;
+        }
+        
+        .section-header h2 span {
+            color: #f97316;
+        }
+        
+        .section-header p {
+            color: #64748b;
+            font-size: 1.125rem;
+        }
+        
+        .products-table {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .products-table-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 24px 32px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            gap: 24px;
+            font-weight: 600;
+        }
+        
+        .products-table-row {
+            padding: 20px 32px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            gap: 24px;
+            border-bottom: 1px solid #f1f5f9;
+            transition: background 0.2s ease;
+        }
+        
+        .products-table-row:hover {
+            background: #f8fafc;
+        }
+        
+        .products-table-row:last-child {
+            border-bottom: none;
+        }
+        
+        .category-cell {
+            font-weight: 700;
+            color: #3b82f6;
+        }
+        
+        .product-cell {
+            font-weight: 600;
+            color: #0f172a;
+        }
+        
+        .spec-cell {
+            color: #64748b;
+            font-family: 'Inter', monospace;
+            font-size: 0.95rem;
+        }
+        
+        /* Service System Section */
+        .service-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 24px;
+        }
+        
+        .service-step {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 32px 24px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .service-step:hover {
+            border-color: #3b82f6;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px rgba(59, 130, 246, 0.2);
+        }
+        
+        .service-step::after {
+            content: '→';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #cbd5e1;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .service-step:last-child::after {
+            display: none;
+        }
+        
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin: 0 auto 20px;
+        }
+        
+        .service-step h4 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+        
+        .service-step p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Why Choose Us Section */
+        .why-section {
+            padding: 100px 0;
+            background: #0f172a;
+            color: white;
+        }
+        
+        .why-section .section-header h2 {
+            color: white;
+        }
+        
+        .why-section .section-header p {
+            color: #94a3b8;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+        
+        .why-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 28px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .why-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-8px);
+        }
+        
+        .why-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 1.75rem;
+        }
+        
+        .why-card h4 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .why-card p {
+            color: #94a3b8;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            text-align: center;
+            color: white;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .btn-white {
+            background: white;
+            color: #2563eb;
+            padding: 16px 40px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            padding: 16px 40px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            border: 2px solid white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-white:hover {
+            background: white;
+            color: #2563eb;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .mv-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .profile-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+            
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .service-step::after {
+                display: none;
+            }
+            
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-table-header,
+            .products-table-row {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            
+            .profile-stats {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "YQ Steel - Tangshan Yueding Qiangsheng Metal Materials Co., Ltd.",
+        "alternateName": "唐山玥鼎强盛金属材料有限公司",
+        "url": "https://yqsteel.com",
+        "logo": "https://yqsteel.com/images/logo.jpg",
+        "description": "Reliable steel supplier of H beams, I beams, angles, channels, and steel plates from Tangshan, China since 2022.",
+        "foundingDate": "2022",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tangshan",
+            "addressRegion": "Hebei",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Sales",
+            "availableLanguage": ["English", "Chinese"]
+        },
+        "sameAs": []
+    }
+    </script>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="images/logo.jpg" alt="YQ Steel Logo" style="height: 48px; width: auto; border-radius: 8px;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);">YQ <span style="color: var(--accent-500);">STEEL</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="yard.html">Our Yard</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile Menu Toggle
+        (function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            mobileToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+                this.classList.toggle('active');
+                this.textContent = isExpanded ? '☰' : '✕';
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                }
+            });
+        })();
+    </script>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1>About YQ Steel</h1>
+                <p class="subtitle">
+                    <strong>Tangshan Yueding Qiangsheng Metal Materials Co., Ltd.</strong> is located in Tangshan, Hebei Province, China — one of the most important steel production centers in the country. Established in <strong>2022</strong>, we specialize in the sales and service of steel plates and structural steel sections.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Vision Values -->
+    <section class="mv-section">
+        <div class="container">
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <div class="mv-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To Connect Quality Steel with Global Projects.<br><br>Consolidating steel sourcing, stocking, and international marketing to provide customers with "Reliable Quality, Competitive Price, Fast Response, Professional Service."</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-icon">🌍</div>
+                    <h3>Our Vision</h3>
+                    <p>Build Strong Foundations, Deliver Lasting Value.<br><br>We aim to become a trusted steel supply partner for construction and manufacturing projects worldwide.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-icon">💎</div>
+                    <h3>Core Values</h3>
+                    <p>Integrity in Every Deal<br>Partnership for Mutual Growth<br>Excellence in Every Detail</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Profile -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-grid">
+                <div class="profile-content">
+                    <h2>Company <span>Profile</span></h2>
+                    <p>
+                        Since our founding in 2022, we have focused on providing reliable supply and responsive support to customers in construction, machinery manufacturing, and industrial applications worldwide.
+                    </p>
+                    <p>
+                        We maintain <strong>long-term and stable cooperation</strong> with multiple major steel distributors and producers in Tangshan and Tianjin regions. This strategic partnership ensures consistent product quality, complete specifications and sizes, and stable supply you can plan around.
+                    </p>
+                    <div class="profile-highlight">
+                        <p>"Credit-Based, Customer First, Quality Focus, Efficient Execution" — pursuing long-term partnerships with customers worldwide.</p>
+                    </div>
+                    <p>
+                        Our team follows strict quality checks and coordinates every step from sourcing to delivery, ensuring your steel arrives on time and meets specifications.
+                    </p>
+                </div>
+                <div class="profile-image">
+                    <div class="profile-image-main" style="padding: 0; overflow: hidden;">
+                        <img src="images/company-facility.jpg" alt="YQ Steel Facility - Steel Coils Storage" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2022</span>
+                            <span class="stat-label">Established</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8</span>
+                            <span class="stat-label">Product Categories</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">H-Beam Specs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Range -->
+    <section class="products-range-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Main <span>Products Range</span></h2>
+                <p>Comprehensive steel solutions for construction and manufacturing industries</p>
+            </div>
+            
+            <div class="products-table">
+                <div class="products-table-header">
+                    <div>Category</div>
+                    <div>Product</div>
+                    <div>Size Range</div>
+                </div>
+                
+                <div class="products-table-row">
+                    <div class="category-cell">Steel Sections</div>
+                    <div class="product-cell">H Beam</div>
+                    <div class="spec-cell">100×100 to 900×300 mm</div>
+                </div>
+                <div class="products-table-row">
+                    <div class="category-cell" style="color: transparent;">—</div>
+                    <div class="product-cell">I Beam</div>
+                    <div class="spec-cell">10# to 40# (6-12m length)</div>
+                </div>
+                <div class="products-table-row">
+                    <div class="category-cell" style="color: transparent;">—</div>
+                    <div class="product-cell">Channel Steel</div>
+                    <div class="spec-cell">5# to 40# (50-400mm)</div>
+                </div>
+                <div class="products-table-row">
+                    <div class="category-cell" style="color: transparent;">—</div>
+                    <div class="product-cell">Equal Angle</div>
+                    <div class="spec-cell">25×3 to 200×20 mm</div>
+                </div>
+                <div class="products-table-row">
+                    <div class="category-cell" style="color: transparent;">—</div>
+                    <div class="product-cell">Unequal Angle</div>
+                    <div class="spec-cell">50×32 to 140×90 mm</div>
+                </div>
+                
+                <div class="products-table-row">
+                    <div class="category-cell">Steel Plates</div>
+                    <div class="product-cell">Checker Plate</div>
+                    <div class="spec-cell">2.0 - 9.75 mm thickness</div>
+                </div>
+                <div class="products-table-row">
+                    <div class="category-cell" style="color: transparent;">—</div>
+                    <div class="product-cell">Medium Plate</div>
+                    <div class="spec-cell">8 - 250 mm thickness</div>
+                </div>
+                <div class="products-table-row">
+                    <div class="category-cell" style="color: transparent;">—</div>
+                    <div class="product-cell">Cut-to-length Plate</div>
+                    <div class="spec-cell">1.5 - 19.75 mm thickness</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tangshan Steel Hub Section -->
+    <section class="tangshan-section" style="padding: 100px 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; font-weight: 800; color: #0f172a; margin-bottom: 16px;">Tangshan: <span style="color: #f97316;">China's Steel Capital</span></h2>
+                <p style="color: #64748b; font-size: 1.125rem; max-width: 700px; margin: 0 auto;">The world's largest steelmaking hub and our strategic home base</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 60px;">
+                <div style="position: relative;">
+                    <div style="background: white; border-radius: 24px; height: 450px; display: flex; align-items: center; justify-content: center; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);">
+                        <img src="images/tangshan-steel.jpg" alt="Tangshan Steel Mill" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; padding: 12px 28px; border-radius: 12px; font-weight: 700; white-space: nowrap; box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.4);">
+                        📍 Our Location Advantage
+                    </div>
+                </div>
+                <div>
+                    <p style="color: #475569; line-height: 1.9; margin-bottom: 20px; font-size: 1.05rem;">
+                        Located in Tangshan, Hebei Province — the <strong style="color: #0f172a;">world's largest steelmaking hub</strong>. This city alone produces over 130 million tons of steel annually, accounting for approximately 14% of China's total steel production and 8% of global output.
+                    </p>
+                    <p style="color: #475569; line-height: 1.9; margin-bottom: 24px; font-size: 1.05rem;">
+                        Tangshan's industrial legacy dates back to 1878 with the establishment of the Kailuan Coal Mine. Today, it remains the birthplace of China's modern steel industry, home to major producers like HBIS Group and over 30 major steel enterprises.
+                    </p>
+                    <a href="yard.html" class="btn-primary" style="display: inline-block;">View Our Yard →</a>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 60px;">
+                <div style="text-align: center; padding: 40px 32px; background: white; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, #f97316 0%, #fb923c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 12px;">130M+</div>
+                    <div style="font-size: 1rem; color: #64748b; font-weight: 600;">Tons Annual Production</div>
+                </div>
+                <div style="text-align: center; padding: 40px 32px; background: white; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 12px;">8%</div>
+                    <div style="font-size: 1rem; color: #64748b; font-weight: 600;">of Global Output</div>
+                </div>
+                <div style="text-align: center; padding: 40px 32px; background: white; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, #10b981 0%, #34d399 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 12px;">30+</div>
+                    <div style="font-size: 1rem; color: #64748b; font-weight: 600;">Major Steel Mills</div>
+                </div>
+            </div>
+
+            <!-- Advantages -->
+            <div style="padding: 48px; background: white; border-radius: 24px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08);">
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 32px; color: #0f172a; text-align: center;">Why Being in Tangshan Matters</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                    <div style="text-align: center;">
+                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 1.75rem;">🏭</div>
+                        <h4 style="color: #0f172a; font-weight: 700; margin-bottom: 12px;">Direct Mill Access</h4>
+                        <p style="color: #64748b; line-height: 1.7; font-size: 0.95rem;">Direct partnerships with major mills ensure stable supply, competitive pricing, and faster response to market changes.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 1.75rem;">🚢</div>
+                        <h4 style="color: #0f172a; font-weight: 700; margin-bottom: 12px;">Logistics Hub</h4>
+                        <p style="color: #64748b; line-height: 1.7; font-size: 0.95rem;">Strategic location near Tianjin Port (2 hours) and major highways enables efficient domestic and international shipping.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #d1fae5 0%, #6ee7b7 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 1.75rem;">📊</div>
+                        <h4 style="color: #0f172a; font-weight: 700; margin-bottom: 12px;">Market Intelligence</h4>
+                        <p style="color: #64748b; line-height: 1.7; font-size: 0.95rem;">Real-time market insights from China's steel price center help us provide optimal sourcing recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service System -->
+    <section class="service-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span>Service System</span></h2>
+                <p>We operate an efficient end-to-end service workflow</p>
+            </div>
+            
+            <div class="service-grid">
+                <div class="service-step">
+                    <div class="step-number">1</div>
+                    <h4>Inquiry & Quotation</h4>
+                    <p>Understanding your needs, providing competitive quotes</p>
+                </div>
+                <div class="service-step">
+                    <div class="step-number">2</div>
+                    <h4>Order Processing</h4>
+                    <p>Confirming specifications, scheduling, documentation</p>
+                </div>
+                <div class="service-step">
+                    <div class="step-number">3</div>
+                    <h4>Quality Inspection</h4>
+                    <p>Pre-shipment checks, mill test reports when available</p>
+                </div>
+                <div class="service-step">
+                    <div class="step-number">4</div>
+                    <h4>Logistics & Delivery</h4>
+                    <p>Coordinating transport, customs clearance support</p>
+                </div>
+                <div class="service-step">
+                    <div class="step-number">5</div>
+                    <h4>After-sales Support</h4>
+                    <p>Following up, addressing feedback, building partnership</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section" style="padding: 100px 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; font-weight: 800; color: #0f172a; margin-bottom: 16px;">Why <span style="color: #f97316;">Choose Us</span></h2>
+                <p style="color: #64748b; font-size: 1.125rem;">Your reliable partner for steel supply</p>
+            </div>
+
+            <div class="why-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+                <div class="why-card" style="background: white; padding: 40px 28px; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08); text-align: center; transition: all 0.3s ease;">
+                    <div class="why-icon" style="width: 72px; height: 72px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">📦</div>
+                    <h4 style="color: #0f172a; font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">Wide Spec Range</h4>
+                    <p style="color: #64748b; line-height: 1.7; font-size: 0.95rem;">8 product categories, 40+ H-beam sizes, plate thickness 1.5-250mm</p>
+                </div>
+                <div class="why-card" style="background: white; padding: 40px 28px; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08); text-align: center; transition: all 0.3s ease;">
+                    <div class="why-icon" style="width: 72px; height: 72px; background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">🔗</div>
+                    <h4 style="color: #0f172a; font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">Stable Supply Chain</h4>
+                    <p style="color: #64748b; line-height: 1.7; font-size: 0.95rem;">Long-term partnerships with major steel distributors in Tangshan & Tianjin</p>
+                </div>
+                <div class="why-card" style="background: white; padding: 40px 28px; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08); text-align: center; transition: all 0.3s ease;">
+                    <div class="why-icon" style="width: 72px; background: linear-gradient(135deg, #fce7f3 0%, #f9a8d4 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">🤝</div>
+                    <h4 style="color: #0f172a; font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">End-to-End Service</h4>
+                    <p style="color: #64748b; line-height: 1.7; font-size: 0.95rem;">Inquiry to delivery, one point of contact, timely communication</p>
+                </div>
+                <div class="why-card" style="background: white; padding: 40px 28px; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08); text-align: center; transition: all 0.3s ease;">
+                    <div class="why-icon" style="width: 72px; height: 72px; background: linear-gradient(135deg, #d1fae5 0%, #6ee7b7 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">⚡</div>
+                    <h4 style="color: #0f172a; font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">Flexible Supply</h4>
+                    <p style="color: #64748b; line-height: 1.7; font-size: 0.95rem;">Standard stock and custom specifications available based on your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Welcome to YQ Steel!</h2>
+            <p>Ready to discuss your steel requirements? We're here to help.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-white">Contact Us</a>
+                <a href="products.html" class="btn-outline-white">View Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products/h-beam.html">H Beam</a></li>
+                        <li><a href="products/i-beam.html">I Beam</a></li>
+                        <li><a href="products/channel-steel.html">Channel Steel</a></li>
+                        <li><a href="products/equal-angle.html">Equal Angle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Tangshan Yueding Qiangsheng</p>
+                    <p>Metal Materials Co., Ltd.</p>
+                    <p>Tangshan, Hebei, China</p>
+                    <p>Email: <a href="mailto:bianaiqiang@yqsteel.org" style="color: var(--primary-600); text-decoration: none;">bianaiqiang@yqsteel.org</a></p>
+                    <p>Phone: [TBD]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022-2025 Tangshan Yueding Qiangsheng Metal Materials Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

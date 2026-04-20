@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Steel Sections & Plates | YQ Steel</title>
+    <meta name="description" content="Browse YQ Steel's comprehensive range of steel structural sections and plates. H beams, I beams, angles, channels, checker plates, medium plates, and cut-to-length plates from Tangshan, China.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yqsteel.com/products.html">
+    <meta property="og:title" content="Products | Steel Sections & Plates | YQ Steel">
+    <meta property="og:description" content="Browse YQ Steel's comprehensive range of steel structural sections and plates. H beams, I beams, angles, channels, and plates.">
+    <meta property="og:image" content="https://yqsteel.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yqsteel.com/products.html">
+    <meta property="twitter:title" content="Products | Steel Sections & Plates | YQ Steel">
+    <meta property="twitter:description" content="Browse YQ Steel's comprehensive range of steel structural sections and plates.">
+    <meta property="twitter:image" content="https://yqsteel.com/images/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yqsteel.com/products.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=1">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "H Beam",
+                "url": "https://yqsteel.com/products/h-beam.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "I Beam",
+                "url": "https://yqsteel.com/products/i-beam.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Channel Steel",
+                "url": "https://yqsteel.com/products/channel-steel.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Equal Angle",
+                "url": "https://yqsteel.com/products/equal-angle.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Unequal Angle",
+                "url": "https://yqsteel.com/products/unequal-angle.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Checker Plate",
+                "url": "https://yqsteel.com/products/checker-plate.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "Medium Plate",
+                "url": "https://yqsteel.com/products/medium-plate.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 8,
+                "name": "Cut-to-length Plate",
+                "url": "https://yqsteel.com/products/cut-to-length-plate.html"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="images/logo.jpg" alt="YQ Steel Logo" style="height: 48px; width: auto; border-radius: 8px;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);">YQ <span style="color: var(--accent-500);">STEEL</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="yard.html">Our Yard</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile Menu Toggle
+        (function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            mobileToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+                this.classList.toggle('active');
+                this.textContent = isExpanded ? '☰' : '✕';
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                }
+            });
+        })();
+    </script>
+
+    <!-- Page Header -->
+    <header class="hero" style="min-height: 400px; padding-top: 140px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Products</h1>
+                <p class="hero-subtitle">Comprehensive steel solutions for construction and manufacturing industries</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-section" style="padding-top: 40px;">
+        <div class="container">
+            
+            <h3 class="category-title">Steel Sections</h3>
+            <div class="product-grid">
+                <a href="products/h-beam.html" class="product-card">
+                    <div class="product-image" style="padding: 0; overflow: hidden;">
+                        <img src="images/h-beam.jpg" alt="H Beam" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h4>H Beam</h4>
+                        <p class="product-desc">Hot-rolled H-shaped steel for high-load structures. Excellent strength-to-weight ratio.</p>
+                        <span class="product-spec">100×100×6×8 to 900×300×16×28 mm<br>Standard length: 12m</span>
+                        <span class="product-link">View Details →</span>
+                    </div>
+                </a>
+                
+                <a href="products/i-beam.html" class="product-card">
+                    <div class="product-image" style="padding: 0; overflow: hidden;">
+                        <img src="images/i-beam.jpg" alt="I Beam" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h4>I Beam</h4>
+                        <p class="product-desc">Universal beam for general construction. Good bending resistance, cost-effective.</p>
+                        <span class="product-spec">10# to 40# (100-400mm)<br>Length: 6-12m</span>
+                        <span class="product-link">View Details →</span>
+                    </div>
+                </a>
+                
+                <a href="products/channel-steel.html" class="product-card">
+                    <div class="product-image" style="padding: 0; overflow: hidden;">
+                        <img src="images/channel-steel.jpg" alt="Channel Steel" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h4>Channel Steel</h4>
+                        <p class="product-desc">U-shaped section for purlins, brackets, frames. Easy to fabricate and install.</p>
+                        <span class="product-spec">5# to 40# (50-400mm)<br>Theoretical weight listed</span>
+                        <span class="product-link">View Details →</span>
+                    </div>
+                </a>
+                
+                <a href="products/equal-angle.html" class="product-card">
+                    <div class="product-image" style="padding: 0; overflow: hidden;">
+                        <img src="images/equal-angle.jpg" alt="Equal Angle" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h4>Equal Angle</h4>
+                        <p class="product-desc">L-shaped with equal legs. Versatile for brackets, frames, reinforcement.</p>
+                        <span class="product-spec">25×3 to 200×20 mm<br>Welding & drilling ready</span>
+                        <span class="product-link">View Details →</span>
+                    </div>
+                </a>
+                
+                <a href="products/unequal-angle.html" class="product-card">
+                    <div class="product-image" style="padding: 0; overflow: hidden;">
+                        <img src="images/unequal-angle.png" alt="Unequal Angle" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h4>Unequal Angle</h4>
+                        <p class="product-desc">L-shaped with unequal legs for asymmetric load designs.</p>
+                        <span class="product-spec">50×32 to 140×90 mm<br>Custom sizes available</span>
+                        <span class="product-link">View Details →</span>
+                    </div>
+                </a>
+            </div>
+            
+            <h3 class="category-title">Steel Plates</h3>
+            <div class="product-grid">
+                <a href="products/checker-plate.html" class="product-card">
+                    <div class="product-image" style="padding: 0; overflow: hidden;">
+                        <img src="images/checker-plate.jpg" alt="Checker Plate" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h4>Checker Plate</h4>
+                        <p class="product-desc">Raised diamond pattern for anti-slip performance. Ideal for walkways, stairs, platforms.</p>
+                        <span class="product-spec">Thickness: 2.0 / 2.3 / 2.5 / 2.75 / 3.0 / 3.5 / 3.75 / 4.5 / 4.75 / 5.5 / 5.75 / 7.5 / 7.75 / 9.5 / 9.75 mm</span>
+                        <span class="product-link">View Details →</span>
+                    </div>
+                </a>
+                
+                <a href="products/medium-plate.html" class="product-card">
+                    <div class="product-image" style="padding: 0; overflow: hidden;">
+                        <img src="images/medium-plate.jpg" alt="Medium Plate" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h4>Medium Plate</h4>
+                        <p class="product-desc">Thick plates for load-bearing structures and fabrication. Suitable for machinery bases.</p>
+                        <span class="product-spec">Thickness: 8 / 10 / 12 / 14 / 16 / 18 / 20 / 22 / 24 / 26 / 28 / 30 / 32 / 35 / 36 / 38 / 40 / 45 / 50–250 mm</span>
+                        <span class="product-link">View Details →</span>
+                    </div>
+                </a>
+                
+                <a href="products/cut-to-length-plate.html" class="product-card">
+                    <div class="product-image" style="padding: 0; overflow: hidden;">
+                        <img src="images/cut-to-length-plate.jpg" alt="Cut-to-length Plate" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h4>Cut-to-length Plate</h4>
+                        <p class="product-desc">Leveled and sheared from steel coils. Good flatness, precise dimensions.</p>
+                        <span class="product-spec">Thickness: 1.5 / 1.8 / 2.0 / 2.3 / 2.5 / 2.75 / 3.0 / 3.5 / 3.75 / 4.0 / 4.5 / 4.75 / 5.0 / 5.5 / 5.75 / 6.0 / 7.5 / 7.75 / 9.5 / 9.75 / 11.5 / 11.75 / 13.5 / 13.75 / 15.5 / 15.75 / 17.5 / 17.75 / 19.5 / 19.75 mm</span>
+                        <span class="product-link">View Details →</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div style="background: var(--bg-secondary); padding: 48px; border-radius: 16px; margin-top: 60px; border: 1px solid var(--border-light);">
+                <h3 style="color: var(--text-primary); margin-bottom: 16px; font-size: 1.5rem;">Need Custom Specifications?</h3>
+                <p style="color: var(--text-muted); margin-bottom: 24px;">We can discuss non-standard sizes, grades, and processing requirements. Send us your technical requirements for feasibility and pricing.</p>
+                <a href="contact.html" class="btn-primary">Request Custom Quote</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products/h-beam.html">H Beam</a></li>
+                        <li><a href="products/i-beam.html">I Beam</a></li>
+                        <li><a href="products/channel-steel.html">Channel Steel</a></li>
+                        <li><a href="products/equal-angle.html">Equal Angle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>YQ Steel</p>
+                    <p>Tangshan, China</p>
+                    <p>Email: <a href="mailto:bianaiqiang@yqsteel.org" style="color: var(--primary-600); text-decoration: none;">bianaiqiang@yqsteel.org</a></p>
+                    <p>Phone: [TBD]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022-2025 YQ Steel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

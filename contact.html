@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | YQ Steel – Steel Supplier</title>
+    <meta name="description" content="Contact YQ Steel in Tangshan, China for steel product inquiries, quotations, and partnership opportunities. We supply H beams, I beams, angles, channels, and steel plates globally.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yqsteel.com/contact.html">
+    <meta property="og:title" content="Contact Us | YQ Steel – Steel Supplier">
+    <meta property="og:description" content="Contact YQ Steel in Tangshan, China for steel product inquiries, quotations, and partnership opportunities.">
+    <meta property="og:image" content="https://yqsteel.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yqsteel.com/contact.html">
+    <meta property="twitter:title" content="Contact Us | YQ Steel – Steel Supplier">
+    <meta property="twitter:description" content="Contact YQ Steel in Tangshan, China for steel product inquiries, quotations, and partnership opportunities.">
+    <meta property="twitter:image" content="https://yqsteel.com/images/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yqsteel.com/contact.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=1">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "YQ Steel - Tangshan Yueding Qiangsheng Metal Materials Co., Ltd.",
+        "alternateName": "唐山玥鼎强盛金属材料有限公司",
+        "url": "https://yqsteel.com",
+        "logo": "https://yqsteel.com/images/logo.jpg",
+        "description": "Reliable steel supplier of H beams, I beams, angles, channels, and steel plates from Tangshan, China.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tangshan",
+            "addressRegion": "Hebei",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Sales",
+            "email": "bianaiqiang@yqsteel.org",
+            "availableLanguage": ["English", "Chinese"]
+        },
+        "sameAs": []
+    }
+    </script>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="images/logo.jpg" alt="YQ Steel Logo" style="height: 48px; width: auto; border-radius: 8px;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);">YQ <span style="color: var(--accent-500);">STEEL</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="yard.html">Our Yard</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="btn-primary active">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile Menu Toggle
+        (function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            mobileToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+                this.classList.toggle('active');
+                this.textContent = isExpanded ? '☰' : '✕';
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                }
+            });
+        })();
+    </script>
+
+    <!-- Hero Section -->
+    <header class="hero" style="min-height: 400px; padding-top: 140px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p class="hero-subtitle">Send us your inquiry and we'll get back to you with a quotation</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="products-section" style="padding-top: 40px;">
+        <div class="container">
+            
+            <?php if (isset($_GET['status']) && isset($_GET['message'])): ?>
+            <div style="max-width: 720px; margin: 0 auto 32px; padding: 16px 24px; border-radius: 12px; font-weight: 500; <?php echo $_GET['status'] === 'success' ? 'background: #d1fae5; color: #065f46; border: 1px solid #6ee7b7;' : 'background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5;'; ?>">
+                <?php echo htmlspecialchars($_GET['message']); ?>
+            </div>
+            <?php endif; ?>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 60px;">
+                <div style="background: var(--bg-primary); padding: 40px 24px; border-radius: 16px; text-align: center; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                    <div style="width: 64px; height: 64px; background: var(--primary-50); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.75rem;">📧</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 12px; font-size: 1.125rem; font-weight: 700;">Email</h4>
+                    <p style="color: var(--text-muted);"><a href="mailto:bianaiqiang@yqsteel.org" style="color: var(--primary-600); text-decoration: none;">bianaiqiang@yqsteel.org</a></p>
+                </div>
+                <div style="background: var(--bg-primary); padding: 40px 24px; border-radius: 16px; text-align: center; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                    <div style="width: 64px; height: 64px; background: var(--primary-50); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.75rem;">📞</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 12px; font-size: 1.125rem; font-weight: 700;">Phone</h4>
+                    <p style="color: var(--text-muted);">Contact via email</p>
+                </div>
+                <div style="background: var(--bg-primary); padding: 40px 24px; border-radius: 16px; text-align: center; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                    <div style="width: 64px; height: 64px; background: var(--primary-50); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.75rem;">📍</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 12px; font-size: 1.125rem; font-weight: 700;">Address</h4>
+                    <p style="color: var(--text-muted);">Tangshan, China</p>
+                </div>
+            </div>
+            
+            <div style="max-width: 720px; margin: 0 auto;">
+                <h3 class="category-title" style="text-align: center; margin-bottom: 40px;">Send an Inquiry</h3>
+                
+                <form action="send-inquiry.php" method="POST" style="background: var(--bg-primary); padding: 48px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                    <div style="margin-bottom: 24px;">
+                        <label style="display: block; color: var(--text-primary); margin-bottom: 8px; font-weight: 600; font-size: 0.9375rem;">Your Name *</label>
+                        <input type="text" name="name" style="width: 100%; padding: 14px 18px; background: var(--bg-secondary); border: 1px solid var(--border-light); color: var(--text-primary); border-radius: 12px; font-family: var(--font-body); font-size: 1rem; transition: all 0.2s;" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <label style="display: block; color: var(--text-primary); margin-bottom: 8px; font-weight: 600; font-size: 0.9375rem;">Company</label>
+                        <input type="text" name="company" style="width: 100%; padding: 14px 18px; background: var(--bg-secondary); border: 1px solid var(--border-light); color: var(--text-primary); border-radius: 12px; font-family: var(--font-body); font-size: 1rem;" placeholder="Enter company name">
+                    </div>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <label style="display: block; color: var(--text-primary); margin-bottom: 8px; font-weight: 600; font-size: 0.9375rem;">Email *</label>
+                        <input type="email" name="email" style="width: 100%; padding: 14px 18px; background: var(--bg-secondary); border: 1px solid var(--border-light); color: var(--text-primary); border-radius: 12px; font-family: var(--font-body); font-size: 1rem;" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <label style="display: block; color: var(--text-primary); margin-bottom: 8px; font-weight: 600; font-size: 0.9375rem;">Product Interest</label>
+                        <select name="product" style="width: 100%; padding: 14px 18px; background: var(--bg-secondary); border: 1px solid var(--border-light); color: var(--text-primary); border-radius: 12px; font-family: var(--font-body); font-size: 1rem; cursor: pointer;">
+                            <option value="">Select a product</option>
+                            <option value="h-beam">H Beam</option>
+                            <option value="i-beam">I Beam</option>
+                            <option value="channel">Channel Steel</option>
+                            <option value="equal-angle">Equal Angle</option>
+                            <option value="unequal-angle">Unequal Angle</option>
+                            <option value="checker-plate">Checker Plate</option>
+                            <option value="medium-plate">Medium Plate</option>
+                            <option value="cut-to-length">Cut-to-length Plate</option>
+                            <option value="multiple">Multiple Products</option>
+                        </select>
+                    </div>
+                    
+                    <div style="margin-bottom: 32px;">
+                        <label style="display: block; color: var(--text-primary); margin-bottom: 8px; font-weight: 600; font-size: 0.9375rem;">Message / Requirements *</label>
+                        <textarea name="message" rows="5" style="width: 100%; padding: 14px 18px; background: var(--bg-secondary); border: 1px solid var(--border-light); color: var(--text-primary); border-radius: 12px; font-family: var(--font-body); font-size: 1rem; resize: vertical;" placeholder="Please include product specifications, quantity, delivery terms..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-large" style="width: 100%;">Send Inquiry</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products/h-beam.html">H Beam</a></li>
+                        <li><a href="products/i-beam.html">I Beam</a></li>
+                        <li><a href="products/channel-steel.html">Channel Steel</a></li>
+                        <li><a href="products/equal-angle.html">Equal Angle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>YQ Steel</p>
+                    <p>Tangshan, China</p>
+                    <p>Email: <a href="mailto:bianaiqiang@yqsteel.org" style="color: var(--primary-600); text-decoration: none;">bianaiqiang@yqsteel.org</a></p>
+                    <p>Phone: [TBD]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022-2025 YQ Steel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

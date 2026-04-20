@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Steel Supply Workflow | YQ Steel</title>
+    <meta name="description" content="Discover YQ Steel's end-to-end steel supply service: inquiry handling, quotation, order processing, quality inspection, logistics coordination, and after-sales support for global customers.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yqsteel.com/services.html">
+    <meta property="og:title" content="Services | Steel Supply Workflow | YQ Steel">
+    <meta property="og:description" content="Discover YQ Steel's end-to-end steel supply service: inquiry handling, quotation, order processing, logistics, and after-sales support.">
+    <meta property="og:image" content="https://yqsteel.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yqsteel.com/services.html">
+    <meta property="twitter:title" content="Services | Steel Supply Workflow | YQ Steel">
+    <meta property="twitter:description" content="Discover YQ Steel's end-to-end steel supply service: inquiry, quotation, order processing, logistics, and after-sales support.">
+    <meta property="twitter:image" content="https://yqsteel.com/images/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yqsteel.com/services.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=1">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Steel Supply Services",
+        "provider": {
+            "@type": "Organization",
+            "name": "YQ Steel - Tangshan Yueding Qiangsheng Metal Materials Co., Ltd."
+        },
+        "description": "End-to-end steel supply service including inquiry handling, quotation, order processing, quality inspection, logistics coordination, and after-sales support.",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Global"
+        }
+    }
+    </script>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="images/logo.jpg" alt="YQ Steel Logo" style="height: 48px; width: auto; border-radius: 8px;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);">YQ <span style="color: var(--accent-500);">STEEL</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="yard.html">Our Yard</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile Menu Toggle
+        (function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            mobileToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+                this.classList.toggle('active');
+                this.textContent = isExpanded ? '☰' : '✕';
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                }
+            });
+        })();
+    </script>
+
+    <!-- Hero Section -->
+    <header class="hero" style="min-height: 400px; padding-top: 140px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Services</h1>
+                <p class="hero-subtitle">End-to-end steel supply service from inquiry to after-sales support</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Content -->
+    <section class="products-section" style="padding-top: 40px;">
+        <div class="container">
+            
+            <h3 class="category-title">Service Workflow</h3>
+            
+            <div style="background: var(--bg-primary); border-radius: 16px; overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); margin-bottom: 60px;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: var(--primary-50);">
+                            <th style="padding: 24px; text-align: left; color: var(--primary-700); font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-light);">Step</th>
+                            <th style="padding: 24px; text-align: left; color: var(--primary-700); font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-light);">Activity</th>
+                            <th style="padding: 24px; text-align: left; color: var(--primary-700); font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-light);">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 24px; color: var(--text-primary); font-weight: 700;">1. Requirement Confirmation</td>
+                            <td style="padding: 24px; color: var(--text-secondary);">Understanding your needs</td>
+                            <td style="padding: 24px; color: var(--text-muted);">Product type, standard, grade, size, quantity, delivery terms</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 24px; color: var(--text-primary); font-weight: 700;">2. Quotation & Proposal</td>
+                            <td style="padding: 24px; color: var(--text-secondary);">Matching solutions</td>
+                            <td style="padding: 24px; color: var(--text-muted);">Product recommendations, pricing, lead time, payment terms</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 24px; color: var(--text-primary); font-weight: 700;">3. Order Processing</td>
+                            <td style="padding: 24px; color: var(--text-secondary);">Contract execution</td>
+                            <td style="padding: 24px; color: var(--text-muted);">Contract/PI confirmation, stocking arrangements</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 24px; color: var(--text-primary); font-weight: 700;">4. Logistics & Delivery</td>
+                            <td style="padding: 24px; color: var(--text-secondary);">Shipping coordination</td>
+                            <td style="padding: 24px; color: var(--text-muted);">Transport, loading, shipping, documentation</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 24px; color: var(--text-primary); font-weight: 700;">5. After-Sales Follow-Up</td>
+                            <td style="padding: 24px; color: var(--text-secondary);">Post-delivery support</td>
+                            <td style="padding: 24px; color: var(--text-muted);">Arrival confirmation, quality feedback handling</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+                <div style="background: var(--bg-primary); padding: 40px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                    <h4 style="color: var(--accent-600); font-size: 1.25rem; font-weight: 700; margin-bottom: 24px;">What We Can Support</h4>
+                    <ul style="list-style: none; color: var(--text-secondary);">
+                        <li style="margin-bottom: 16px; padding-left: 28px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-500); font-weight: 700;">✓</span> Product selection advice based on application</li>
+                        <li style="margin-bottom: 16px; padding-left: 28px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-500); font-weight: 700;">✓</span> Matching specifications to project requirements</li>
+                        <li style="margin-bottom: 16px; padding-left: 28px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-500); font-weight: 700;">✓</span> Order tracking and status updates</li>
+                        <li style="padding-left: 28px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-500); font-weight: 700;">✓</span> Documentation support</li>
+                    </ul>
+                </div>
+                <div style="background: var(--bg-primary); padding: 40px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                    <h4 style="color: var(--accent-600); font-size: 1.25rem; font-weight: 700; margin-bottom: 24px;">Info We Need for Quote</h4>
+                    <ul style="list-style: none; color: var(--text-secondary);">
+                        <li style="margin-bottom: 16px; padding-left: 28px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-500); font-weight: 700;">✓</span> Product name and standard/grade</li>
+                        <li style="margin-bottom: 16px; padding-left: 28px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-500); font-weight: 700;">✓</span> Size specifications and quantity</li>
+                        <li style="margin-bottom: 16px; padding-left: 28px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-500); font-weight: 700;">✓</span> Delivery terms (EXW/FOB/CIF)</li>
+                        <li style="padding-left: 28px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-500); font-weight: 700;">✓</span> Required documents (MTC, etc.)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="background: var(--bg-secondary); padding: 48px; border-radius: 16px; border: 1px solid var(--border-light); text-align: center;">
+                <h3 style="color: var(--text-primary); margin-bottom: 16px; font-size: 1.5rem;">Have Questions?</h3>
+                <p style="color: var(--text-muted); margin-bottom: 24px;">Contact us to discuss your project requirements and learn how we can support your steel supply needs.</p>
+                <a href="contact.html" class="btn-primary">Contact Us</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products/h-beam.html">H Beam</a></li>
+                        <li><a href="products/i-beam.html">I Beam</a></li>
+                        <li><a href="products/channel-steel.html">Channel Steel</a></li>
+                        <li><a href="products/equal-angle.html">Equal Angle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>YQ Steel</p>
+                    <p>Tangshan, China</p>
+                    <p>Email: <a href="mailto:bianaiqiang@yqsteel.org" style="color: var(--primary-600); text-decoration: none;">bianaiqiang@yqsteel.org</a></p>
+                    <p>Phone: [TBD]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022-2025 YQ Steel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
