@@ -211,6 +211,9 @@
         
         .profile-image {
             position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         
         .profile-image-main {
@@ -241,21 +244,22 @@
         }
         
         .profile-stats {
-            position: absolute;
-            bottom: -30px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
+            position: static;
+            transform: none;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+            width: 100%;
         }
         
         .stat-item {
             background: white;
-            padding: 24px 32px;
+            padding: 20px 16px;
             border-radius: 16px;
             box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
             text-align: center;
-            min-width: 120px;
+            min-width: 0;
+            border: 1px solid #e2e8f0;
         }
         
         .stat-number {
@@ -580,8 +584,7 @@
             }
             
             .profile-stats {
-                flex-wrap: wrap;
-                justify-content: center;
+                grid-template-columns: 1fr;
             }
             
             .cta-buttons {
@@ -738,12 +741,12 @@
                             <span class="stat-label">Established</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">8</span>
-                            <span class="stat-label">Product Categories</span>
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Core Product Groups</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">40+</span>
-                            <span class="stat-label">H-Beam Specs</span>
+                            <span class="stat-number">End-to-End</span>
+                            <span class="stat-label">Sourcing to Delivery</span>
                         </div>
                     </div>
                 </div>
