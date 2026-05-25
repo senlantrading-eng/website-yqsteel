@@ -2,6 +2,11 @@ window.NEWS_POSTS = [
   {
     "id": "2026-05-25-finished-steel-export-pressure",
     "date": "2026-05-25",
+    "category": {
+      "slug": "market-analysis",
+      "en": "Market Analysis",
+      "zh": "市场分析"
+    },
     "cover": "images/2026-05-25-finished-steel-export-pressure.png",
     "coverAlt": {
       "en": "Finished steel export cargo prepared at a Chinese port yard",

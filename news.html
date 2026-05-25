@@ -239,6 +239,36 @@
             gap: 14px;
         }
 
+        .news-sidebar-section {
+            margin-top: 28px;
+        }
+
+        .news-sidebar-section:first-of-type {
+            margin-top: 0;
+        }
+
+        .news-sidebar-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .news-sidebar-heading h4 {
+            font-size: 0.98rem;
+            color: var(--news-ink);
+            margin: 0;
+        }
+
+        .news-sidebar-heading span {
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--news-muted);
+        }
+
         .history-card {
             display: block;
             text-decoration: none;
@@ -281,6 +311,73 @@
             font-size: 0.92rem;
             color: #56605b;
             line-height: 1.7;
+        }
+
+        .history-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        .history-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 999px;
+            background: var(--news-accent-soft);
+            color: var(--news-accent);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .category-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .category-chip {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--news-line);
+            background: rgba(255, 255, 255, 0.78);
+            color: var(--news-ink);
+            text-decoration: none;
+            font-size: 0.84rem;
+            font-weight: 700;
+            line-height: 1.2;
+            transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+        }
+
+        .category-chip:hover {
+            transform: translateY(-1px);
+            border-color: rgba(165, 77, 45, 0.35);
+        }
+
+        .category-chip.active {
+            background: var(--news-accent);
+            color: #fff;
+            border-color: var(--news-accent);
+        }
+
+        .category-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .category-empty {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: var(--news-muted);
+            padding: 14px 0 4px;
         }
 
         .news-empty-panel {
@@ -411,9 +508,25 @@
                 <aside class="news-sidebar">
                     <div class="news-sidebar-title">
                         <h3>Historical Articles</h3>
-                        <span id="history-count">0 posts</span>
+                        <span id="history-count">Latest 4</span>
                     </div>
                     <div id="history-list" class="history-list"></div>
+
+                    <div class="news-sidebar-section">
+                        <div class="news-sidebar-heading">
+                            <h4>Categories</h4>
+                            <span id="category-count">0 groups</span>
+                        </div>
+                        <div id="category-list" class="category-chips"></div>
+                    </div>
+
+                    <div class="news-sidebar-section">
+                        <div class="news-sidebar-heading">
+                            <h4 id="category-articles-title">Category Articles</h4>
+                            <span id="category-articles-count">0 posts</span>
+                        </div>
+                        <div id="category-articles-list" class="category-list"></div>
+                    </div>
                 </aside>
             </div>
 
@@ -462,11 +575,34 @@
         (function() {
             const params = new URLSearchParams(window.location.search);
             const requestedId = params.get('id');
-            const posts = Array.isArray(window.NEWS_POSTS) ? window.NEWS_POSTS : [];
+            const requestedCategory = params.get('category');
+            const posts = (Array.isArray(window.NEWS_POSTS) ? window.NEWS_POSTS : []).slice().sort((a, b) => {
+                return new Date(b.date) - new Date(a.date);
+            });
             const root = document.getElementById('article-root');
             const historyList = document.getElementById('history-list');
             const historyCount = document.getElementById('history-count');
+            const categoryCount = document.getElementById('category-count');
+            const categoryList = document.getElementById('category-list');
+            const categoryArticlesTitle = document.getElementById('category-articles-title');
+            const categoryArticlesCount = document.getElementById('category-articles-count');
+            const categoryArticlesList = document.getElementById('category-articles-list');
             const empty = document.getElementById('news-empty');
+            const latestPosts = posts.slice(0, 4);
+
+            const normalizeCategory = post => {
+                if (!post || !post.category) {
+                    return { slug: 'uncategorized', en: 'Uncategorized', zh: '未分类' };
+                }
+                if (typeof post.category === 'string') {
+                    return { slug: post.category, en: post.category, zh: post.category };
+                }
+                return {
+                    slug: post.category.slug || 'uncategorized',
+                    en: post.category.en || post.category.slug || 'Uncategorized',
+                    zh: post.category.zh || post.category.en || post.category.slug || '未分类'
+                };
+            };
 
             if (!posts.length) {
                 empty.style.display = 'block';
@@ -474,7 +610,22 @@
                 return;
             }
 
-            const activeArticle = posts.find(post => post.id === requestedId) || posts[0];
+            const requestedArticle = posts.find(post => post.id === requestedId);
+            const fallbackCategory = requestedCategory || (requestedArticle ? normalizeCategory(requestedArticle).slug : normalizeCategory(posts[0]).slug);
+            const categories = posts.reduce((acc, post) => {
+                const category = normalizeCategory(post);
+                if (!acc.some(item => item.slug === category.slug)) {
+                    acc.push(category);
+                }
+                return acc;
+            }, []);
+            const activeCategory = categories.some(category => category.slug === fallbackCategory)
+                ? fallbackCategory
+                : categories[0].slug;
+            const sameCategoryPosts = posts.filter(post => normalizeCategory(post).slug === activeCategory);
+            const activeArticle = requestedArticle && normalizeCategory(requestedArticle).slug === activeCategory
+                ? requestedArticle
+                : (sameCategoryPosts[0] || posts[0]);
             const blocksHtml = activeArticle.blocks.map(block => {
                 if (block.type === 'heading') {
                     return `<h2>${block.en}</h2>`;
@@ -501,14 +652,39 @@
                 <section class="news-body">${blocksHtml}</section>
             `;
 
-            historyCount.textContent = posts.length === 1 ? '1 post' : `${posts.length} posts`;
-            historyList.innerHTML = posts.map(post => `
-                <a href="news.html?id=${encodeURIComponent(post.id)}" class="history-card${post.id === activeArticle.id ? ' active' : ''}">
+            historyCount.textContent = latestPosts.length === 1 ? 'Latest 1' : `Latest ${latestPosts.length}`;
+            historyList.innerHTML = latestPosts.map(post => {
+                const category = normalizeCategory(post);
+                const href = `news.html?id=${encodeURIComponent(post.id)}&category=${encodeURIComponent(category.slug)}`;
+                return `
+                <a href="${href}" class="history-card${post.id === activeArticle.id ? ' active' : ''}">
+                    <span class="history-meta">
+                        <span class="history-date">${post.date}</span>
+                        <span class="history-tag">${category.en}</span>
+                    </span>
+                    <span class="history-headline">${post.title.en}</span>
+                    <span class="history-excerpt">${post.excerpt && post.excerpt.en ? post.excerpt.en : ''}</span>
+                </a>
+            `;
+            }).join('');
+
+            categoryCount.textContent = categories.length === 1 ? '1 group' : `${categories.length} groups`;
+            categoryList.innerHTML = categories.map(category => `
+                <a href="news.html?category=${encodeURIComponent(category.slug)}" class="category-chip${category.slug === activeCategory ? ' active' : ''}">
+                    ${category.en}
+                </a>
+            `).join('');
+
+            const currentCategory = categories.find(category => category.slug === activeCategory) || normalizeCategory(activeArticle);
+            categoryArticlesTitle.textContent = currentCategory.en;
+            categoryArticlesCount.textContent = sameCategoryPosts.length === 1 ? '1 post' : `${sameCategoryPosts.length} posts`;
+            categoryArticlesList.innerHTML = sameCategoryPosts.length ? sameCategoryPosts.map(post => `
+                <a href="news.html?id=${encodeURIComponent(post.id)}&category=${encodeURIComponent(currentCategory.slug)}" class="history-card${post.id === activeArticle.id ? ' active' : ''}">
                     <span class="history-date">${post.date}</span>
                     <span class="history-headline">${post.title.en}</span>
                     <span class="history-excerpt">${post.excerpt && post.excerpt.en ? post.excerpt.en : ''}</span>
                 </a>
-            `).join('');
+            `).join('') : '<div class="category-empty">No articles available in this category yet.</div>';
         })();
     </script>
 </body>
