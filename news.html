@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | Company Updates, Product Notes & Export Insights | YQ Steel</title>
+    <meta name="description" content="Read the latest YQ Steel company updates, product notes, sourcing insights, and export-related news from Tangshan, China.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yqsteel.com/news.html">
+    <meta property="og:title" content="News | Company Updates, Product Notes & Export Insights | YQ Steel">
+    <meta property="og:description" content="Latest YQ Steel updates, product notes, sourcing insights, and export-related news.">
+    <meta property="og:image" content="https://yqsteel.com/images/og-image.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yqsteel.com/news.html">
+    <meta property="twitter:title" content="News | Company Updates, Product Notes & Export Insights | YQ Steel">
+    <meta property="twitter:description" content="Latest YQ Steel updates, product notes, sourcing insights, and export-related news.">
+    <meta property="twitter:image" content="https://yqsteel.com/images/og-image.jpg">
+
+    <link rel="canonical" href="https://yqsteel.com/news.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        :root {
+            --news-paper: #f7f3ea;
+            --news-ink: #1a1f1d;
+            --news-muted: #6b746f;
+            --news-line: rgba(26, 31, 29, 0.12);
+            --news-accent: #a54d2d;
+            --news-accent-soft: rgba(165, 77, 45, 0.12);
+            --news-shadow: 0 24px 60px rgba(19, 27, 23, 0.10);
+        }
+
+        body.news-journal {
+            background:
+                radial-gradient(circle at top left, rgba(165, 77, 45, 0.08), transparent 30%),
+                linear-gradient(180deg, #fbf8f1 0%, #f3eee3 100%);
+            color: var(--news-ink);
+        }
+
+        .news-journal .hero {
+            min-height: auto;
+            padding: 148px 0 72px;
+            background:
+                linear-gradient(135deg, rgba(165, 77, 45, 0.08), rgba(26, 31, 29, 0.02)),
+                transparent;
+        }
+
+        .news-journal .hero-content {
+            max-width: 860px;
+        }
+
+        .news-journal .hero h1 {
+            font-family: "Manrope", sans-serif;
+            font-size: clamp(2.8rem, 6vw, 4.4rem);
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+            margin: 0 0 18px;
+            color: #111714;
+            font-weight: 800;
+        }
+
+        .news-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            margin-bottom: 22px;
+            border-radius: 999px;
+            border: 1px solid var(--news-line);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--news-accent);
+            margin-bottom: 18px;
+        }
+
+        .hero-subtitle {
+            max-width: 760px;
+            font-size: 1.02rem;
+            line-height: 1.85;
+            color: #4e5752;
+        }
+
+        .news-shell {
+            display: grid;
+            grid-template-columns: minmax(0, 1.55fr) 360px;
+            gap: 36px;
+            align-items: start;
+        }
+
+        .news-main {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid var(--news-line);
+            border-radius: 32px;
+            box-shadow: var(--news-shadow);
+            overflow: hidden;
+        }
+
+        .news-article {
+            padding: 40px;
+        }
+
+        .news-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: var(--news-accent-soft);
+            color: var(--news-accent);
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .news-date {
+            font-size: 0.95rem;
+            color: var(--news-muted);
+            margin-bottom: 14px;
+        }
+
+        .news-title {
+            font-family: "Manrope", sans-serif;
+            font-size: clamp(2.1rem, 4.4vw, 3.3rem);
+            line-height: 1.15;
+            letter-spacing: -0.035em;
+            margin-bottom: 18px;
+            color: var(--news-ink);
+            max-width: 20ch;
+            text-wrap: pretty;
+            font-weight: 800;
+        }
+
+        .news-excerpt {
+            font-size: 1.08rem;
+            line-height: 1.9;
+            color: #49514d;
+            margin-bottom: 30px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid var(--news-line);
+            max-width: 62ch;
+        }
+
+        .news-cover {
+            width: 100%;
+            display: block;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 24px;
+            border: 1px solid var(--news-line);
+            margin-bottom: 30px;
+        }
+
+        .news-body h2 {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.45rem;
+            line-height: 1.3;
+            margin: 34px 0 14px;
+            color: var(--news-ink);
+        }
+
+        .news-body p {
+            font-size: 1.03rem;
+            line-height: 1.95;
+            color: #323936;
+            margin-bottom: 18px;
+        }
+
+        .news-body figure {
+            margin: 30px 0;
+            padding: 16px;
+            background: #fcfaf5;
+            border: 1px solid var(--news-line);
+            border-radius: 24px;
+        }
+
+        .news-body figure img {
+            width: 100%;
+            display: block;
+            border-radius: 18px;
+        }
+
+        .news-body figcaption {
+            margin-top: 12px;
+            color: var(--news-muted);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        .news-sidebar {
+            position: sticky;
+            top: 128px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid var(--news-line);
+            border-radius: 28px;
+            box-shadow: var(--news-shadow);
+            padding: 28px;
+        }
+
+        .news-sidebar-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--news-line);
+        }
+
+        .news-sidebar-title h3 {
+            font-size: 1.15rem;
+            color: var(--news-ink);
+            margin: 0;
+        }
+
+        .news-sidebar-title span {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--news-accent);
+        }
+
+        .history-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .history-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            padding: 16px;
+            border: 1px solid var(--news-line);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.72);
+            transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+        }
+
+        .history-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(165, 77, 45, 0.35);
+            background: rgba(255, 255, 255, 0.96);
+        }
+
+        .history-card.active {
+            background: linear-gradient(135deg, rgba(165, 77, 45, 0.14), rgba(255, 255, 255, 0.92));
+            border-color: rgba(165, 77, 45, 0.35);
+        }
+
+        .history-date {
+            display: block;
+            font-size: 0.82rem;
+            color: var(--news-muted);
+            margin-bottom: 8px;
+        }
+
+        .history-headline {
+            display: block;
+            font-weight: 800;
+            color: var(--news-ink);
+            line-height: 1.45;
+            margin-bottom: 8px;
+        }
+
+        .history-excerpt {
+            display: block;
+            font-size: 0.92rem;
+            color: #56605b;
+            line-height: 1.7;
+        }
+
+        .news-empty-panel {
+            display: none;
+            padding: 36px;
+            background: rgba(255, 255, 255, 0.84);
+            border: 1px solid var(--news-line);
+            border-radius: 24px;
+            text-align: center;
+        }
+
+        @media (max-width: 1080px) {
+            .news-shell {
+                grid-template-columns: 1fr;
+            }
+
+            .news-sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .news-article,
+            .news-sidebar {
+                padding: 22px;
+            }
+
+            .news-cover {
+                border-radius: 18px;
+                aspect-ratio: 4 / 3;
+            }
+
+            .news-title {
+                font-size: 2.2rem;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body class="news-journal">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "YQ Steel News",
+        "url": "https://yqsteel.com/news.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "YQ Steel - Tangshan Yueding Qiangsheng Metal Materials Co., Ltd.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yqsteel.com/images/logo.jpg"
+            }
+        }
+    }
+    </script>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="images/logo.jpg" alt="YQ Steel Logo" style="height: 48px; width: auto; border-radius: 8px;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);">YQ <span style="color: var(--accent-500);">STEEL</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="yard.html">Our Yard</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <script>
+        (function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            mobileToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+                this.classList.toggle('active');
+                this.textContent = isExpanded ? '☰' : '✕';
+            });
+
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                }
+            });
+        })();
+    </script>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="news-kicker">YQ Steel Journal</div>
+                <h1>News &amp; Updates</h1>
+                <p class="hero-subtitle">Directly on the news page, the newest article appears first. Older posts stay on the right like a compact export and sourcing archive.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="products-section" style="padding-top: 20px; padding-bottom: 80px;">
+        <div class="container">
+            <div class="news-shell">
+                <div class="news-main">
+                    <article id="article-root" class="news-article"></article>
+                </div>
+
+                <aside class="news-sidebar">
+                    <div class="news-sidebar-title">
+                        <h3>Historical Articles</h3>
+                        <span id="history-count">0 posts</span>
+                    </div>
+                    <div id="history-list" class="history-list"></div>
+                </aside>
+            </div>
+
+            <div id="news-empty" class="news-empty-panel" style="margin-top: 24px;">
+                <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 14px;">No posts published yet</h3>
+                <p style="color: var(--text-muted); margin-bottom: 24px;">Once the first article is added to <code>news-data.js</code>, it will appear here automatically.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products/h-beam.html">H Beam</a></li>
+                        <li><a href="products/i-beam.html">I Beam</a></li>
+                        <li><a href="products/channel-steel.html">Channel Steel</a></li>
+                        <li><a href="products/equal-angle.html">Equal Angle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:bianaiqiang@yqsteel.org">bianaiqiang@yqsteel.org</a></p>
+                    <p>Location: Tangshan, China</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022-2025 YQ Steel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="news-data.js"></script>
+    <script>
+        (function() {
+            const params = new URLSearchParams(window.location.search);
+            const requestedId = params.get('id');
+            const posts = Array.isArray(window.NEWS_POSTS) ? window.NEWS_POSTS : [];
+            const root = document.getElementById('article-root');
+            const historyList = document.getElementById('history-list');
+            const historyCount = document.getElementById('history-count');
+            const empty = document.getElementById('news-empty');
+
+            if (!posts.length) {
+                empty.style.display = 'block';
+                document.querySelector('.news-shell').style.display = 'none';
+                return;
+            }
+
+            const activeArticle = posts.find(post => post.id === requestedId) || posts[0];
+            const blocksHtml = activeArticle.blocks.map(block => {
+                if (block.type === 'heading') {
+                    return `<h2>${block.en}</h2>`;
+                }
+                if (block.type === 'image') {
+                    return `
+                        <figure>
+                            <img src="${block.src}" alt="${block.alt && block.alt.en ? block.alt.en : ''}">
+                            <figcaption>${block.caption && block.caption.en ? block.caption.en : ''}</figcaption>
+                        </figure>
+                    `;
+                }
+                return `<p>${block.en}</p>`;
+            }).join('');
+
+            document.title = activeArticle.title.en + ' | YQ Steel';
+
+            root.innerHTML = `
+                <div class="news-label">${activeArticle.id === posts[0].id ? 'Latest Article' : 'Archive Article'}</div>
+                <div class="news-date">${activeArticle.date}</div>
+                <h1 class="news-title">${activeArticle.title.en}</h1>
+                <div class="news-excerpt">${activeArticle.excerpt && activeArticle.excerpt.en ? activeArticle.excerpt.en : ''}</div>
+                <img class="news-cover" src="${activeArticle.cover}" alt="${activeArticle.coverAlt && activeArticle.coverAlt.en ? activeArticle.coverAlt.en : activeArticle.title.en}">
+                <section class="news-body">${blocksHtml}</section>
+            `;
+
+            historyCount.textContent = posts.length === 1 ? '1 post' : `${posts.length} posts`;
+            historyList.innerHTML = posts.map(post => `
+                <a href="news.html?id=${encodeURIComponent(post.id)}" class="history-card${post.id === activeArticle.id ? ' active' : ''}">
+                    <span class="history-date">${post.date}</span>
+                    <span class="history-headline">${post.title.en}</span>
+                    <span class="history-excerpt">${post.excerpt && post.excerpt.en ? post.excerpt.en : ''}</span>
+                </a>
+            `).join('');
+        })();
+    </script>
+</body>
+</html>

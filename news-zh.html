@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻 | YQ Steel 公司动态、产品信息与出口资讯</title>
+    <meta name="description" content="查看 YQ Steel 的公司动态、产品信息、出口相关内容与供货更新。">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yqsteel.com/news-zh.html">
+    <meta property="og:title" content="新闻 | YQ Steel 公司动态、产品信息与出口资讯">
+    <meta property="og:description" content="查看 YQ Steel 的公司动态、产品信息、出口相关内容与供货更新。">
+    <meta property="og:image" content="https://yqsteel.com/images/og-image.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yqsteel.com/news-zh.html">
+    <meta property="twitter:title" content="新闻 | YQ Steel 公司动态、产品信息与出口资讯">
+    <meta property="twitter:description" content="查看 YQ Steel 的公司动态、产品信息、出口相关内容与供货更新。">
+    <meta property="twitter:image" content="https://yqsteel.com/images/og-image.jpg">
+
+    <link rel="canonical" href="https://yqsteel.com/news-zh.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index-zh.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="images/logo.jpg" alt="YQ Steel 标志" style="height: 48px; width: auto; border-radius: 8px;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);">YQ <span style="color: var(--accent-500);">STEEL</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index-zh.html">首页</a></li>
+                <li><a href="products-zh.html">产品</a></li>
+                <li><a href="about-zh.html">关于我们</a></li>
+                <li><a href="yard-zh.html">我们的货场</a></li>
+                <li><a href="services-zh.html">服务</a></li>
+                <li><a href="news-zh.html" class="active">新闻</a></li>
+                <li><a href="contact-zh.html" class="btn-primary">联系我们</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <script>
+        (function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            mobileToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+                this.classList.toggle('active');
+                this.textContent = isExpanded ? '☰' : '✕';
+            });
+
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                }
+            });
+        })();
+    </script>
+
+    <header class="hero" style="min-height: 400px; padding-top: 140px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>新闻与动态</h1>
+                <p class="hero-subtitle">用于展示公司动态、产品信息、装运更新、出口知识和采购相关内容。</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="products-section" style="padding-top: 40px;">
+        <div class="container">
+            <div style="max-width: 860px; margin: 0 auto 56px; text-align: center;">
+                <h2 style="font-size: 2rem; color: var(--text-primary); margin-bottom: 16px;">这里可以持续更新内容</h2>
+                <p style="color: var(--text-muted); line-height: 1.8;">后续可以在这里放公司新闻、货场更新、产品说明、出口发货信息、采购常见问题等内容。</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+                <article style="background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 18px; padding: 32px; box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 0.875rem; font-weight: 700; color: var(--accent-600); margin-bottom: 12px;">公司动态</div>
+                    <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 14px;">货场与装卸能力更新</h3>
+                    <p style="color: var(--text-muted); line-height: 1.75; margin-bottom: 20px;">可发布货场实拍、装车情况、库存展示等内容，增强客户对履约能力的信任。</p>
+                    <a href="yard.html" style="color: var(--primary-600); font-weight: 700; text-decoration: none;">查看货场</a>
+                </article>
+
+                <article style="background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 18px; padding: 32px; box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 0.875rem; font-weight: 700; color: var(--accent-600); margin-bottom: 12px;">产品信息</div>
+                    <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 14px;">新增品类与规格说明</h3>
+                    <p style="color: var(--text-muted); line-height: 1.75; margin-bottom: 20px;">可用于发布新增产品线、常用规格、热销品类或加工支持能力等内容。</p>
+                    <a href="products.html" style="color: var(--primary-600); font-weight: 700; text-decoration: none;">查看产品</a>
+                </article>
+
+                <article style="background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 18px; padding: 32px; box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 0.875rem; font-weight: 700; color: var(--accent-600); margin-bottom: 12px;">出口资讯</div>
+                    <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 14px;">报价、单证与发货知识</h3>
+                    <p style="color: var(--text-muted); line-height: 1.75; margin-bottom: 20px;">可写成简短文章，解释客户常问的交货条款、资料要求、单证和询盘信息。</p>
+                    <a href="contact.html" style="color: var(--primary-600); font-weight: 700; text-decoration: none;">获取报价</a>
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

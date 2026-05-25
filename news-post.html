@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Article | YQ Steel</title>
+    <meta name="description" content="Read YQ Steel news articles, sourcing commentary, product notes, and export insights.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="images/logo.jpg" alt="YQ Steel Logo" style="height: 48px; width: auto; border-radius: 8px;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);">YQ <span style="color: var(--accent-500);">STEEL</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="yard.html">Our Yard</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="contact.html" class="btn-primary">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <script>
+        (function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            mobileToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+                this.classList.toggle('active');
+                this.textContent = isExpanded ? '☰' : '✕';
+            });
+
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                }
+            });
+
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            window.location.replace(id ? `news.html?id=${encodeURIComponent(id)}` : 'news.html');
+        })();
+    </script>
+
+    <main style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="container" style="max-width: 980px;">
+            <div style="margin-bottom: 24px;">
+                <a href="news.html" style="color: var(--primary-600); font-weight: 700;">← Back to News</a>
+            </div>
+
+            <article id="article-root" style="background: var(--bg-primary);"></article>
+            <div id="article-missing" style="display: none; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 18px; padding: 40px; text-align: center;">
+                <h1 style="margin-bottom: 14px;">Article not found</h1>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">The requested news article could not be found in <code>news-data.js</code>.</p>
+                <a href="news.html" class="btn-primary">Back to News</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products/h-beam.html">H Beam</a></li>
+                        <li><a href="products/i-beam.html">I Beam</a></li>
+                        <li><a href="products/channel-steel.html">Channel Steel</a></li>
+                        <li><a href="products/equal-angle.html">Equal Angle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:bianaiqiang@yqsteel.org">bianaiqiang@yqsteel.org</a></p>
+                    <p>Location: Tangshan, China</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022-2025 YQ Steel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
