@@ -1,5 +1,128 @@
 window.NEWS_POSTS = [
   {
+    "id": "2026-05-26-finished-vs-semis-export-lanes",
+    "date": "2026-05-26",
+    "category": {
+      "slug": "market-analysis",
+      "en": "Market Analysis",
+      "zh": "市场分析"
+    },
+    "cover": "images/2026-05-26-finished-semis-export-cover.png",
+    "coverAlt": {
+      "en": "Finished steel coils and plates staged at a Chinese port, reflecting the split between finished and semi-finished export flows",
+      "zh": "中国港口钢卷与钢板堆场场景，呼应成品与半成品出口分化"
+    },
+    "title": {
+      "en": "Finished vs Semi-Finished Steel Exports: What the Diverging Signals Mean for Buyers",
+      "zh": "成品与半成品出口分化：对采购方意味着什么"
+    },
+    "excerpt": {
+      "en": "Recent trade and market reporting points to a clear split: finished steel exports are facing more pressure, while semi-finished flows are finding room to move. For buyers, the key question is not only price—but which export lane is most workable for your destination, timeline, and specification risk.",
+      "zh": "近期的海关数据与市场报道呈现出一个清晰分化：成品钢出口承压更明显，而半成品流向仍有空间。对采购方而言，关键不只是价格，而是你的目的地、交期与规格风险，究竟更适合走哪一条“出口通道”。"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "en": "Late May is a useful checkpoint for steel buyers. The latest customs/trade updates have been pointing to softer momentum in China’s finished-steel exports in early 2026, even as export discussions remain active. That combination is important: deals still happen, but they increasingly depend on the right product mix, destination lane, and execution design.",
+        "zh": "对钢材采购方来说，5月下旬是一个很好的“体检节点”。最新的海关/贸易数据更新显示，2026年前几个月中国成品钢出口动能偏弱，但市场沟通仍然活跃。这种组合很关键：成交还在发生，但越来越依赖正确的品种结构、目的地通道与执行设计。"
+      },
+      {
+        "type": "paragraph",
+        "en": "One set of reports notes that China’s finished-steel exports in January–April were down year-on-year, while April volumes ticked up versus March. Another set of reporting highlights that sheet/plate exports over the same period fell more sharply than the headline, while semi-finished exports moved the other way. The signal is not “exports are over”—it is “exports are being re-priced and re-routed.”",
+        "zh": "一方面，有报道提到中国1—4月成品钢出口同比下降，但4月较3月有环比回升；另一方面，也有报道指出板材（板卷/板材）在同一时期的降幅更明显，而半成品出口则呈现相反方向。这里的信号不是“出口结束了”，而是“出口正在被重新定价与重新选择路径”。"
+      },
+      {
+        "type": "heading",
+        "en": "1. The split in the export mix",
+        "zh": "1. 出口结构的分化"
+      },
+      {
+        "type": "paragraph",
+        "en": "Finished steel (such as HRC, plate, and coated products) is closer to end-use competition and therefore more exposed to trade barriers, destination policy risk, and downstream demand uncertainty. When buying slows, it often slows first in finished categories where buyers can postpone procurement or pivot to domestic substitutes.",
+        "zh": "成品钢（如热卷、板材、镀涂类）更接近终端竞争，因此更容易受到贸易壁垒、目的地政策风险与下游需求不确定性的影响。当采购趋缓时，往往最先体现在成品类别上——买方可以延后采购或转向本地替代。"
+      },
+      {
+        "type": "paragraph",
+        "en": "By contrast, semi-finished cargo (slab, billet, and other feedstock) is often bought to keep rolling and conversion lines running. That makes the decision framework different: buyers focus on continuity, conversion cost, and delivery reliability more than on direct competition with local finished products. In practice, this is why semi-finished trade can remain active even when finished exports feel “harder.”",
+        "zh": "相比之下，半成品货物（板坯、方坯等）更多是为了保障下游轧制与转化产线的连续性。因此决策逻辑不同：买方更关注不断料、转化成本与交付可靠性，而不是与本地成品的直接竞争。现实中，这也是为什么在成品出口“更难做”的阶段，半成品贸易仍可能保持活跃。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-05-26-semi-finished-loading.png",
+        "alt": {
+          "en": "Semi-finished steel slabs and billets being loaded at a terminal",
+          "zh": "码头装船作业中的板坯与方坯等半成品货物"
+        },
+        "caption": {
+          "en": "Semi-finished flows can follow a different lane when buyers prioritize feedstock continuity and conversion flexibility.",
+          "zh": "当买方更重视不断料与转化灵活性时，半成品往往能沿着不同的通道继续流动。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "2. Why semi-finished can stay resilient",
+        "zh": "2. 半成品为什么更“抗压”"
+      },
+      {
+        "type": "paragraph",
+        "en": "Semi-finished procurement is usually anchored to a production plan. If the downstream mill has orders and capacity, it needs feedstock on time—often with less concern about brand preference or surface-critical specifications. That does not mean quality is unimportant; it means the risk is managed differently, with a stronger emphasis on chemistry/size tolerance, inspection, and documentation rather than on a long list of end-user finish requirements.",
+        "zh": "半成品采购通常绑定下游产线计划。只要下游工厂有订单与产能，就需要原料按时到位——对品牌偏好或表面质量类的苛刻要求相对少一些。这并不代表质量不重要，而是风险管理方式不同：更强调成分/尺寸公差、检验与单证，而不是终端用钢那种更长的表面与外观要求清单。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For traders and buyers, semi-finished deals also offer a practical hedge: if finished prices move against you, conversion timing and product allocation can be adjusted. That flexibility is valuable in a market where raw material costs, freight, and destination sentiment can shift within weeks.",
+        "zh": "对贸易商与采购方而言，半成品交易还具备一种“操作性对冲”：如果成品价格对你不利，下游转化节奏与品种分配仍有调整空间。在原料成本、运费与目的地情绪可能按周变化的市场里，这种灵活性价值很高。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-05-26-finished-steel-qc.png",
+        "alt": {
+          "en": "Quality inspection of finished steel coils and plates before export",
+          "zh": "成品钢卷与钢板出口前的质量检验场景"
+        },
+        "caption": {
+          "en": "Finished steel exports tend to require tighter specification confirmation and a clearer risk allocation around documentation and delivery windows.",
+          "zh": "成品钢出口往往需要更严格的规格确认，以及对单证与交付窗口风险更清晰的责任划分。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "3. Pricing and lead-time implications for buyers",
+        "zh": "3. 对采购方的价格与交期影响"
+      },
+      {
+        "type": "paragraph",
+        "en": "Market commentary on China’s HRC export pricing in mid-May has suggested that export offers can stay supported by costs even when overseas buying becomes selective. For buyers, this creates a familiar tension: the headline price may look firm, but transaction success depends on whether the destination lane is commercially and operationally workable for the next 30–60 days.",
+        "zh": "关于5月中旬中国热卷出口报价的市场评论显示，即使海外采购更挑剔，成本端也可能支撑报价保持坚挺。对买方来说，这会形成一种常见张力：表面价格看起来“挺”，但能否成交取决于未来30—60天内目的地通道在商业与执行层面是否仍可行。"
+      },
+      {
+        "type": "paragraph",
+        "en": "This is where offer structure matters. In a more fragile environment, buyers benefit from clearer assumptions: shipment month, booking lead time, allowable substitutions (grade/thickness), documentation package, and re-pricing triggers if freight or route availability changes. A slightly higher ex-works number can be cheaper in total if it comes with a better-defined execution plan.",
+        "zh": "这也是“报价结构”变得更重要的原因。在更脆弱的环境里，买方需要更清晰的假设条件：发运月份、订舱提前期、可接受的替代（材质/厚度）、单证包，以及当运费或航线可用性变化时的重定价触发条件。如果执行计划更明确，一个略高的出厂价在总成本上反而可能更便宜。"
+      },
+      {
+        "type": "heading",
+        "en": "4. A practical procurement checklist",
+        "zh": "4. 一份可直接落地的采购清单"
+      },
+      {
+        "type": "paragraph",
+        "en": "If you are evaluating a finished-steel import: confirm the destination lane first (policy and customs posture), then lock the spec pack (grade, tolerances, test standards), then lock the execution pack (shipment window, booking plan, documents, inspection). Treat these as one bundle rather than three separate negotiations.",
+        "zh": "如果你在评估成品钢进口：先把目的地通道确认清楚（政策与海关口径），再把规格包锁定（材质、公差、检验标准），最后把执行包锁定（发运窗口、订舱计划、单证、检验）。建议把它当作一个整体，而不是三场分开的谈判。"
+      },
+      {
+        "type": "paragraph",
+        "en": "If you are evaluating semi-finished feedstock: focus on continuity and conversion—chemistry and size tolerance, inspection scope, destination processing requirements, and a realistic loading/discharge plan. The commercial edge often comes from fewer surprises, not from squeezing the last dollar out of the headline price.",
+        "zh": "如果你在评估半成品原料：重点放在不断料与可转化性——成分与尺寸公差、检验范围、目的地加工要求，以及一个现实可执行的装卸计划。很多时候商业优势来自“少意外”，而不是把报价表面数字压到极致。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Takeaway: the current split between finished and semi-finished export flows is a reminder that market risk is not uniform. Buyers who match product selection with the right lane—destination, documentation, and delivery design—tend to get better reliability even when the broader market feels uncertain.",
+        "zh": "结论：成品与半成品出口的分化提醒我们，市场风险并不均匀。能把品种选择与正确通道（目的地、单证与交付设计）匹配起来的采购方，往往能在不确定的市场中获得更高的可靠性。"
+      }
+    ]
+  },
+  {
     "id": "2026-05-25-freight-volatility-steel-export-execution",
     "date": "2026-05-25",
     "category": {
