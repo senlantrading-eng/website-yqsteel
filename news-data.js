@@ -1,5 +1,138 @@
 window.NEWS_POSTS = [
   {
+    "id": "2026-05-26-korea-ad-probe-specialty-steel-bars",
+    "date": "2026-05-26",
+    "category": {
+      "slug": "trade-policy",
+      "en": "Trade Policy",
+      "zh": "贸易政策"
+    },
+    "cover": "images/2026-05-26-korea-ad-probe-cover.png",
+    "coverAlt": {
+      "en": "Port inspection scene with bundled steel bars and documentation checks, reflecting tighter trade-policy scrutiny",
+      "zh": "港口检验与钢材捆包核验场景，呼应贸易政策审查趋严"
+    },
+    "title": {
+      "en": "Korea’s Anti-Dumping Probe on Chinese Specialty Steel Bars: What Changes for Procurement and Shipment Execution",
+      "zh": "韩国对中国特殊钢棒材启动反倾销调查：采购与发运执行将发生哪些变化"
+    },
+    "excerpt": {
+      "en": "South Korea has launched an anti-dumping investigation into Chinese specialty steel bars. For importers and project buyers, the immediate impact is rarely a single “new duty number”—it is a shift in documentation discipline, origin and mill traceability, shipment timing, and how risk is allocated in contracts while the case proceeds.",
+      "zh": "韩国已对中国特殊钢棒材启动反倾销调查。对进口商与工程采购方而言，短期影响往往并不是某个“新税率数字”，而是当案件推进时，单证要求、产地与钢厂可追溯性、发运节奏，以及合同中的风险分配都会发生变化。"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "en": "Trade-policy news matters most when it changes how a shipment is executed. In early May 2026, South Korea launched an anti-dumping investigation into Chinese specialty steel bars after a domestic-industry petition. Even before a final decision is reached, an investigation can reshape lead times and paperwork standards—especially for buyers who need stable delivery windows.",
+        "zh": "贸易政策新闻真正重要之处，在于它会改变一票货的“执行方式”。2026年5月上旬，韩国在国内产业提出申请后，对中国特殊钢棒材启动反倾销调查。即使最终裁定尚未作出，调查期也可能改变交期与单证标准——尤其对需要稳定交付窗口的采购方而言。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For steel buyers, the practical question is not whether trade remedies exist—they always do in one form or another. The question is how quickly your procurement plan can adapt: Are your specs clearly defined? Are mill and heat-level traceability documents ready? Can your contract pricing and shipping terms survive a sudden change in border costs or clearance friction?",
+        "zh": "对采购方来说，现实问题并不是“贸易救济会不会出现”——它一直以不同形式存在。真正的问题是：你的采购计划能多快适应？规格是否定义清晰？是否具备钢厂与炉批层级的可追溯单据？当边境成本或通关摩擦突然变化时，你的合同报价与发运条款能否承受？"
+      },
+      {
+        "type": "heading",
+        "en": "1) What an anti-dumping probe changes—before any duty is finalized",
+        "zh": "1）反倾销调查在“最终税率落地前”会改变什么"
+      },
+      {
+        "type": "paragraph",
+        "en": "An investigation period often increases operational scrutiny. Importers may face more questions around producer identity, product definition, and the consistency of commercial documents. If your shipment is time-sensitive, this is where risk accumulates: a small mismatch between PO, MTC, invoice, and packing list can become a delay, not a clerical nuisance.",
+        "zh": "调查期往往意味着更高的执行审查强度。进口环节可能会更关注生产商身份、产品定义以及商业单据的一致性。对交付敏感的项目来说，风险就在这里累积：采购订单、材质证明（MTC）、发票与装箱单之间一个小小的不一致，可能就从“文书问题”升级为“放行延误”。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Procurement teams should assume that requests for clarifications will rise. The most common pain points are classification and scope wording (what is in-scope vs out-of-scope), origin and mill traceability, and evidence that the supplied grade truly matches the declared specification. The fix is not complicated—but it must be prepared before cargo is booked.",
+        "zh": "采购团队应当预期“补充说明/补件”的频率会上升。常见痛点包括：海关归类与范围措辞（哪些在范围内/哪些不在）、产地与钢厂可追溯性，以及证明所供材质确实符合申报规格的证据。解决方法并不复杂——但必须在订舱之前准备好。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-05-26-korea-ad-probe-loading.png",
+        "alt": {
+          "en": "Bundled steel bars being lifted at a bulk cargo terminal, highlighting execution and documentation sensitivity",
+          "zh": "散货码头吊装钢棒捆包作业，体现执行与单证敏感度"
+        },
+        "caption": {
+          "en": "When policy risk rises, execution discipline (tagging, traceability, document consistency) becomes as important as the headline price.",
+          "zh": "当政策风险上升时，执行纪律（标识、可追溯、单据一致性）与表面报价同样重要。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "2) Specification discipline: define the product the same way on every document",
+        "zh": "2）规格纪律：让所有单据对“产品”说同一种语言"
+      },
+      {
+        "type": "paragraph",
+        "en": "With specialty bars, scope can be sensitive to chemistry, heat treatment, mechanical properties, and end-use descriptors. Buyers reduce friction by standardizing a single spec pack: grade, size range, tolerances, surface condition, heat-treatment route (if any), testing standards, and acceptance criteria. Then ensure the same identifiers flow into the sales contract, invoice description, packing list, and mill test certificate.",
+        "zh": "在特殊钢棒材领域，范围界定可能对化学成分、热处理、力学性能以及用途描述高度敏感。采购方要降低摩擦，关键是做一份统一的“规格包”：材质牌号、尺寸范围、公差、表面状态、热处理路线（如有）、检验标准与验收指标。并确保这些识别信息一致地出现在销售合同、发票品名、装箱单以及材质证明中。"
+      },
+      {
+        "type": "paragraph",
+        "en": "If you are buying for machining, tooling, or high-performance applications, include the practical downstream needs up-front: required straightness, decarburization limits, ultrasonic testing scope, and whether substitution is allowed across equivalent grades. The more you decide before production, the less you negotiate at the border.",
+        "zh": "如果采购用途涉及机加工、工装或高性能应用，建议把下游的关键需求提前写清：直线度要求、脱碳层限制、超声检测范围，以及是否允许在“等效牌号”之间替代。越多事情在生产前定下来，越少问题需要在口岸再谈判。"
+      },
+      {
+        "type": "heading",
+        "en": "3) Contract structure: allocate trade-policy risk like a real schedule risk",
+        "zh": "3）合同结构：把贸易政策风险当作真实的“进度风险”来分配"
+      },
+      {
+        "type": "paragraph",
+        "en": "Many disputes during investigations come from vague responsibility lines. A practical contract approach is to separate: (a) product scope responsibility (what the seller declares and documents), (b) compliance responsibility (what the importer must file), and (c) border-cost adjustment logic (what happens if provisional measures appear mid-shipment).",
+        "zh": "调查期的很多争议来自责任边界不清。更可落地的合同做法是拆分三件事：（a）产品范围责任（卖方如何申报与出具单据），（b）合规申报责任（进口方需要提交什么），以及（c）边境成本调整逻辑（若临时措施在运输途中出现，应如何处理）。"
+      },
+      {
+        "type": "paragraph",
+        "en": "If you cannot get a clean price-adjustment clause, tighten the execution clause instead: lock shipment month, define booking lead time, define document set, and define what constitutes a “document discrepancy” event. Buyers often save more money by preventing a week of demurrage or rework than by shaving a few dollars off the base price.",
+        "zh": "如果很难谈出清晰的价格调整条款，那就先把执行条款收紧：锁定发运月份、明确订舱提前期、明确单证包、并定义何为“单据不一致事件”。很多时候，避免一周的滞期费或返工成本，比在基准价上多压几美元更省钱。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-05-26-korea-ad-probe-lab-testing.png",
+        "alt": {
+          "en": "Laboratory testing of a steel bar sample, reflecting the importance of traceability and test standards",
+          "zh": "钢棒样品实验室检测场景，体现可追溯与检验标准的重要性"
+        },
+        "caption": {
+          "en": "For specialty grades, aligning test standards and traceability (heat numbers, MTC consistency) reduces clearance friction.",
+          "zh": "对特殊钢材质而言，统一检验标准与可追溯信息（炉批号、MTC一致性）能显著降低通关摩擦。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "4) Lead time and routing: plan for extra verification cycles",
+        "zh": "4）交期与路径：为额外核验周期预留空间"
+      },
+      {
+        "type": "paragraph",
+        "en": "Even when physical logistics is smooth, investigations can add “administrative lead time.” Build that into your procurement timeline: document preparation, pre-clearance checks, and the possibility of clarification requests. For project supply, the safe approach is to book earlier and treat paperwork as a critical-path item.",
+        "zh": "即使实物流转很顺，调查也可能增加“行政交期”。建议把它纳入采购排期：单证准备、预审检查、以及可能出现的补充说明请求。对工程供货而言，更稳妥的做法是更早订舱，并把单证当作关键路径事项管理。"
+      },
+      {
+        "type": "paragraph",
+        "en": "If your supply chain relies on multiple mills or traders, tighten the consistency rules: keep naming conventions, producer identifiers, and product descriptions stable. Changes that are harmless in normal times—like switching producer names on documents—can attract questions when scrutiny rises.",
+        "zh": "如果你的供应链涉及多个钢厂或多层贸易链条，更要强化一致性：品名写法、生产商标识、产品描述保持稳定。平时看似无害的变化（例如单据上的生产商名称切换），在审查趋严时更容易被追问。"
+      },
+      {
+        "type": "heading",
+        "en": "5) A buyer’s checklist for the next 30–60 days",
+        "zh": "5）未来30—60天采购方可直接落地的清单"
+      },
+      {
+        "type": "paragraph",
+        "en": "1) Confirm scope: verify your grade/size/process is described consistently. 2) Lock traceability: require heat numbers, mill identity, and a consistent MTC format. 3) Freeze the doc set: invoice/packing list/BL/CO/MTC with the same identifiers. 4) Build slack: add time for pre-clearance review and clarification rounds. 5) Agree risk logic: specify how provisional measures or policy changes are handled.",
+        "zh": "1）确认范围：确保材质/尺寸/工艺的描述一致。2）锁定可追溯：要求炉批号、钢厂身份与稳定的MTC格式。3）冻结单证包：发票/装箱单/提单/原产地证/MTC使用同一套识别信息。4）预留缓冲：为预审与补充说明预留时间。5）明确风险逻辑：写清临时措施或政策变化如何处理。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Takeaway: an anti-dumping probe is not only a policy headline—it is a project-management event. Buyers who treat documentation, traceability, and contract risk allocation as part of procurement (not afterthoughts) tend to protect delivery reliability and total landed cost, even while the case is still unfolding.",
+        "zh": "结论：反倾销调查不只是一个政策标题，更是一个项目管理事件。把单证、可追溯性与合同风险分配纳入采购流程（而不是事后补救）的买方，更容易在案件推进过程中保持交付可靠性与到岸总成本的可控性。"
+      }
+    ]
+  },
+  {
     "id": "2026-05-26-finished-vs-semis-export-lanes",
     "date": "2026-05-26",
     "category": {
