@@ -570,13 +570,26 @@
         </div>
     </footer>
 
-    <script src="news-data.js"></script>
     <script>
-        (function() {
+        (async function() {
+            async function loadNewsPosts() {
+                const script = document.createElement('script');
+                const cacheBust = `v=${Date.now()}`;
+                script.src = `news-data.js?${cacheBust}`;
+
+                await new Promise((resolve, reject) => {
+                    script.onload = resolve;
+                    script.onerror = reject;
+                    document.head.appendChild(script);
+                });
+
+                return Array.isArray(window.NEWS_POSTS) ? window.NEWS_POSTS : [];
+            }
+
             const params = new URLSearchParams(window.location.search);
             const requestedId = params.get('id');
             const requestedCategory = params.get('category');
-            const posts = (Array.isArray(window.NEWS_POSTS) ? window.NEWS_POSTS : []).slice().sort((a, b) => {
+            const posts = (await loadNewsPosts()).slice().sort((a, b) => {
                 return new Date(b.date) - new Date(a.date);
             });
             const root = document.getElementById('article-root');
@@ -685,6 +698,18 @@
                     <span class="history-excerpt">${post.excerpt && post.excerpt.en ? post.excerpt.en : ''}</span>
                 </a>
             `).join('') : '<div class="category-empty">No articles available in this category yet.</div>';
+        })().catch(error => {
+            console.error('Failed to load news posts:', error);
+            const shell = document.querySelector('.news-shell');
+            const empty = document.getElementById('news-empty');
+            if (shell) shell.style.display = 'none';
+            if (empty) {
+                empty.style.display = 'block';
+                empty.innerHTML = `
+                    <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 14px;">Unable to load the latest posts</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 24px;">The page could not refresh <code>news-data.js</code> just now. Please try again in a moment.</p>
+                `;
+            }
         })();
     </script>
 </body>
