@@ -1,5 +1,138 @@
 window.NEWS_POSTS = [
   {
+    "id": "2026-05-27-sea-hrc-signals-vietnam-logistics",
+    "date": "2026-05-27",
+    "category": {
+      "slug": "market-analysis",
+      "en": "Market Analysis",
+      "zh": "市场分析"
+    },
+    "cover": "images/2026-05-27-sea-hrc-signals-cover.png",
+    "coverAlt": {
+      "en": "Steel coils staged at a port yard with cranes and containers, reflecting Southeast Asia’s late-May hot-rolled coil procurement and logistics signals",
+      "zh": "港口堆场钢卷与吊装作业场景，呼应东南亚5月下旬热卷采购与物流信号"
+    },
+    "title": {
+      "en": "Late-May HRC Signals in Southeast Asia: Vietnam Offer Moves, Narrowing Spreads, and What Buyers Should Lock In",
+      "zh": "东南亚5月下旬热卷信号：越南报价调整、价差收敛，以及采购方该“先锁定什么”"
+    },
+    "excerpt": {
+      "en": "Late May 2026 brings a useful checkpoint for SEA flat-steel buyers: Vietnamese mill offers and regional price spreads are shifting while logistics constraints remain real. The practical takeaway is less about chasing the lowest number and more about controlling replacement-cost risk, shipment windows, and spec/traceability discipline.",
+      "zh": "2026年5月下旬是东南亚板材采购方的一个关键“体检点”：越南钢厂报价与区域价差在变化，但物流约束依然真实存在。更实用的结论并不是一味追最低价，而是要管住替代成本风险、发运窗口，以及规格与可追溯性这类执行基本功。"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "en": "Steel purchasing decisions rarely change on a single headline. They change when several small signals line up—offers move, spreads compress, and delivery constraints refuse to disappear. In late May 2026, Southeast Asia’s hot-rolled coil (HRC) market provides exactly this kind of “quiet but actionable” setup for importers and project buyers.",
+        "zh": "钢材采购决策很少因为某一条新闻就彻底改变。真正会触发变化的，是多个小信号叠加：报价在动、价差在收、交付约束却并未消失。2026年5月下旬，东南亚热轧卷板（HRC）市场正好呈现出这种“安静但可行动”的组合，值得进口商与项目采购方认真对待。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Recent market reporting highlights Vietnam mill offer adjustments alongside narrowing regional price differentials and persistent logistics challenges on some lanes. For buyers, the right question is not “Is the price up or down this week?”—it is “What must I lock in now so my replacement cost and delivery risk do not drift while I wait?”",
+        "zh": "近期市场报道提到，越南钢厂报价出现调整，同时区域价差有收敛迹象，而部分航线的物流挑战仍在。对采购方而言，更关键的问题不是“本周涨跌多少”，而是“我现在必须先锁定哪些要素，才能避免等待过程中替代成本与交付风险悄悄漂移”。"
+      },
+      {
+        "type": "heading",
+        "en": "1) What the latest offer moves are really saying",
+        "zh": "1）报价调整真正透露了什么"
+      },
+      {
+        "type": "paragraph",
+        "en": "When a major mill trims or reshapes its offer, it is often less about “weak demand” and more about finding a tradable clearing level while buyers compare multiple origins. In SEA, that comparison is constant: Vietnam domestic supply, Northeast Asian exports, and China-origin material that moves in and out of competitiveness depending on spreads and freight.",
+        "zh": "当头部钢厂下调或重塑报价时，背后往往不只是“需求变弱”，更像是在买方多源比价的背景下，寻找一个可成交的“清算价位”。在东南亚，这种比价几乎是常态：越南本地供应、东北亚出口，以及在价差与运费变化下时强时弱的中国资源。"
+      },
+      {
+        "type": "paragraph",
+        "en": "The operational implication is straightforward: if you are buying for a defined consumption month, you should treat late-May offers as inputs for a replacement-cost model, not as a final answer. What matters is whether the offer level can be repeated for your next tranche—and whether it is linked to tighter payment/quantity conditions that quietly increase total landed cost.",
+        "zh": "执行层面的含义很直接：如果你是为某个明确的用钢月份采购，那么5月下旬的报价更像是“替代成本模型”的输入，而不是最终答案。关键在于：这个价位在下一批是否可复制？是否伴随更苛刻的付款/数量条件，从而在不显眼的地方抬高到岸综合成本？"
+      },
+      {
+        "type": "heading",
+        "en": "2) Narrowing spreads = higher risk of being under-covered",
+        "zh": "2）价差收敛 = 更容易“买少了、补得更贵”"
+      },
+      {
+        "type": "paragraph",
+        "en": "Buyers tend to focus on the absolute HRC number, but spreads often matter more. When the differential between origins narrows, the market becomes less forgiving: a small delay in decision-making can move you from “one origin is clearly best” to “everything is similarly priced, so execution decides the outcome.”",
+        "zh": "采购方往往盯着热卷的绝对价格，但很多时候“价差”更重要。当不同来源之间的价差收敛时，市场会变得不那么宽容：决策稍微拖延，就可能从“某一来源明显最优”变成“大家差不多，那就看执行谁更稳”。"
+      },
+      {
+        "type": "paragraph",
+        "en": "This is where under-coverage risk appears. If your initial tranche is booked at an attractive level but the next tranche is delayed, your average cost can drift upward—especially if raw-material sentiment firms or if mills re-anchor offers on a new reference. The safe play is to size your booking by consumption coverage (weeks of demand), not by emotion (fear of buying the top).",
+        "zh": "这时“覆盖不足”的风险就会出现：第一批锁得不错，但第二批拖延后再补货，你的平均成本就可能被抬高——尤其在原料情绪偏强、钢厂把报价重新锚定到新参考价位时。更稳的做法是按“消耗覆盖周期（能覆盖多少周用量）”来定采购节奏，而不是按情绪（害怕买在高点）来拍板。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-05-27-sea-hrc-signals-warehouse-inspection.png",
+        "alt": {
+          "en": "Coil and plate inspection inside a service center, reflecting spec control and replacement-cost discipline",
+          "zh": "钢卷与板材入库检验场景，体现规格控制与替代成本管理"
+        },
+        "caption": {
+          "en": "When spreads compress, the “right buy” often depends on discipline: spec clarity, inspection steps, and repeatable landed-cost math.",
+          "zh": "当价差收敛时，“买对了”更多取决于基本功：规格清晰、检验到位，以及可重复计算的到岸成本模型。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "3) Logistics friction: the hidden variable behind price",
+        "zh": "3）物流摩擦：价格背后的隐藏变量"
+      },
+      {
+        "type": "paragraph",
+        "en": "Even when price talk dominates, steel is still a physical business. Congestion at some ports, uneven equipment availability, and lane-specific disruptions can turn a “good number” into a bad outcome if the shipment misses a project window. Buyers should map their risk by node: mill dispatch, port gate-in, vessel schedule, destination clearance, and last-mile delivery.",
+        "zh": "即使市场讨论聚焦价格，钢材终究是“物理生意”。部分港口的拥堵、设备资源的不均衡，以及特定航线的扰动，都可能让一个“看起来很好的价格”在错过项目窗口后变成坏结果。采购方应按节点梳理风险：钢厂发运、港区进场、船期、目的港清关，以及末端配送。"
+      },
+      {
+        "type": "paragraph",
+        "en": "The practical change you can make immediately is to negotiate shipment windows as carefully as you negotiate price. When offers are close, the winner is often the party that can actually ship on time with complete documents—commercial invoice, packing list, mill test certificate (MTC), and traceability for heat/lot where required by the buyer’s QA system.",
+        "zh": "你可以立刻做出的实用改变，是把“发运窗口”的谈判强度提升到和“价格”同一个级别。当报价接近时，真正胜出的往往是谁能按期发走、单证齐全：商业发票、装箱单、材质证明（MTC），以及在买方质保体系要求下的炉批/批次可追溯性。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-05-27-sea-hrc-signals-vessel-loading.png",
+        "alt": {
+          "en": "Steel plates and beams being loaded at a quay, highlighting execution risk and shipment-window management",
+          "zh": "码头装船作业场景，强调执行风险与发运窗口管理"
+        },
+        "caption": {
+          "en": "When prices converge, the differentiator is often execution: booking discipline, cut-off times, and document accuracy.",
+          "zh": "当价格趋同，差异往往来自执行：订舱纪律、截关节点，以及单证准确性。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "4) A procurement checklist for late-May decisions",
+        "zh": "4）5月下旬决策的采购清单"
+      },
+      {
+        "type": "paragraph",
+        "en": "If you are buying HRC for conversion (pipe, tube, fabrication, or re-rolling), confirm your technical baseline first: grade, thickness tolerance, coil ID/OD and weight limits, edge condition, and surface requirements. A marginal price improvement is meaningless if it triggers yield loss or downstream rework.",
+        "zh": "如果你采购热卷用于加工转化（制管、制圆/方矩、加工或再轧），应先把技术底线确认清楚：牌号、厚度公差、钢卷内外径与单卷重量限制、边部状态、表面要求等。若因为小幅让利导致成材率损失或下游返工，所谓“便宜”就失去意义。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Second, treat landed cost as a system, not a quote: base price, port charges, inland trucking, insurance, financing cost, and quality risk provisions. When spreads are narrow, the total landed-cost difference often hides in the “small line items” and in who owns the risk if cargo is delayed or a document needs re-issuance.",
+        "zh": "其次，把到岸成本当作一个系统，而不是一张报价：基价、港杂、内陆运输、保险、资金成本，以及质量风险条款。当价差变窄时，真正的成本差异往往藏在这些“小项”里，以及当延误或补单证发生时，究竟由谁承担风险与成本。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Finally, size your booking with a simple rule: cover the weeks you cannot afford to miss. If your project or production line has a hard deadline, buying slightly earlier with a clean execution plan can be cheaper than buying “perfectly timed” but exposed to the next round of offer re-anchoring.",
+        "zh": "最后，用一个简单规则来定采购量：先覆盖那些你“绝对不能断供”的周数。如果项目或产线有硬性节点，那么在执行方案清晰的前提下略微提前采购，往往比“掐点买得刚刚好”但暴露在下一轮报价再锚定风险中更省钱。"
+      },
+      {
+        "type": "heading",
+        "en": "Takeaway",
+        "zh": "结论"
+      },
+      {
+        "type": "paragraph",
+        "en": "Late May 2026 is not a moment for dramatic calls—it is a moment for disciplined procurement. With offers shifting and spreads narrowing, the winners are buyers who lock in shipment windows, keep specs and traceability tight, and manage replacement-cost risk with repeatable landed-cost math.",
+        "zh": "2026年5月下旬并不适合做“夸张的趋势判断”，但非常适合做“有纪律的采购”。在报价变化与价差收敛的背景下，真正占优的是那些能锁住发运窗口、把规格与可追溯性做扎实，并用可重复的到岸成本模型管理替代成本风险的采购方。"
+      }
+    ]
+  },
+  {
     "id": "2026-05-26-korea-ad-probe-specialty-steel-bars",
     "date": "2026-05-26",
     "category": {
