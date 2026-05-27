@@ -1,5 +1,138 @@
 window.NEWS_POSTS = [
   {
+    "id": "2026-05-28-china-hrc-export-offers-logistics-landed-cost",
+    "date": "2026-05-28",
+    "category": {
+      "slug": "market-analysis",
+      "en": "Market Analysis",
+      "zh": "市场分析"
+    },
+    "cover": "images/2026-05-28-hrc-export-offers-cover.png",
+    "coverAlt": {
+      "en": "Hot-rolled coils and plate bundles staged at a port terminal, reflecting late-May export-offer and logistics signals",
+      "zh": "港口堆场的热轧钢卷与板材捆扎堆放，呼应5月下旬出口报价与物流信号"
+    },
+    "title": {
+      "en": "China HRC Export Offers Hold Steady, but Freight Variability Keeps Landed Costs Moving",
+      "zh": "中国热卷出口报价趋稳，但运费与船期波动仍在推动到岸成本变化"
+    },
+    "excerpt": {
+      "en": "Late May 2026 is a useful checkpoint for flat-steel buyers: export offer references for China-origin HRC appear relatively steady, yet freight reliability and lane-specific surcharges can still swing the real landed cost. The practical play is to lock in shipment windows, spec discipline, and document completeness—not only the headline number.",
+      "zh": "2026年5月下旬是板材采购方的一个关键“校准点”：中国热卷出口报价参考相对平稳，但运费可靠性与航线附加费仍可能显著影响真实到岸成本。更实用的策略，是同时锁定发运窗口、规格纪律与单证完整性，而不只盯住表面价格。"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "en": "For flat-steel buyers in Southeast Asia and other import markets, a steady export offer does not necessarily mean a steady delivered reality. In late May 2026, the more valuable signal is the gap between the quoted price and the price you can consistently land—on time, with clean paperwork, and within a controllable risk envelope.",
+        "zh": "对于东南亚及其他进口市场的板材采购方而言，出口报价“趋稳”并不等于到岸结果也趋稳。到2026年5月下旬，更有价值的信号其实是：报价与“可稳定落地”的到岸成本之间的差距——能否按期到港、单证是否干净、风险是否可控。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Recent market notes point to China-origin HRC export references holding relatively steady, while regional spreads and buyer negotiations continue to move around freight and availability. At the same time, logistics reporting highlights schedule adjustments, localized congestion, and surcharges on specific lanes—factors that can quietly re-price landed cost even when the mill number looks unchanged.",
+        "zh": "近期市场信息显示，中国热卷出口参考价相对稳定，但区域价差与买卖谈判仍围绕运费与资源可得性发生变化；同时，物流侧的船期调整、局部拥堵与航线附加费也在被反复提及——这些因素会在钢厂报价不变的情况下，悄悄重估到岸成本。"
+      },
+      {
+        "type": "heading",
+        "en": "1) What ‘steady offers’ really indicate",
+        "zh": "1）“报价趋稳”真正说明什么"
+      },
+      {
+        "type": "paragraph",
+        "en": "When export offer references stay in a narrow band, it usually reflects a temporary balance: sellers prefer not to chase the market down, while buyers test the floor by comparing origins and waiting for the next clear trigger (inventory pressure, currency moves, or a freight shift). In other words, steady offers can mean ‘anchor behavior’, not ‘certainty’.",
+        "zh": "当出口报价参考值在一个较窄区间内横盘，往往意味着一种短暂平衡：卖方不愿向下追价，买方则通过多源比价与等待下一轮“明确信号”（库存压力、汇率变化或运费变化）来测试底部。换句话说，报价趋稳更多是“锚定行为”，而非“确定性”。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For procurement teams, the actionable question is: if you buy the next tranche two weeks later, will the same offer still be repeatable—and will it come with the same payment terms, shipment window, and mill-side documentation discipline? Those ‘non-price’ variables are often where volatility hides.",
+        "zh": "对采购团队而言，更可执行的问题是：两周后你再补下一批，当前报价是否还能复刻？并且付款条件、发运窗口、钢厂端单证与可追溯性纪律是否仍然一致？波动往往不是躲在“价格”里，而是藏在这些“非价格变量”里。"
+      },
+      {
+        "type": "heading",
+        "en": "2) Why freight variability can outweigh a small price move",
+        "zh": "2）为什么运费与船期波动可能比小幅涨跌更重要"
+      },
+      {
+        "type": "paragraph",
+        "en": "In today’s lanes, the reliability of departure timing and the risk of last-minute surcharges can matter as much as a $5–$10/t price change. Logistics updates in late May continue to discuss service adjustments, blank sailings in some networks, and bottlenecks at certain hubs—all of which can change the true cost of ‘arriving on the week you planned’.",
+        "zh": "在当前航线环境里，离港时间的可靠性与临时附加费的风险，往往不亚于每吨5–10美元的钢价波动。5月下旬的物流动态仍在讨论航线服务调整、部分网络的空班，以及某些枢纽的瓶颈——它们都会改变“按计划那一周到港”的真实成本。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-05-28-hrc-export-vessel-loading.png",
+        "alt": {
+          "en": "Quay-side loading of steel cargo, illustrating how shipment windows and schedule reliability affect landed cost",
+          "zh": "码头钢材装船作业场景，体现发运窗口与船期可靠性对到岸成本的影响"
+        },
+        "caption": {
+          "en": "When headline prices converge, execution (booking, cut-off, and schedule stability) often becomes the real differentiator.",
+          "zh": "当表面价格趋同时，真正拉开差距的往往是执行：订舱、截关与船期稳定性。"
+        }
+      },
+      {
+        "type": "paragraph",
+        "en": "This is where buyers get surprised: even if the FOB/CFR headline looks ‘unchanged’, a modest schedule slip can force expedited inland trucking, storage, or production rescheduling costs. For converters (pipe/tube, fabrication, re-rollers), the downstream penalty of a missed window is often larger than the saving achieved by delaying the purchase.",
+        "zh": "这也是采购方容易“被反噬”的地方：即使FOB/CFR表面价格看起来没变，若船期小幅延误，也可能触发加急内陆运输、仓储占用或生产计划重排成本。对加工企业（制管、加工、再轧）而言，错过窗口的下游代价，往往大于你延后采购所“省下”的那点钱。"
+      },
+      {
+        "type": "heading",
+        "en": "3) The hidden math: landed cost is a system, not a quote",
+        "zh": "3）隐藏的算术：到岸成本是系统，不是一张报价"
+      },
+      {
+        "type": "paragraph",
+        "en": "A clean landed-cost model should include more than base price and freight. At minimum, teams should map port charges, inland delivery, insurance, financing time, inspection/quality cost, and who owns the risk if a document needs re-issuance or a roll is rejected at receiving. When markets are range-bound, these ‘small line items’ often decide who actually wins the buy.",
+        "zh": "一个可靠的到岸成本模型不应只包含基价与海运费。至少还应纳入港杂费、内陆配送、保险、资金占用时间、检验/质量成本，以及当补单证或收货拒收发生时风险由谁承担。市场横盘时，真正决定输赢的往往就是这些“看起来不大”的细项。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Also watch the ‘replaceability’ factor: if you cannot easily replace the same spec at the same timing, the cheapest offer can be the most expensive outcome. Practical procurement is less about catching the absolute bottom and more about staying covered through the weeks you cannot afford to miss.",
+        "zh": "还要看“可替代性”：如果同规格、同窗口的资源并不容易补到，那么最低报价反而可能对应最贵结果。务实的采购并不是去抓绝对最低点，而是让关键周数始终处于“有覆盖”的状态。"
+      },
+      {
+        "type": "heading",
+        "en": "4) A late-May checklist for HRC import decisions",
+        "zh": "4）5月下旬热卷进口决策清单"
+      },
+      {
+        "type": "paragraph",
+        "en": "Start with spec discipline: grade, thickness tolerance, coil ID/OD and weight limits, edge condition, and surface requirements. Put these in writing before price negotiation, and make sure they match your downstream process capability. A marginal saving is meaningless if it triggers yield loss or rework.",
+        "zh": "先从规格纪律开始：牌号、厚度公差、钢卷内外径与单卷重量限制、边部状态、表面要求等。在谈价格前先把这些写清楚，并确认与下游工艺能力一致。若因为小幅让利导致成材率损失或返工，那就得不偿失。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-05-28-hrc-export-spec-documents.png",
+        "alt": {
+          "en": "Inspection and document checking for coils, emphasizing MTC completeness and traceability",
+          "zh": "钢卷检验与文件核对场景，强调材质证明完整性与可追溯性"
+        },
+        "caption": {
+          "en": "In tight spreads, discipline wins: spec clarity, inspection steps, and complete MTC/traceability reduce re-pricing surprises.",
+          "zh": "价差变窄时，基本功决定胜负：规格清晰、检验到位、材质证明与可追溯性完整，能减少后续“被重新定价”的意外。"
+        }
+      },
+      {
+        "type": "paragraph",
+        "en": "Then lock the execution lane: shipment window, cut-off time, and document set (invoice, packing list, MTC, and heat/lot traceability when required). If your business cannot absorb delays, negotiate schedule protections as carefully as you negotiate price.",
+        "zh": "然后把执行通道锁定：发运窗口、截关节点，以及单证清单（发票、装箱单、材质证明，以及买方要求的炉批/批次可追溯性）。如果你的业务无法吸收延误，就要把“船期保护”谈得和“价格”一样认真。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Finally, size the order by risk: cover the weeks you cannot afford to miss, and avoid being forced into a replacement purchase during the next round of offer re-anchoring. A slightly earlier, well-executed booking is often cheaper than a perfectly timed buy that arrives late.",
+        "zh": "最后按风险来决定采购节奏：覆盖那些你“绝对不能断档”的周数，避免在下一轮报价重新锚定时被迫高价补货。一个略早但执行顺畅的订舱，往往比“卡点很准但到晚了”的采购更便宜。"
+      },
+      {
+        "type": "heading",
+        "en": "Takeaway",
+        "zh": "结论"
+      },
+      {
+        "type": "paragraph",
+        "en": "Late May 2026 suggests a simple message for import buyers: treat stable export offers as a reference, but manage landed cost through execution. If you can keep shipment windows, specs, and documents under control, you can turn a range-bound market into predictable procurement—without needing to gamble on the next headline.",
+        "zh": "对进口采购方而言，2026年5月下旬给出的信息很简单：把出口报价当作参考值，但用执行来管理到岸成本。只要发运窗口、规格与单证可控，你就能把横盘市场变成可预测的采购节奏，而无需押注下一条新闻。"
+      }
+    ]
+  },
+  {
     "id": "2026-05-27-sea-hrc-signals-vietnam-logistics",
     "date": "2026-05-27",
     "category": {
