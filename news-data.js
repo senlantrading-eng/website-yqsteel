@@ -1,5 +1,96 @@
 window.NEWS_POSTS = [
   {
+    "id": "2026-05-29-china-steel-exports-trade-barriers-logistics",
+    "date": "2026-05-29",
+    "category": {
+      "slug": "market-analysis",
+      "en": "Market Analysis",
+      "zh": "市场分析"
+    },
+    "cover": "images/2026-05-29-china-steel-exports-logistics-cover.png",
+    "coverAlt": {
+      "en": "Steel cargo, coils, and plate bundles staged at a Chinese port terminal, reflecting export headwinds and logistics resilience",
+      "zh": "中国港口码头堆场中的钢材货物、钢卷与板材捆扎，呼应出口压力与物流韧性"
+    },
+    "title": {
+      "en": "China Finished Steel Exports Ease, but Port Throughput and Semi-Finished Flows Keep Execution Channels Open",
+      "zh": "中国成材出口承压回落，但港口吞吐与半成品流向仍在维持执行通道"
+    },
+    "excerpt": {
+      "en": "Late May 2026 is sending a more nuanced signal than a simple export slowdown headline. Finished steel shipments from China have softened year on year under licensing changes, trade barriers, and regional disruption, yet port throughput, foreign-trade containers, and semi-finished steel flows still point to an active execution environment. For buyers, the practical question is no longer just price, but which cargoes can still move predictably and on schedule.",
+      "zh": "2026年5月下旬传递出的信号，并不是一句“出口放缓”就能概括。受许可证调整、贸易壁垒与区域扰动影响，中国成材出口同比回落；但与此同时，港口吞吐、外贸集装箱与半成品钢流向仍显示出出口执行体系依然活跃。对买家而言，真正需要判断的，已经不只是价格，而是哪类货物仍能稳定、按期地发运落地。"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "en": "For importers watching China-origin supply, the current market is not a clean one-direction story. April export data shows clear pressure on finished steel shipments, but logistics-side indicators are more resilient than the headline suggests. That split matters because procurement success now depends on execution quality and cargo selection, not only on the nominal offer level.",
+        "zh": "对于关注中国货源的进口采购方来说，当前市场并不是一个单方向的简单故事。4月出口数据确实反映了成材发运压力，但物流侧指标却比标题党式的“出口下滑”更有韧性。这种分化很重要，因为当下采购是否成功，更多取决于执行质量与货物结构选择，而不只是名义报价。"
+      },
+      {
+        "type": "heading",
+        "en": "1) What the finished-steel export slowdown is really telling buyers",
+        "zh": "1）成材出口放缓，真正告诉买家的是什么"
+      },
+      {
+        "type": "paragraph",
+        "en": "Recent customs-based market reporting indicates that China’s finished steel exports in January through April were down year on year, with April still below the same month last year even after a month-on-month rebound. That points to a market where overseas demand is still present, but policy frictions and destination-specific trade barriers are increasingly shaping what can move easily.",
+        "zh": "基于海关数据的近期市场报道显示，2026年1至4月中国成材出口同比下降，4月虽然环比修复，但仍低于去年同期。这说明海外需求并未消失，但政策摩擦与目的地市场的贸易壁垒，正在更深地决定哪些货能顺畅成交并发走。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For YQ Steel-style export execution, this is less a signal to step away from the market and more a signal to filter harder. Buyers should assume that quote availability and shipment reliability are no longer perfectly aligned. A workable offer now needs to be checked against licensing readiness, destination sensitivity, and whether the cargo lane has remained commercially usable in the past few weeks.",
+        "zh": "对玥鼎强盛这类偏执行型的钢材出口业务而言，这不是一个“退出市场”的信号，而是一个“更严格筛选”的信号。采购方需要默认：报价可获得性与发运可靠性已经不再完全同步。真正可执行的报价，要同时核对许可证准备度、目的地敏感性，以及该条航线在最近几周是否仍具备商业可操作性。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-05-29-china-steel-exports-logistics-cover.png",
+        "alt": {
+          "en": "Chinese port logistics scene with steel cargo and containers supporting export execution analysis",
+          "zh": "带有钢材货物与集装箱的中国港口物流场景，呼应出口执行分析"
+        },
+        "caption": {
+          "en": "Export competitiveness now depends as much on cargo execution and route stability as on the quoted steel price itself.",
+          "zh": "当前出口竞争力，已经和钢价本身一样，取决于货物执行能力与航线稳定性。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "2) Why logistics indicators still matter more than the headline drop",
+        "zh": "2）为什么在“出口回落”之外，更要看物流指标"
+      },
+      {
+        "type": "paragraph",
+        "en": "China’s transport-side data for the first four months of 2026 shows steady port activity, with container throughput growing faster than overall cargo volume and foreign-trade containers rising even faster. That is an important counter-signal. It suggests that while certain steel flows are under pressure, the broader export-handling system is still functioning with scale and momentum.",
+        "zh": "2026年前四个月的中国运输侧数据显示，港口运行总体平稳，集装箱吞吐增速快于整体货运吞吐，而外贸集装箱增速又快于国内箱量。这是一个很关键的反向信号。它意味着：虽然部分钢材流向承压，但更广义的出口处理系统仍在以相当规模和节奏运行。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For steel cargoes, that means the problem is becoming more selective rather than universal. A buyer should not read weaker finished-steel export data as proof that all China-origin execution has become unreliable. The smarter interpretation is that lane choice, vessel timing, document discipline, and product mix have become more decisive in separating smooth shipments from delayed ones.",
+        "zh": "对钢材货物来说，这意味着问题正在变得“选择性更强”，而不是“全面失效”。买家不应把成材出口走弱直接等同于“中国发运都不可靠了”。更合理的理解是：航线选择、船期安排、单证纪律以及产品结构，正越来越决定哪些货能顺利走、哪些货会延误。"
+      },
+      {
+        "type": "heading",
+        "en": "3) Semi-finished flows and route disruption are reshaping decision-making",
+        "zh": "3）半成品流向与航线扰动，正在重塑采购判断"
+      },
+      {
+        "type": "paragraph",
+        "en": "Market coverage in May also points to strong semi-finished steel orders and continued billet/slab movement, even while finished steel export growth faces more friction. At the same time, shipping-side analysis shows that route disruption in the Gulf has materially reduced some traditional seaborne outlets for Chinese steel. The combined message is that export capacity has not disappeared, but it is being redistributed across products and corridors.",
+        "zh": "5月的市场报道也显示，在成材出口承压的同时，半成品钢订单与方坯/板坯流向仍保持活跃；与此同时，航运侧分析则指出，海湾航线扰动明显压缩了中国钢材传统海运出口中的部分流向。综合来看，出口能力并没有消失，而是在产品结构与通道结构上发生再分配。"
+      },
+      {
+        "type": "paragraph",
+        "en": "That changes the buyer’s playbook. Instead of asking only whether China steel is available, buyers should ask which form of steel is moving more cleanly, through which port and route, under what booking window, and with what documentation certainty. In late May 2026, those execution variables can be worth more than pushing for the last few dollars on headline price.",
+        "zh": "这会直接改变买家的操作手册。与其只问“中国钢材还能不能买”，更应追问：哪一种钢材形态更容易顺畅发运、通过哪个港口与航线、在什么订舱窗口下、具备怎样的单证确定性。到了2026年5月下旬，这些执行变量的价值，可能比一味压低几美元表面价格更大。"
+      },
+      {
+        "type": "paragraph",
+        "en": "The practical takeaway is clear: keep China in the sourcing set, but manage it with tighter route intelligence and shipment discipline. For distributors, service centers, and project buyers, the best opportunities are likely to come from suppliers that can align product availability with port execution, not just from those willing to quote aggressively.",
+        "zh": "可执行的结论也很明确：依然可以把中国保留在采购来源池中，但要用更严格的航线情报与发运纪律来管理它。对分销商、加工服务中心和项目买家而言，接下来更好的机会，往往来自那些既能提供产品、又能把港口执行与交付节奏对齐的供应商，而不只是报价最激进的卖方。"
+      }
+    ]
+  },
+  {
     "id": "2026-05-28-china-hrc-export-offers-logistics-landed-cost",
     "date": "2026-05-28",
     "category": {
