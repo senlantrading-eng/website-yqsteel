@@ -1,5 +1,145 @@
 window.NEWS_POSTS = [
   {
+    "id": "2026-06-01-china-flat-steel-exports-pricing-execution",
+    "date": "2026-06-01",
+    "category": {
+      "slug": "market-analysis",
+      "en": "Market Analysis",
+      "zh": "市场分析"
+    },
+    "cover": "images/2026-06-01-flat-steel-export-signal-cover.png",
+    "coverAlt": {
+      "en": "Steel coils and plate bundles staged at a port terminal, reflecting June export pricing and execution signals",
+      "zh": "港口码头堆场中的钢卷与板材捆扎，呼应6月出口报价与执行信号"
+    },
+    "title": {
+      "en": "China Flat-Steel Exports Cool, Yet Pricing Holds: What Buyers Should Watch in June",
+      "zh": "中国板卷出口量降温但报价仍稳：6月采购方需要盯住哪些关键点"
+    },
+    "excerpt": {
+      "en": "Late-May indicators suggest China’s steel export momentum is cooling year on year, while parts of the flat-steel export market still show stable quoting and order-taking. The practical implication for buyers is to separate ‘market direction’ from ‘shipment execution’: freight, booking windows, and documentation readiness can change landed cost more than a small move in the headline price.",
+      "zh": "5月下旬的多项信号显示，中国钢材出口同比动能在降温，但板卷等部分出口市场的报价与接单仍相对稳定。对采购方更现实的启示是：把“市场方向”与“发运执行”拆开看——运价、订舱窗口与单证准备度对到岸成本的影响，可能比表面价格的小幅波动更大。"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "en": "Entering June, buyers are seeing a mixed picture from China-origin supply. Some macro and customs-linked signals point to softer export momentum year on year, but flat-steel export offers have not collapsed into a panic discount. That gap is not a contradiction—it is what markets look like when domestic demand is uneven and sellers prioritize margin and order quality.",
+        "zh": "进入6月，采购方从中国货源端看到的是一幅“分化”的图景：宏观与海关口径的部分信号指向出口同比动能走弱，但板卷等平材出口报价并没有出现恐慌式跳水。这并不矛盾——当内需不均、卖方更重视利润与订单质量时，市场往往就呈现这种状态。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For import decision-making, the key is to avoid treating every headline as a trading instruction. A slowing export volume trend may reduce availability in some destinations and lift competitive pressure in others, yet the real risk for downstream users is often execution: when the cargo actually loads, clears documentation, and arrives within the planned production window.",
+        "zh": "对进口采购决策而言，关键是不要把每条标题都当成“交易指令”。出口量趋势走弱，可能会在某些目的地减少资源、在另一些市场加大竞争压力；但对下游用钢企业来说，真正的风险往往在执行：货物是否能按期装船、单证是否顺利、到港是否落在计划生产窗口内。"
+      },
+      {
+        "type": "heading",
+        "en": "1) Volume eases, but the offer side stays selective",
+        "zh": "1）量在回落，但报价端更趋“择单”"
+      },
+      {
+        "type": "paragraph",
+        "en": "Recent market commentary around April and early-2026 trade flows suggests finished steel exports are lower than the same period last year. Even so, sellers do not automatically chase volume. Many mills and traders prefer fewer, cleaner orders—tight specs, clearer payment terms, and smoother destination compliance—because that protects margin and reduces post-booking disruption.",
+        "zh": "围绕4月与2026年前几个月贸易流向的市场解读显示，成材出口较去年同期偏弱。但卖方并不会因此自动“冲量”。不少钢厂与贸易商反而更倾向于更少、更干净的订单：规格更明确、付款条款更清晰、目的地合规更顺畅——这样能守住利润，也能减少订舱后反复与扰动。"
+      },
+      {
+        "type": "paragraph",
+        "en": "This selectivity is why buyers sometimes feel the market is ‘softer’ in theory but not dramatically cheaper in practice. When sellers filter for execution-quality orders, the discount becomes conditional: it shows up in specific grades, less-sensitive destinations, or in shipment windows where vessel space is abundant.",
+        "zh": "这也解释了为何采购方会感觉“理论上更弱、现实中却没便宜太多”。当卖方筛选的是执行质量，折扣就会变成“条件折扣”：往往只出现在特定牌号、敏感度较低的目的地，或在舱位更宽松的发运窗口。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-01-flat-steel-export-signal-cover.png",
+        "alt": {
+          "en": "Port-side steel inventory and cranes, illustrating the split between market direction and shipment execution",
+          "zh": "港口堆场钢材库存与装卸设备，体现市场方向与发运执行之间的分化"
+        },
+        "caption": {
+          "en": "In June, stable quotes can coexist with softer volumes—execution readiness often decides who can actually ship on schedule.",
+          "zh": "6月里，“报价稳定”与“出口量走弱”可以同时存在——能否按期发运，往往取决于执行准备度。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "2) Why flat-steel export prices can hold even when demand cools",
+        "zh": "2）需求降温时，为什么板卷出口价格仍能站得住"
+      },
+      {
+        "type": "paragraph",
+        "en": "Flat-steel pricing is often stickier than buyers expect because the supply side can adjust in multiple ways: product mix shifts (from commoditized to higher-requirement specs), tighter order screening, and timing control (prioritizing shipments that fit mill rolling and port loading cycles). These levers can keep offer levels stable even if headline demand is not booming.",
+        "zh": "板卷类出口定价往往比采购方预期更“粘”，原因在于供给端可用的调节手段不止一个：产品结构切换（从更通用的规格转向要求更高的规格）、接单筛选更严、以及时间控制（优先匹配轧制节奏与港口装船周期的出运窗口）。即使需求并不火热，这些杠杆也能让报价保持相对稳定。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For buyers, the actionable question is not whether a reference price moved by $5–$10/t last week, but whether a supplier is still willing to commit to the details that protect landed cost: tolerance, surface, packaging, and complete documentation. In a slower market, the best ‘price’ often comes from lower risk, not from a lower number.",
+        "zh": "对采购方而言，更可执行的问题不是“基准价上周波动了5–10美元/吨”，而是供应商是否仍愿意在那些真正守住到岸成本的细节上给出承诺：厚度公差、表面质量、包装方式、以及完整的单证与追溯。市场变慢时，最好的“价格”往往来自更低风险，而不是更低数字。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-01-flat-steel-export-orderbook.png",
+        "alt": {
+          "en": "Warehouse inspection of steel coils and bundles, emphasizing traceability and order quality",
+          "zh": "仓库内对钢卷与捆扎货物进行检验，强调可追溯与订单质量"
+        },
+        "caption": {
+          "en": "When the market is range-bound, specification discipline and traceability reduce surprises that usually appear after booking.",
+          "zh": "当市场横盘时，规格纪律与可追溯性能够减少“订舱后才出现”的意外成本。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "3) Execution factors that quietly reshape landed cost",
+        "zh": "3）悄悄改写到岸成本的执行因素"
+      },
+      {
+        "type": "paragraph",
+        "en": "June planning should start with the shipment window, not the quote. A one-week slip can trigger storage, extra inland drayage, or production rescheduling that dwarfs a small unit-price saving. The tighter your downstream schedule (fabrication, pipe/tube lines, project delivery), the more you should price execution reliability as a first-class variable.",
+        "zh": "6月排产与备货的起点应该是“发运窗口”，而不是“报价”。船期晚一周，可能就会触发仓储占用、额外内陆短驳或生产计划重排，其代价往往远大于单价上省下的那点钱。下游节奏越紧（加工、制管、工程交付），越应该把执行可靠性当作核心变量来定价。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Also watch the ‘paperwork lead time’. Even when steel is ready, a missing MTC item, inconsistent heat numbers, or delayed endorsement can push cut-off timing and create a chain reaction: missed vessel, rebooking, and demurrage exposure. A reliable exporter is often the one who can show a clean pre-shipment checklist before you wire the balance.",
+        "zh": "还要盯住“单证提前量”。即使货物已经备好，若材质证明（MTC）缺项、炉批号不一致或背书延迟，也会推迟截港时间并引发连锁反应：错过船期、重新订舱、甚至暴露在滞期费风险里。真正可靠的出口执行方，往往能在你打尾款前就拿出一份干净的装前清单。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-01-steel-port-loading-window.png",
+        "alt": {
+          "en": "Steel cargo loading into a vessel at a port, highlighting booking windows and schedule discipline",
+          "zh": "港口钢材装船入舱作业，体现订舱窗口与船期纪律"
+        },
+        "caption": {
+          "en": "A predictable loading window is often worth more than a marginal discount—especially for project-linked procurement.",
+          "zh": "可预期的装船窗口，往往比边际折扣更值钱——尤其是工程项目关联采购。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "4) A practical checklist for June buying decisions",
+        "zh": "4）6月采购决策的一份务实清单"
+      },
+      {
+        "type": "paragraph",
+        "en": "Start with specification discipline: grade, thickness tolerance, coil ID/OD and single-coil weight, edge condition, and surface requirement. Put these into the offer confirmation, not only into internal notes. If you can’t audit the spec in writing, you can’t defend the landed cost when claims happen.",
+        "zh": "先从规格纪律开始：牌号、厚度公差、钢卷内外径与单卷重量、边部状态、表面要求。把这些写进确认文件，而不是只放在内部备忘里。如果规格不能落到书面可稽核，就很难在出现索赔或拒收时守住到岸成本。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Then price the execution variables explicitly: booking lead time, whether split shipment is acceptable, port of loading flexibility, inspection arrangement, document package list, and who carries re-issuance risk if something needs correction. In a slower market, better terms can be negotiated—but only if the buyer asks for them as a package.",
+        "zh": "然后把执行变量明确地“定价”：订舱提前期、是否接受分批发运、装港灵活度、检验安排、单证包清单，以及若需更正重开由谁承担风险。市场变慢时，条件是可以谈出来的——但前提是采购方把它们当成一揽子要求提出来。"
+      },
+      {
+        "type": "heading",
+        "en": "Takeaway",
+        "zh": "结论"
+      },
+      {
+        "type": "paragraph",
+        "en": "The June signal is a disciplined one: export volumes can cool while flat-steel offer levels remain relatively stable. Buyers who win are those who separate ‘price talk’ from ‘execution reality’, lock specifications early, and manage shipment windows and paperwork lead time as carefully as the headline number.",
+        "zh": "6月的信号更偏向“纪律性”：出口量可以降温，而板卷报价仍可能相对稳定。真正能买得漂亮的采购方，往往是把“价格讨论”与“执行现实”分开看的人——先锁规格，再把发运窗口与单证提前量像管理价格一样认真管理。"
+      }
+    ]
+  },
+  {
     "id": "2026-05-29-china-steel-exports-trade-barriers-logistics",
     "date": "2026-05-29",
     "category": {
