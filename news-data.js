@@ -1,5 +1,160 @@
 window.NEWS_POSTS = [
   {
+    "id": "2026-06-02-china-steel-export-mix-shift",
+    "date": "2026-06-02",
+    "category": {
+      "slug": "market-analysis",
+      "en": "Market Analysis",
+      "zh": "市场分析"
+    },
+    "cover": "images/2026-06-02-china-steel-export-mix-cover.png",
+    "coverAlt": {
+      "en": "Steel slabs, plate bundles, and coils positioned beside a cargo vessel at a Chinese export terminal",
+      "zh": "中国出口码头边的板坯、钢板捆和钢卷，与待装货船同框"
+    },
+    "title": {
+      "en": "China's Steel Export Mix Is Shifting: Why Rising Semis and Softer Plate Flows Matter for Buyers",
+      "zh": "中国钢材出口结构正在切换：半成品走强、板材走弱，对买家意味着什么"
+    },
+    "excerpt": {
+      "en": "Fresh trade data from May 2026 points to a sharper split inside China's steel export story. Semi-finished shipments are expanding quickly, while finished steel and sheet/plate exports remain under pressure from licensing, antidumping friction, and selective overseas demand. For buyers, the message is not simply that China is exporting less or more. It is that product mix, route choice, and execution discipline now matter more than any single headline number.",
+      "zh": "截至2026年5月披露的最新贸易数据表明，中国钢材出口内部的分化正在加深：半成品出海明显加速，而成材以及板材出口仍受到许可证、反倾销摩擦和海外需求选择性的压制。对买家来说，真正的信号不是简单的“出口变多了还是变少了”，而是产品结构、航线选择和执行纪律的重要性，已经超过任何单一 headline 数字。"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "en": "The first weeks of June are opening with a more nuanced China steel export picture than many buyers expected. Aggregate headlines still show weaker finished-steel performance year on year, but that does not mean the export machine has stalled. What is changing is the composition of cargoes that can move smoothly, competitively, and with acceptable risk.",
+        "zh": "6月初的中国钢材出口图景，比许多买家预想得更复杂。总量 headline 仍显示成材出口同比偏弱，但这并不意味着出口机器停下来了。真正变化的是，哪些货种能够更顺畅、更有竞争力、并以可接受的风险水平完成出运。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For procurement teams, that distinction matters. When the export mix shifts, the question is no longer just where FOB prices sit this week. It becomes a broader sourcing decision about whether the product category you need is still benefiting from available route capacity, easier compliance, and suppliers willing to commit to shipment details in writing.",
+        "zh": "对采购团队而言，这种区别非常关键。当出口结构发生切换时，问题就不再只是“本周 FOB 报到哪里”。它会变成一个更广义的 sourcing 判断：你需要的产品类别，是否仍然享受可用航线能力、相对容易的合规环境，以及供应商是否愿意把发运细节写进确认文件。"
+      },
+      {
+        "type": "heading",
+        "en": "1) The export mix is diverging, not collapsing",
+        "zh": "1）出口不是整体塌陷，而是在加速分化"
+      },
+      {
+        "type": "paragraph",
+        "en": "Recent customs-based reporting shows China's finished steel exports reached 34.214 million mt in January through April 2026, down 9.7 percent year on year, even though April volumes recovered modestly from March. In practical terms, that tells buyers the export market still has supply, but it is operating with more friction than last year and with less room for undisciplined order-taking.",
+        "zh": "基于海关数据的最新市场报道显示，2026年1至4月中国成材出口为3421.4万吨，同比下降9.7%，尽管4月较3月出现了小幅修复。对买家更有意义的解读是：出口供给并未消失，但相较去年，执行摩擦更大，卖方对低质量、低确定性的订单容忍度也更低。"
+      },
+      {
+        "type": "paragraph",
+        "en": "At the same time, the weakness is not evenly distributed across all steel categories. That unevenness is exactly why broad headlines can mislead downstream users. A buyer of plate, coil, pipe, or structural inputs needs to know which export lanes are tightening and which segments are still expanding, because those two conditions produce very different negotiations on price, lead time, and shipment reliability.",
+        "zh": "与此同时，这种走弱并不是平均落在所有钢材品种上的。正因为不均衡，宽泛 headline 才容易误导下游用户。无论你采购板材、卷材、管材还是结构钢原料，都必须分清哪些出口通道在收紧、哪些品类仍在扩张，因为这两种状态会在价格、交期和发运可靠性上形成完全不同的谈判环境。"
+      },
+      {
+        "type": "heading",
+        "en": "2) Semi-finished steel is finding room to move",
+        "zh": "2）半成品钢正在获得更大的出海空间"
+      },
+      {
+        "type": "paragraph",
+        "en": "One of the clearest current signals is the strength of semi-finished exports. China shipped 4.94 million mt of semi-finished steel in January through April, up 47.77 percent year on year, with April alone reaching 1.64 million mt and more than doubling from the same month last year. That is not a background detail. It suggests international buyers are still pulling Chinese-origin tonnage when the product faces fewer trade barriers and can fit rolling or downstream conversion needs elsewhere.",
+        "zh": "当前最清晰的信号之一，就是半成品出口的强势。2026年1至4月，中国半成品钢出口494万吨，同比增加47.77%；仅4月就达到164万吨，同比翻倍以上。这绝不是一个“背景细节”。它说明当产品面对的贸易壁垒更少，并且能匹配海外轧制或下游转化需求时，国际买家仍然愿意吸收中国来源的吨位。"
+      },
+      {
+        "type": "paragraph",
+        "en": "The implication for the market is broader than semis themselves. When semis move more freely, they can absorb mill output and help stabilize the wider ferrous balance, even if finished-product exports remain less comfortable. Buyers of finished products should therefore avoid assuming that weaker finished-export data automatically forces aggressive discounts. Mills with another release valve are less likely to chase every order at any price.",
+        "zh": "这对市场的含义，不只局限于半成品本身。当半成品流动更顺畅时，它们可以吸收钢厂产量，并在成材出口相对不顺的情况下，帮助维持更广义黑色链条的平衡。因此，成材采购方不应简单认为“成材出口数据偏弱”就必然逼出激进折价。对钢厂来说，只要还有别的释放阀门，就不会对所有订单无底线让价。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-02-china-steel-export-mix-cover.png",
+        "alt": {
+          "en": "Chinese export terminal with semi-finished slabs, finished plate bundles, and a cargo vessel preparing for loading",
+          "zh": "中国出口码头上可见板坯、成品钢板捆与准备装货的散货船"
+        },
+        "caption": {
+          "en": "China's export story in mid-2026 is increasingly about product mix: semis are moving more easily than many finished cargoes.",
+          "zh": "来到2026年中，中国出口故事越来越取决于产品结构：与许多成材相比，半成品的流动性更强。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "3) Sheet and plate remain under heavier external pressure",
+        "zh": "3）板卷与板材仍承受更重的外部压力"
+      },
+      {
+        "type": "paragraph",
+        "en": "That contrast becomes sharper in flat products. China's sheet and plate exports totaled 20.06 million mt in January through April, down 16.6 percent year on year, with April still down 17.5 percent from a year earlier despite a slight month-on-month increase. The reason is not mysterious: flat steel remains a frequent target of antidumping actions, while demand in many developed markets has not been strong enough to absorb higher-risk bookings comfortably.",
+        "zh": "这种反差在平材上更明显。2026年1至4月，中国板卷与板材出口为2006万吨，同比下降16.6%；4月虽然环比略有增长，但同比仍下降17.5%。原因并不神秘：平材仍是海外反倾销行动的高频目标，而不少发达市场的需求恢复力度，也不足以从容吸收高风险订单。"
+      },
+      {
+        "type": "paragraph",
+        "en": "This is where many buyers can misread the market. Softer plate exports do not automatically translate into universally easier buying conditions. Instead, sellers become more selective on destination, specification complexity, and payment clarity. Discounts, when they appear, are often conditional on shipment window flexibility or on accepting the grades and widths with the least commercial resistance.",
+        "zh": "很多买家恰恰容易在这里误判市场。板材出口偏弱，并不自动等于“什么都更好买了”。更常见的现实是，卖方会在目的地、规格复杂度与付款确定性上变得更挑剔。即便出现折价，也往往附带条件，例如需要更灵活的发运窗口，或接受那些商业阻力最小的牌号与宽厚规格。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-02-china-steel-export-mix-orderbook.png",
+        "alt": {
+          "en": "Warehouse inspection scene with heavy plate, coils, order documents, and quality control focus",
+          "zh": "仓库内的厚板、钢卷与订单文件检查场景，突出质量控制"
+        },
+        "caption": {
+          "en": "In a selective flat-steel market, specification discipline and documentation quality matter as much as nominal price.",
+          "zh": "在更挑单的平材市场里，规格纪律和单证质量的重要性，已经不低于名义价格。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "4) Port and route conditions are still supporting execution",
+        "zh": "4）港口与航线条件仍在支撑执行"
+      },
+      {
+        "type": "paragraph",
+        "en": "The logistics side adds an important counterweight to the softer finished-steel data. China's Ministry of Transport data for the first four months showed port cargo throughput up 3.1 percent year on year, foreign-trade cargo throughput up 5.5 percent, and container throughput up 7.2 percent to 120 million TEUs. Several major ports also added new international routes, including Africa-bound services, reinforcing that export handling capacity itself remains active.",
+        "zh": "物流侧给偏弱的成材数据提供了一个重要的反向支撑。根据中国交通运输部披露的前四个月数据，全国港口货物吞吐量同比增长3.1%，外贸货物吞吐量增长5.5%，集装箱吞吐量增长7.2%，达到1.2亿标箱。多家主要港口还新增了国际航线，其中包括面向非洲的新服务，这说明出口处理能力本身仍然活跃。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For buyers, this means execution risk is becoming more selective rather than universally worse. If the cargo category, destination, and documentation package are aligned, a workable shipment can still be assembled without extraordinary disruption. The better interpretation is that the market now rewards preparation: correct specs, clear booking lead times, and disciplined document packages are more valuable than waiting for a marginally better quote.",
+        "zh": "对买家而言，这意味着执行风险更像是“选择性上升”，而不是“全面恶化”。只要货物类别、目的地与单证包是匹配的，仍然可以在没有非常规扰动的情况下拼出一票可执行的发运。更准确的市场理解应当是：当下市场在奖励准备度，正确的规格、清晰的订舱提前期和严谨的单证包，比等待一个边际更低的报价更有价值。"
+      },
+      {
+        "type": "heading",
+        "en": "5) What buyers should change in June sourcing",
+        "zh": "5）6月采购动作应该怎么调整"
+      },
+      {
+        "type": "paragraph",
+        "en": "The first adjustment is to separate product strategy from negotiation strategy. If you are buying inputs that sit closer to semi-finished flows or to less-sensitive long-product demand, suppliers may have firmer confidence and less urgency to cut deeply. If you are buying plate or other flat products facing repeated trade scrutiny, the leverage may exist, but it needs to be converted into better execution terms, not only a lower FOB number.",
+        "zh": "第一项调整，是把“产品策略”与“谈判策略”分开。如果你采购的是更接近半成品流向、或者更接近低敏感度长材需求的货种，供应商往往更有底气，也未必急于大幅降价。如果你采购的是反复面临贸易审查的板材或其他平材，谈判筹码可能确实存在，但更值得被兑换成更好的执行条件，而不只是更低的 FOB 数字。"
+      },
+      {
+        "type": "paragraph",
+        "en": "The second adjustment is to audit execution capability before closing the order. Ask about booking windows, rebooking risk, route stability, document turnaround time, MTC completeness, and whether substitute ports or split shipment options are acceptable. In the current market, the supplier who can answer those questions cleanly is often more competitive in real landed-cost terms than the supplier offering a nominally cheaper headline quote.",
+        "zh": "第二项调整，是在成交前就把执行能力审完。要问清订舱窗口、改订舱风险、航线稳定性、单证出具时效、材质证明完整性，以及是否接受替代装港或分批发运。放在当前市场里，真正有竞争力的供应商，往往不是 headline 报价最低的那个，而是能把这些问题清晰回答、并落实到文件里的那个。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-02-china-steel-export-mix-port-routes.png",
+        "alt": {
+          "en": "Port logistics scene with steel cargo, containers, cranes, and route planning emphasis toward emerging export markets",
+          "zh": "带有钢材货物、集装箱和桥吊的港口物流场景，强调面向新兴出口市场的航线组织"
+        },
+        "caption": {
+          "en": "As routes diversify and product flows separate, buyers gain more value from execution clarity than from chasing every short-term price move.",
+          "zh": "当航线更分散、产品流向更分化时，采购方从执行清晰度中获得的价值，往往高于追逐每一次短期价格波动。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "Takeaway",
+        "zh": "结论"
+      },
+      {
+        "type": "paragraph",
+        "en": "China's steel export market in early June 2026 is better understood as a mix shift than a one-line slowdown story. Semi-finished cargoes are still finding demand and release channels, finished exports are softer, and sheet/plate cargoes face heavier trade friction. Buyers who respond well will not treat this as a simple price dip. They will treat it as a signal to source with sharper product selection, clearer route planning, and stronger control over export execution details.",
+        "zh": "2026年6月初的中国钢材出口市场，更应该被理解为一次“结构切换”，而不是一句话就能讲完的“出口放缓”。半成品仍在获得需求与释放通道，成材整体偏弱，板材货物面临更重的贸易摩擦。真正反应更好的买家，不会把这当成一次简单的价格下探，而会把它当成一个信号：要用更精细的产品选择、更清晰的航线规划，以及对出口执行细节更强的控制来完成采购。"
+      }
+    ]
+  },
+  {
     "id": "2026-06-01-china-flat-steel-exports-pricing-execution",
     "date": "2026-06-01",
     "category": {
