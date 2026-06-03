@@ -1,5 +1,170 @@
 window.NEWS_POSTS = [
   {
+    "id": "2026-06-03-china-flat-steel-execution-window",
+    "date": "2026-06-03",
+    "category": {
+      "slug": "market-analysis",
+      "en": "Market Analysis",
+      "zh": "市场分析"
+    },
+    "cover": "images/2026-06-03-china-flat-steel-execution-window-cover.png",
+    "coverAlt": {
+      "en": "Chinese export terminal with coils, heavy plate, and a vessel preparing for outbound loading",
+      "zh": "中国出口码头上摆放的钢卷、厚板与准备装船的外贸货船"
+    },
+    "title": {
+      "en": "China's Flat-Steel Export Window Is Narrower, Not Closed: Why Order Quality and Port Execution Matter More in June",
+      "zh": "中国平材出口窗口正在变窄而非关闭：为何进入6月后订单质量与港口执行更关键"
+    },
+    "excerpt": {
+      "en": "Fresh late-May and early-June trade signals point to a more selective export environment for China-origin flat steel. Finished-steel totals remain softer year on year, sheet and plate exports are still under heavier antidumping pressure, but HRC order flow at northern ports has not collapsed and China's port system is adding route depth toward emerging markets. For buyers, that combination means June procurement is less about waiting for a dramatic price break and more about securing the right product, destination, and loading plan.",
+      "zh": "截至5月下旬和6月初披露的最新贸易信号显示，中国来源平材的出口环境正在变得更具选择性。成材总量同比仍偏弱，板卷与板材继续承受更重的反倾销压力，但北方港口的热卷出口接单并未失速，中国港口体系也在向新兴市场增加航线深度。对买家而言，这意味着6月采购的重点，不再是单纯等待一次明显降价，而是尽快锁定正确的产品、目的地与装运方案。"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "en": "China's steel export market is entering June with a more complicated message than the headline volume numbers suggest. Exporters still have cargo to move and ports are still moving substantial tonnage, but the practical ease of shipping one order versus another is diverging more sharply by product category, destination, and documentation burden.",
+        "zh": "进入6月后，中国钢材出口市场传递出的信号，比总量 headline 展示的更复杂。出口商仍有货要走，港口体系也仍在承接大量吞吐，但不同订单之间在实际执行上的难易程度，正越来越明显地被产品类别、目的地和单证负担所区分。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For flat-steel buyers, that distinction matters immediately. A cargo of commodity-grade coil moving into a workable market with a flexible booking window is operating in a very different commercial environment from a more specification-sensitive plate order heading into a trade-sensitive destination. The June market therefore rewards execution discipline more than simple price patience.",
+        "zh": "对平材买家来说，这种区分会立刻影响采购判断。一票发往可操作市场、订舱窗口较灵活的普通热卷，与一票发往贸易敏感目的地、且规格更复杂的厚板订单，所处的商业环境已经明显不同。因此，6月市场更奖励执行纪律，而不是单纯的价格等待。"
+      },
+      {
+        "type": "heading",
+        "en": "1) Finished export totals are softer, but that is only the starting point",
+        "zh": "1）成材出口总量偏弱，但这只是分析的起点"
+      },
+      {
+        "type": "paragraph",
+        "en": "Recent market reporting built on Chinese customs data shows rolled steel exports reached about 34.2 million mt in January through April 2026, down 9.7 percent year on year, while April exports were still lower than the same month last year. On its own, that looks like a softer market. In practice, however, it tells buyers only that broad outbound momentum has cooled compared with 2025, not that every category now faces equal selling pressure.",
+        "zh": "基于中国海关数据的最新市场报道显示，2026年1至4月中国成材出口约3420万吨，同比下降9.7%，4月单月出口也仍低于去年同期。单独看这个数据，市场似乎在走弱。但放到采购执行里，它更多只能说明整体外发动能较2025年降温，并不能说明所有品类都承受同样的销售压力。"
+      },
+      {
+        "type": "paragraph",
+        "en": "That nuance matters because mills are no longer responding to every soft headline in the same way. When some product categories still have workable export channels or better inquiry quality, sellers can remain more selective. Buyers who negotiate only off the weaker aggregate export number can misread how much urgency actually exists on the supply side.",
+        "zh": "这层细节非常重要，因为钢厂对每一个偏弱 headline 的反应，已经不再完全相同。当某些产品仍保有可操作的出口通道，或者接单质量相对更好时，卖方就能保持更高的筛单能力。若买家只根据总量走弱来谈判，往往会误判供应端真正的紧迫程度。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-03-china-flat-steel-execution-window-cover.png",
+        "alt": {
+          "en": "Chinese export port scene with coils, plate bundles, cranes, and a bulk vessel ready for loading",
+          "zh": "中国出口港口内的钢卷、钢板捆、吊机与待装货船场景"
+        },
+        "caption": {
+          "en": "June's flat-steel market is less about whether cargo can move at all, and more about which orders are easiest to execute cleanly.",
+          "zh": "6月平材市场的关键，不在于货物能否出运，而在于哪些订单最容易被高质量地执行。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "2) Plate and sheet are still facing the narrower commercial lanes",
+        "zh": "2）板卷与板材仍在面对更狭窄的商业通道"
+      },
+      {
+        "type": "paragraph",
+        "en": "The most direct pressure remains concentrated in sheet and plate. Chinese sheet and plate exports totaled 20.06 million mt in January through April, down 16.6 percent year on year, and April volume was still down 17.5 percent from a year earlier despite a small month-on-month rise. That pattern is consistent with a market where demand has not disappeared, but where orders face more screening and more destination-specific risk.",
+        "zh": "最直接的压力仍集中在板卷与板材。2026年1至4月，中国板卷与板材出口合计2006万吨，同比下降16.6%；4月单月虽有小幅环比改善，但同比仍下降17.5%。这种走势对应的市场状态并不是“需求消失”，而是订单面临更强筛选与更高目的地风险。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Industry reporting also notes that flat products remain a primary focus of antidumping action, while developed-market demand has stayed relatively sluggish. Even when demand in parts of India, ASEAN, or the Middle East looks healthier, those pockets do not automatically convert into easy Chinese flat-steel sales. Some of the incremental demand is landing more naturally in long products or in cargoes with fewer downstream trade complications.",
+        "zh": "行业报道同时指出，平材产品仍是反倾销措施的重点对象，而发达市场需求也持续偏弱。即便印度、部分东盟或中东市场的需求看上去更健康，这些增量也不会自动转化为更容易成交的中国平材订单。其中一部分需求，更自然地流向了长材，或流向那些下游贸易障碍更少的货种。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For buyers, the takeaway is practical rather than abstract. In this environment, a seller may quote a flat-steel order only if the destination is clean, the grade definition is straightforward, the width and thickness package is manageable, and the paperwork chain is credible. A nominally attractive offer can still become the weaker commercial choice if it carries higher compliance or rerouting risk.",
+        "zh": "对买家而言，这里的结论是非常具体的。在当前环境下，卖方往往只愿意在目的地清晰、牌号定义明确、宽厚规格可控、且单证链路可信的条件下积极报价。一个名义上更吸引人的报价，也可能因为合规风险或改港风险更高，而成为更弱的商业选择。"
+      },
+      {
+        "type": "heading",
+        "en": "3) HRC order flow is giving mills more support than the broad export numbers imply",
+        "zh": "3）热卷接单情况给了钢厂比总量数据更强的支撑"
+      },
+      {
+        "type": "paragraph",
+        "en": "This is why flat-steel execution should not be read as uniformly difficult. During May 18-22, Chinese HRC export prices were reported as generally stable, with relatively ample export orders and improving transaction activity at major northern ports helping support the market. Mill offers eased somewhat with domestic futures weakness, but the orderbook did not collapse. That suggests active buyers still exist where the product-destination match is workable.",
+        "zh": "这也是为什么不能把平材执行环境简单理解为“全面困难”。在5月18日至22日期间，中国热卷出口价格被报道为总体稳定，北方主要港口相对充足的出口订单和改善中的成交活动，对市场形成了支撑。虽然钢厂报价因国内期货走弱而有所回调，但接单簿并未塌陷。这说明只要产品与目的地匹配得当，真实买盘仍然存在。"
+      },
+      {
+        "type": "paragraph",
+        "en": "That support changes negotiation behavior. A mill that still sees credible HRC inquiries or transactions can afford to defend price more patiently than buyers expect from the softer year-on-year export statistics alone. In other words, the June market is not rewarding low-quality bargaining. It is rewarding clean cargo structures that can move with fewer surprises after the order is fixed.",
+        "zh": "这种支撑会直接改变谈判行为。只要钢厂仍能看到可信的热卷询单或成交，就会比买家依据同比出口数据所预期的更有耐心去守价。换句话说，6月市场奖励的不是低质量砍价，而是那些在订单确认后更少出现意外的“干净货盘结构”。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-03-china-flat-steel-execution-window-orderbook.png",
+        "alt": {
+          "en": "Flat-steel warehouse and order review scene with HRC coils, heavy plate, and shipping documents",
+          "zh": "带有热卷、厚板与发运文件审核场景的平材仓储画面"
+        },
+        "caption": {
+          "en": "Where inquiry quality still exists, order clarity and document readiness become part of price support.",
+          "zh": "当有效询单仍然存在时，订单清晰度与单证准备本身就会成为价格支撑的一部分。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "4) Ports and route expansion are reducing one part of the export risk",
+        "zh": "4）港口与航线扩张正在削弱出口风险中的一个关键环节"
+      },
+      {
+        "type": "paragraph",
+        "en": "The logistics side is also stronger than many buyers assume. According to Ministry of Transport data released in late May, China's ports handled 5.93 billion metric tons of cargo in the first four months of 2026, up 3.1 percent year on year, while container throughput reached 120 million TEUs, up 7.2 percent. Foreign-trade container throughput rose to 75.23 million TEUs, up 10.9 percent. Those figures do not describe a port system that is unable to support export execution.",
+        "zh": "物流侧的实际状况，也比很多买家想象得更强。根据5月下旬披露的交通运输部数据，2026年前四个月中国港口完成货物吞吐量59.3亿吨，同比增长3.1%；集装箱吞吐量达到1.2亿标箱，同比增长7.2%；外贸集装箱吞吐量升至7523万标箱，同比增长10.9%。这些数字并不对应一个无法支撑出口执行的港口体系。"
+      },
+      {
+        "type": "paragraph",
+        "en": "More importantly, several major ports have been widening their route options toward emerging markets. Ningbo Zhoushan Port said it opened three new Africa-bound routes in April. Qingdao Port's second Africa-bound route of the year brought its Africa network to 11 container services, and Tianjin also launched a direct route to South Africa in April. Even for flat-steel cargoes that are not containerized in the same way, broader route density and stronger trade links help support booking confidence and execution flexibility.",
+        "zh": "更关键的是，多家主要港口正在向新兴市场扩大航线选择。宁波舟山港表示其在4月新开了三条非洲航线；青岛港年内第二条非洲航线投入运营后，其非洲网络已扩展到11条集装箱服务；天津港也在4月开通了直达南非的新航线。即使对并非完全以同样方式集装化的平材货物而言，更高的航线密度和更强的贸易连接，也会提升订舱信心和执行灵活性。"
+      },
+      {
+        "type": "paragraph",
+        "en": "This does not remove trade friction. It does change where the weakest link sits. In many June transactions, the harder problem is not whether China's ports can move cargo. It is whether the product specification, destination profile, and compliance burden allow the order to use that logistics capacity efficiently.",
+        "zh": "这并不意味着贸易摩擦已经消失，但它确实改变了“最弱环节”所在的位置。对许多6月订单来说，更难的问题并不是中国港口能否把货运出去，而是产品规格、目的地特征与合规负担，是否允许该订单高效利用这些物流能力。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-03-china-flat-steel-execution-window-port-routes.png",
+        "alt": {
+          "en": "Chinese port logistics scene with cranes, containers, steel cargo, and outbound route planning focus",
+          "zh": "带有桥吊、集装箱、钢材货物并突出外贸航线规划的中国港口物流场景"
+        },
+        "caption": {
+          "en": "As route options deepen, execution quality matters more than assuming every export order deserves the same discount.",
+          "zh": "随着航线选项加深，执行质量的重要性已经超过“默认所有出口订单都应获得同样折价”的判断。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "5) What buyers should check before fixing June cargoes",
+        "zh": "5）买家在锁定6月货盘前应重点检查什么"
+      },
+      {
+        "type": "paragraph",
+        "en": "The first check is product positioning. Buyers should decide whether their order sits inside the more sensitive plate-and-sheet lane, or closer to a category where mills still have healthier export turnover. That distinction shapes how much negotiating room really exists and how aggressive a supplier needs to be to secure the business.",
+        "zh": "第一项检查是产品定位。买家需要先判断自己的订单，是处在更敏感的板卷与板材通道内，还是更接近那些仍保持较健康出口周转的品类。这个区别将直接决定：真实的谈判空间有多大，以及供应商需要多激进地争取这笔业务。"
+      },
+      {
+        "type": "paragraph",
+        "en": "The second check is execution certainty: loading port flexibility, route alternatives, realistic booking lead time, mill test certificate completeness, and the supplier's willingness to confirm these details in writing. In the current market, the order that looks cheapest at first glance can still become the least efficient order if it depends on a fragile route or an incomplete compliance package.",
+        "zh": "第二项检查是执行确定性，包括装港灵活性、替代航线、现实可行的订舱提前期、材质证明完整性，以及供应商是否愿意把这些细节写进确认文件。放在当前市场里，乍看之下最便宜的订单，完全可能因为依赖脆弱航线或不完整的合规包，而成为效率最低的一票货。"
+      },
+      {
+        "type": "heading",
+        "en": "Takeaway",
+        "zh": "结论"
+      },
+      {
+        "type": "paragraph",
+        "en": "China's flat-steel export window in early June 2026 is narrower, but it is not shut. Softer finished-steel totals, weaker sheet and plate exports, steadier HRC order support, and stronger port-route capacity are all true at the same time. The practical consequence is that buyers now gain more from choosing the right cargo structure and execution path than from waiting passively for a dramatic drop in offer levels.",
+        "zh": "2026年6月初，中国平材出口窗口确实在变窄，但它并没有关闭。成材总量偏弱、板卷与板材出口承压、热卷接单仍有支撑、港口与航线能力继续增强，这些信号正在同时成立。现实中的结果是，买家从正确选择货盘结构与执行路径中获得的收益，往往已经高于被动等待报价大幅下探。"
+      }
+    ]
+  },
+  {
     "id": "2026-06-02-china-steel-africa-routes",
     "date": "2026-06-02",
     "category": {
