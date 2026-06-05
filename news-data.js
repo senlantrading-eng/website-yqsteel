@@ -160,8 +160,8 @@ window.NEWS_POSTS = [
     ]
   },
   {
-    "id": "2026-06-05-china-steel-export-segmentation",
-    "date": "2026-06-05",
+    "id": "2026-06-04-china-steel-export-segmentation",
+    "date": "2026-06-04",
     "category": {
       "slug": "market-analysis",
       "en": "Market Analysis",
