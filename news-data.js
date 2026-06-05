@@ -1,5 +1,165 @@
 window.NEWS_POSTS = [
   {
+    "id": "2026-06-05-china-steel-export-segmentation",
+    "date": "2026-06-05",
+    "category": {
+      "slug": "market-analysis",
+      "en": "Market Analysis",
+      "zh": "市场分析"
+    },
+    "cover": "images/2026-06-05-china-steel-export-segmentation-cover.png",
+    "coverAlt": {
+      "en": "Chinese export terminal with semi-finished steel, stainless coils, cranes, and an outbound vessel",
+      "zh": "中国出口码头上的半成品钢材、不锈钢卷、吊机与外贸船舶"
+    },
+    "title": {
+      "en": "China's Steel Export Story Is Splitting in 2026: Why Semis Are Surging While Stainless and Higher-Scrutiny Cargoes Need Tighter Execution",
+      "zh": "2026年中国钢材出口正在分化：为何半成品走强，而不锈钢及高审查货盘更依赖精细执行"
+    },
+    "excerpt": {
+      "en": "Fresh late-May and early-June signals show China's steel export market is no longer moving as one block. Semi-finished shipments rose sharply in January-April, stainless exports fell heavily over the same period, and port as well as shipping capacity continued to improve. For buyers, that combination means the June sourcing question is less about a single market direction and more about matching product type, destination risk, and execution quality.",
+      "zh": "截至5月底和6月初披露的最新信号显示，中国钢材出口市场已不再作为一个整体同步运行。2026年1至4月半成品出货明显增长，不锈钢出口同期大幅回落，而港口与航运能力仍在继续改善。对买家而言，这意味着6月采购的关键，不再是寻找单一的市场方向，而是把产品类型、目的地风险与执行质量更准确地匹配起来。"
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "en": "China's export steel market is entering June with a more segmented structure than the headline trade debate suggests. Total activity is still substantial and the logistics system is still functioning at scale, but the easiest cargo to place is no longer the same as the cargo that faces the highest compliance scrutiny or the most demanding downstream specification chain.",
+        "zh": "进入6月后，中国钢材出口市场呈现出的结构性分化，已经比 headline 层面的贸易讨论更明显。整体出货活动依然可观，物流体系也仍在高规模运转，但最容易成交和执行的货种，已经不再等同于那些合规审查更严格、下游规格要求更复杂的货盘。"
+      },
+      {
+        "type": "paragraph",
+        "en": "That distinction matters for YQ Steel's customers because it changes how price, delivery confidence, and route planning should be evaluated. A buyer looking at broad steel-export commentary could assume the market is simply softer or simply more competitive. The better reading is that China's export pipeline is splitting by product and by execution burden.",
+        "zh": "这种区分对YQ Steel客户很重要，因为它会改变对价格、交付确定性与航线规划的判断方式。如果只看宽泛的钢材出口评论，买家可能会以为市场只是单纯变弱，或者只是竞争更激烈。更准确的理解是，中国出口通道正在按产品属性和执行负担发生分化。"
+      },
+      {
+        "type": "heading",
+        "en": "1) The headline is no longer one market",
+        "zh": "1）当前 headline 已不再代表一个统一市场"
+      },
+      {
+        "type": "paragraph",
+        "en": "Recent May reporting based on Chinese customs data showed semi-finished steel exports reached 4.94 million mt in January through April 2026, up 47.77 percent year on year. In the same period, stainless steel exports totaled 1.1972 million mt, down 28.47 percent year on year. Those two numbers do not describe a single export climate. They describe a market where some tonnage is moving into global gaps quickly while other categories are meeting much tighter commercial filters.",
+        "zh": "基于中国海关数据的5月最新报道显示，2026年1至4月中国半成品钢出口达到494万吨，同比增长47.77%；同期不锈钢出口为119.72万吨，同比下降28.47%。这两个数字并不对应一个统一的出口环境，而是反映出这样一个市场现实：部分吨位正在快速填补海外供给缺口，而另一些品类则面对更严格的商业筛选。"
+      },
+      {
+        "type": "paragraph",
+        "en": "For procurement teams, the implication is immediate. It is now risky to assume that a weak signal in one finished category automatically means every exporter is under the same pressure. Suppliers with active semi-finished channels or cleaner destination options can defend price and schedule more confidently than buyers might expect from a general market slowdown narrative.",
+        "zh": "对采购团队来说，这一变化会立刻影响判断。现在如果把某一个成材品类的偏弱信号，直接等同于所有出口商都承受同样压力，就存在明显风险。对于仍拥有活跃半成品渠道、或掌握更干净目的地选择的供应商而言，其守价与守期的能力，往往会强于买家根据“整体放缓”叙事所做的预期。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-05-china-steel-export-segmentation-cover.png",
+        "alt": {
+          "en": "Chinese steel export terminal with semi-finished cargo, stainless coils, cranes, and a loading vessel",
+          "zh": "中国钢材出口码头上的半成品货物、不锈钢卷、吊机与装船场景"
+        },
+        "caption": {
+          "en": "China's June export picture is no longer a single direction story; product mix and execution path now matter more than broad market labels.",
+          "zh": "进入6月后，中国出口市场已不再是单一方向的故事，产品结构与执行路径的重要性正在超过宽泛的市场标签。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "2) Semi-finished cargo is absorbing more of the outbound momentum",
+        "zh": "2）半成品货流正在承接更多外发动能"
+      },
+      {
+        "type": "paragraph",
+        "en": "The semi-finished side of the market remains the clearest source of strength. April alone saw China's semi-finished steel exports rise to 1.64 million mt, up 7.31 percent month on month and 109.03 percent year on year. That kind of acceleration suggests not just opportunistic selling, but genuine overseas room for cargoes that face fewer downstream trade barriers and can be moved with simpler commercial structures.",
+        "zh": "半成品板块仍是当前最明确的强势来源。仅4月单月，中国半成品钢出口就达到164万吨，环比增长7.31%，同比增长109.03%。这种加速并不只是一次性的 opportunistic selling，而更像是在说明：对于那些下游贸易障碍较少、商业结构更简单的货种，海外市场确实仍有承接空间。"
+      },
+      {
+        "type": "paragraph",
+        "en": "This matters even to buyers who are not purchasing semis directly. When mills can move more volume through semi-finished channels, they have another outlet to stabilize operations and margins. That reduces the urgency to chase every finished-steel order at any price, especially if the finished cargo also carries destination complexity, narrow specification tolerance, or a longer documentation chain.",
+        "zh": "即使买家并不直接采购半成品，这一变化也同样重要。只要钢厂能通过半成品渠道释放更多产量，就等于多了一条稳定运营和利润的出口，因此没有必要为每一票成材订单不计代价地让价。尤其当成材货盘还附带目的地复杂性、规格容差要求更严或更长的单证链路时，这种差异会更加明显。"
+      },
+      {
+        "type": "heading",
+        "en": "3) Stainless data shows where higher-scrutiny cargo starts to slow down",
+        "zh": "3）不锈钢数据揭示了高审查货盘如何开始放缓"
+      },
+      {
+        "type": "paragraph",
+        "en": "The stainless segment tells the other side of the story. January-April stainless exports fell 28.47 percent year on year, and net stainless exports were down 39.7 percent over the same period. Even though April monthly exports improved from March, the year-on-year comparison stayed negative, which is consistent with a segment where product scrutiny, trade sensitivity, and downstream market caution are still limiting easy volume growth.",
+        "zh": "不锈钢板块则展示了故事的另一面。2026年1至4月中国不锈钢出口同比下降28.47%，同期净出口量同比下降39.7%。尽管4月单月出口较3月有所恢复，但同比仍然为负，这与一个受到更强产品审查、贸易敏感性和下游市场谨慎情绪约束的板块相吻合。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Buyers should not read this as a collapse in all stainless opportunities. The more useful conclusion is that higher-scrutiny cargo increasingly depends on execution quality. Grade definition, traceability, test certificates, destination compliance, and route reliability all become part of the commercial value of the order. A cheaper offer loses meaning quickly if it carries greater amendment risk after booking.",
+        "zh": "买家不应把这一数据简单理解为所有不锈钢机会都在消失。更有价值的结论是，高审查货盘越来越依赖执行质量。牌号定义、可追溯性、材质证明、目的地合规性以及航线可靠性，正在共同构成订单的商业价值。如果一票表面更便宜的报价在订舱后伴随更高的改单风险，那么其价格优势会很快失去意义。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-05-china-steel-export-segmentation-yard.png",
+        "alt": {
+          "en": "Steel warehouse scene showing semi-finished cargo, stainless coils, and export paperwork preparation",
+          "zh": "展示半成品货物、不锈钢卷与出口文件准备场景的钢材仓储画面"
+        },
+        "caption": {
+          "en": "Where scrutiny rises, paperwork clarity and cargo definition become part of the order's real competitiveness.",
+          "zh": "当审查强度上升时，文件清晰度与货物定义本身就会成为订单真实竞争力的一部分。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "4) Port and shipping conditions are still supporting execution",
+        "zh": "4）港口与航运条件仍在为执行提供支撑"
+      },
+      {
+        "type": "paragraph",
+        "en": "The logistics side of the equation remains more constructive than many buyers assume. China Daily reported that in the first four months of 2026 China's ports handled 5.93 billion metric tons of cargo, up 3.1 percent year on year, while container throughput reached 120 million TEUs, up 7.2 percent. Foreign-trade container throughput climbed to 75.23 million TEUs, up 10.9 percent. Those figures point to a port system that is still expanding foreign-trade capacity rather than retreating from it.",
+        "zh": "物流侧的条件，仍比许多买家想象得更具建设性。China Daily 报道称，2026年前四个月中国港口完成货物吞吐量59.3亿吨，同比增长3.1%；集装箱吞吐量达到1.2亿标箱，同比增长7.2%；外贸集装箱吞吐量升至7523万标箱，同比增长10.9%。这些数据说明，中国港口体系仍在扩大外贸承载能力，而不是从外贸执行中退缩。"
+      },
+      {
+        "type": "paragraph",
+        "en": "The broader shipping narrative also remains supportive. Reporting from the Tianjin International Shipping Industry Expo highlighted China's fleet capacity, dense route coverage, and continued investment in smart-port systems. In practice, this means many June export problems are no longer caused by a lack of basic logistics infrastructure. The weak point is shifting back toward cargo structure, destination choice, and how well the order is prepared for the route it wants to use.",
+        "zh": "更广义的航运叙事同样保持支持性。来自天津国际航运产业博览会的报道强调了中国船队运力、航线覆盖密度以及智能港口系统的持续投入。放到实际执行中，这意味着许多6月出口问题，已不再主要来自基础物流设施不足；真正的薄弱点正在重新转向货盘结构、目的地选择，以及订单是否为其目标航线做好充分准备。"
+      },
+      {
+        "type": "paragraph",
+        "en": "Route development toward Africa strengthens that conclusion. Recent reporting showed Qingdao Port opened its second Africa-bound route of 2026 and expanded its network to 11 Africa-oriented container services, while Tianjin launched a direct South Africa link that cuts transit time by roughly 10 days. Even when steel cargo does not move in exactly the same container profile, deeper route density improves booking confidence and gives exporters more flexibility to match cargo with destination timing.",
+        "zh": "面向非洲的航线扩张进一步强化了这一结论。近期报道显示，青岛港开通了2026年第二条非洲航线，使其面向非洲的集装箱服务扩展到11条；天津港也开通了直达南非的新航线，运输时间缩短约10天。即便钢材货盘并不完全以相同方式集装化，更高的航线密度仍会提升订舱信心，并赋予出口商更大的空间去把货盘与目的地节奏匹配起来。"
+      },
+      {
+        "type": "image",
+        "src": "images/2026-06-05-china-steel-export-segmentation-port.png",
+        "alt": {
+          "en": "Chinese smart port with cranes, containers, steel cargo, trucks, and an outbound export vessel",
+          "zh": "带有吊机、集装箱、钢材货物、卡车与外贸船舶的中国智慧港口场景"
+        },
+        "caption": {
+          "en": "As route capacity improves, the commercial question shifts from whether cargo can move to whether it is prepared to move cleanly.",
+          "zh": "随着航线能力增强，商业问题正从“货能不能走”转向“货能否被干净利落地执行”。"
+        }
+      },
+      {
+        "type": "heading",
+        "en": "5) What buyers should change in June purchasing decisions",
+        "zh": "5）买家在6月采购决策中应做出的调整"
+      },
+      {
+        "type": "paragraph",
+        "en": "The first adjustment is analytical. Buyers should stop treating all China-origin steel as one export lane and instead classify the order by product risk. Semi-finished, commodity-grade flat steel, stainless, and specification-heavy cargoes are no longer living in the same commercial environment, even if they all sit under the broad label of Chinese steel exports.",
+        "zh": "第一项调整发生在分析层面。买家应停止把所有中国来源钢材都视作同一条出口通道，而应先按产品风险来给订单分类。半成品、普通平材、不锈钢以及规格要求更重的货种，虽然都被归在“中国钢材出口”这个大标签下，但它们早已不处于同一个商业环境之中。"
+      },
+      {
+        "type": "paragraph",
+        "en": "The second adjustment is operational. Before fixing cargo, buyers should verify route options, loading windows, certificate readiness, destination compliance expectations, and whether the supplier will confirm these points clearly in writing. In a segmented market, execution certainty is not a secondary concern after price negotiation. It is one of the main ways to decide whether an offer is genuinely competitive.",
+        "zh": "第二项调整发生在操作层面。买家在锁定货盘前，应先核查航线选择、装运窗口、证书准备情况、目的地合规要求，以及供应商是否愿意把这些关键点明确写进确认文件。在一个分化市场中，执行确定性不应被放在价格谈判之后考虑，它本身就是判断报价是否真正具有竞争力的核心标准之一。"
+      },
+      {
+        "type": "heading",
+        "en": "Takeaway",
+        "zh": "结论"
+      },
+      {
+        "type": "paragraph",
+        "en": "China's steel export market in early June 2026 is active, but it is not uniform. Semi-finished shipments are rising, stainless is under heavier pressure, and the port and shipping system is still improving around both capacity and route reach. For buyers, the best June decisions will come from reading the market by product and execution path, not by relying on one broad assumption about all Chinese export steel.",
+        "zh": "2026年6月初的中国钢材出口市场依然活跃，但它已经不是一个统一市场。半成品出货走强，不锈钢承压更重，而港口与航运体系仍在运力和航线覆盖上继续改善。对买家来说，6月最优的采购决策，将来自按产品属性和执行路径来理解市场，而不是依赖对所有中国出口钢材的一种笼统假设。"
+      }
+    ]
+  },
+  {
     "id": "2026-06-03-china-flat-steel-execution-window",
     "date": "2026-06-03",
     "category": {
