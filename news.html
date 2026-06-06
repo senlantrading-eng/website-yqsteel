@@ -5,21 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News | Company Updates, Product Notes & Export Insights | YQ Steel</title>
     <meta name="description" content="Read the latest YQ Steel company updates, product notes, sourcing insights, and export-related news from Tangshan, China.">
-
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yqsteel.com/news.html">
     <meta property="og:title" content="News | Company Updates, Product Notes & Export Insights | YQ Steel">
     <meta property="og:description" content="Latest YQ Steel updates, product notes, sourcing insights, and export-related news.">
-    <meta property="og:image" content="https://yqsteel.com/images/og-image.jpg">
-
+    <meta property="og:image" content="https://yqsteel.com/images/2026-06-07-china-steel-trade-friction-port-resilience-cover.png">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://yqsteel.com/news.html">
     <meta property="twitter:title" content="News | Company Updates, Product Notes & Export Insights | YQ Steel">
     <meta property="twitter:description" content="Latest YQ Steel updates, product notes, sourcing insights, and export-related news.">
-    <meta property="twitter:image" content="https://yqsteel.com/images/og-image.jpg">
-
+    <meta property="twitter:image" content="https://yqsteel.com/images/2026-06-07-china-steel-trade-friction-port-resilience-cover.png">
     <link rel="canonical" href="https://yqsteel.com/news.html">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -58,7 +54,7 @@
 
         .news-journal .hero h1 {
             font-family: "Manrope", sans-serif;
-            font-size: clamp(2.8rem, 6vw, 4.4rem);
+            font-size: clamp(2.7rem, 6vw, 4.4rem);
             line-height: 1.05;
             letter-spacing: -0.04em;
             margin: 0 0 18px;
@@ -71,7 +67,7 @@
             align-items: center;
             gap: 10px;
             padding: 10px 16px;
-            margin-bottom: 22px;
+            margin-bottom: 18px;
             border-radius: 999px;
             border: 1px solid var(--news-line);
             background: rgba(255, 255, 255, 0.7);
@@ -81,7 +77,6 @@
             letter-spacing: 0.08em;
             text-transform: uppercase;
             color: var(--news-accent);
-            margin-bottom: 18px;
         }
 
         .hero-subtitle {
@@ -91,26 +86,30 @@
             color: #4e5752;
         }
 
-        .news-shell {
+        .news-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1.55fr) 360px;
+            grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.95fr);
             gap: 36px;
             align-items: start;
         }
 
-        .news-main {
-            background: rgba(255, 255, 255, 0.8);
+        .news-panel,
+        .news-sidebar {
+            background: rgba(255, 255, 255, 0.82);
             border: 1px solid var(--news-line);
             border-radius: 32px;
             box-shadow: var(--news-shadow);
+        }
+
+        .news-panel {
             overflow: hidden;
         }
 
-        .news-article {
+        .featured-wrap {
             padding: 40px;
         }
 
-        .news-label {
+        .featured-label {
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -122,110 +121,100 @@
             font-weight: 800;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
 
-        .news-date {
+        .featured-date {
             font-size: 0.95rem;
             color: var(--news-muted);
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
-        .news-title {
+        .featured-title {
             font-family: "Manrope", sans-serif;
-            font-size: clamp(2.1rem, 4.4vw, 3.3rem);
-            line-height: 1.15;
+            font-size: clamp(2rem, 4vw, 3.25rem);
+            line-height: 1.12;
             letter-spacing: -0.035em;
-            margin-bottom: 18px;
             color: var(--news-ink);
-            max-width: 20ch;
-            text-wrap: pretty;
-            font-weight: 800;
+            margin-bottom: 18px;
+            max-width: 18ch;
         }
 
-        .news-excerpt {
-            font-size: 1.08rem;
-            line-height: 1.9;
-            color: #49514d;
-            margin-bottom: 30px;
-            padding-bottom: 28px;
-            border-bottom: 1px solid var(--news-line);
-            max-width: 62ch;
+        .featured-excerpt,
+        .featured-cn {
+            font-size: 1.02rem;
+            line-height: 1.85;
+            color: #3f4743;
+            max-width: 65ch;
         }
 
-        .news-cover {
-            width: 100%;
+        .featured-cn {
+            margin-top: 14px;
+        }
+
+        .featured-cover {
             display: block;
+            width: 100%;
             aspect-ratio: 16 / 9;
             object-fit: cover;
             border-radius: 24px;
             border: 1px solid var(--news-line);
-            margin-bottom: 30px;
+            margin: 28px 0;
         }
 
-        .news-body h2 {
-            font-family: "Manrope", sans-serif;
-            font-size: 1.45rem;
-            line-height: 1.3;
-            margin: 34px 0 14px;
-            color: var(--news-ink);
+        .featured-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
         }
 
-        .news-body p {
-            font-size: 1.03rem;
-            line-height: 1.95;
-            color: #323936;
-            margin-bottom: 18px;
+        .featured-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 0 22px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #af512f, #8d3f25);
+            color: #fff;
+            font-weight: 700;
+            box-shadow: 0 16px 34px rgba(141, 63, 37, 0.22);
         }
 
-        .news-body figure {
-            margin: 30px 0;
-            padding: 16px;
-            background: #fcfaf5;
-            border: 1px solid var(--news-line);
-            border-radius: 24px;
+        .featured-link:hover {
+            transform: translateY(-1px);
+            opacity: 0.96;
         }
 
-        .news-body figure img {
-            width: 100%;
-            display: block;
-            border-radius: 18px;
-        }
-
-        .news-body figcaption {
-            margin-top: 12px;
+        .featured-note {
             color: var(--news-muted);
             font-size: 0.92rem;
-            line-height: 1.7;
         }
 
         .news-sidebar {
             position: sticky;
-            top: 128px;
-            background: rgba(255, 255, 255, 0.8);
-            border: 1px solid var(--news-line);
-            border-radius: 28px;
-            box-shadow: var(--news-shadow);
+            top: 124px;
             padding: 28px;
         }
 
-        .news-sidebar-title {
+        .sidebar-title {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             gap: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             padding-bottom: 16px;
             border-bottom: 1px solid var(--news-line);
         }
 
-        .news-sidebar-title h3 {
+        .sidebar-title h3 {
+            margin: 0;
             font-size: 1.15rem;
             color: var(--news-ink);
-            margin: 0;
         }
 
-        .news-sidebar-title span {
+        .sidebar-title span {
             font-size: 0.78rem;
             font-weight: 700;
             letter-spacing: 0.08em;
@@ -233,208 +222,67 @@
             color: var(--news-accent);
         }
 
-        .history-list {
+        .archive-list {
             display: flex;
             flex-direction: column;
             gap: 14px;
         }
 
-        .news-sidebar-section {
-            margin-top: 28px;
+        .archive-card {
+            padding: 16px 18px;
+            border-radius: 22px;
+            border: 1px solid var(--news-line);
+            background: rgba(252, 250, 245, 0.9);
         }
 
-        .news-sidebar-section:first-of-type {
-            margin-top: 0;
-        }
-
-        .news-sidebar-heading {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-
-        .news-sidebar-heading h4 {
-            font-size: 0.98rem;
-            color: var(--news-ink);
-            margin: 0;
-        }
-
-        .news-sidebar-heading span {
-            font-size: 0.74rem;
+        .archive-date {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-size: 0.82rem;
             font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            color: var(--news-muted);
-        }
-
-        .history-card {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-            padding: 16px;
-            border: 1px solid var(--news-line);
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.72);
-            transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
-        }
-
-        .history-card:hover {
-            transform: translateY(-2px);
-            border-color: rgba(165, 77, 45, 0.35);
-            background: rgba(255, 255, 255, 0.96);
-        }
-
-        .history-card.active {
-            background: linear-gradient(135deg, rgba(165, 77, 45, 0.14), rgba(255, 255, 255, 0.92));
-            border-color: rgba(165, 77, 45, 0.35);
-        }
-
-        .history-date {
-            display: block;
-            font-size: 0.82rem;
-            color: var(--news-muted);
-            margin-bottom: 8px;
-        }
-
-        .history-headline {
-            display: block;
-            font-weight: 800;
-            color: var(--news-ink);
-            line-height: 1.45;
-            margin-bottom: 8px;
-        }
-
-        .history-excerpt {
-            display: block;
-            font-size: 0.92rem;
-            color: #56605b;
-            line-height: 1.7;
-        }
-
-        .history-meta {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 8px;
-        }
-
-        .history-tag {
-            display: inline-flex;
-            align-items: center;
-            padding: 5px 10px;
-            border-radius: 999px;
-            background: var(--news-accent-soft);
             color: var(--news-accent);
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
         }
 
-        .category-chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .category-chip {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 14px;
-            border-radius: 999px;
-            border: 1px solid var(--news-line);
-            background: rgba(255, 255, 255, 0.78);
+        .archive-card h4 {
+            font-size: 1rem;
+            line-height: 1.45;
+            margin-bottom: 10px;
             color: var(--news-ink);
-            text-decoration: none;
-            font-size: 0.84rem;
-            font-weight: 700;
-            line-height: 1.2;
-            transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
         }
 
-        .category-chip:hover {
-            transform: translateY(-1px);
-            border-color: rgba(165, 77, 45, 0.35);
+        .archive-card p {
+            font-size: 0.94rem;
+            line-height: 1.72;
+            color: #55605b;
         }
 
-        .category-chip.active {
-            background: var(--news-accent);
-            color: #fff;
-            border-color: var(--news-accent);
-        }
-
-        .category-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .category-empty {
+        .archive-help {
+            margin-top: 18px;
+            padding-top: 18px;
+            border-top: 1px solid var(--news-line);
+            color: var(--news-muted);
             font-size: 0.92rem;
             line-height: 1.7;
-            color: var(--news-muted);
-            padding: 14px 0 4px;
         }
 
-        .news-empty-panel {
-            display: none;
-            padding: 36px;
-            background: rgba(255, 255, 255, 0.84);
-            border: 1px solid var(--news-line);
-            border-radius: 24px;
-            text-align: center;
-        }
-
-        @media (max-width: 1080px) {
-            .news-shell {
+        @media (max-width: 980px) {
+            .news-grid {
                 grid-template-columns: 1fr;
             }
 
             .news-sidebar {
                 position: static;
             }
-        }
 
-        @media (max-width: 720px) {
-            .news-article,
-            .news-sidebar {
-                padding: 22px;
-            }
-
-            .news-cover {
-                border-radius: 18px;
-                aspect-ratio: 4 / 3;
-            }
-
-            .news-title {
-                font-size: 2.2rem;
-                max-width: none;
+            .featured-wrap {
+                padding: 28px;
             }
         }
     </style>
 </head>
 <body class="news-journal">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "YQ Steel News",
-        "url": "https://yqsteel.com/news.html",
-        "publisher": {
-            "@type": "Organization",
-            "name": "YQ Steel - Tangshan Yueding Qiangsheng Metal Materials Co., Ltd.",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://yqsteel.com/images/logo.jpg"
-            }
-        }
-    }
-    </script>
-
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
@@ -454,85 +302,76 @@
         </div>
     </nav>
 
-    <script>
-        (function() {
-            const mobileToggle = document.getElementById('mobileToggle');
-            const navMenu = document.querySelector('.nav-menu');
-
-            mobileToggle.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                this.setAttribute('aria-expanded', !isExpanded);
-                navMenu.classList.toggle('active');
-                this.classList.toggle('active');
-                this.textContent = isExpanded ? '☰' : '✕';
-            });
-
-            document.querySelectorAll('.nav-menu a').forEach(link => {
-                link.addEventListener('click', function() {
-                    navMenu.classList.remove('active');
-                    mobileToggle.classList.remove('active');
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    mobileToggle.textContent = '☰';
-                });
-            });
-
-            document.addEventListener('click', function(e) {
-                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
-                    navMenu.classList.remove('active');
-                    mobileToggle.classList.remove('active');
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    mobileToggle.textContent = '☰';
-                }
-            });
-        })();
-    </script>
-
-    <header class="hero">
+    <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="news-kicker">YQ Steel Journal</div>
-                <h1>News &amp; Updates</h1>
-                <p class="hero-subtitle">Directly on the news page, the newest article appears first. Older posts stay on the right like a compact export and sourcing archive.</p>
+                <div class="news-kicker">YQ Steel News Desk</div>
+                <h1>Steel trade signals, written for buyers who need execution clarity.</h1>
+                <p class="hero-subtitle">
+                    YQ Steel's news page now publishes standalone static articles. The latest report appears first below, with direct page links and an archive view that stays readable without client-side article rendering.
+                </p>
             </div>
         </div>
-    </header>
+    </section>
 
-    <section class="products-section" style="padding-top: 20px; padding-bottom: 80px;">
+    <section style="padding-bottom: 88px;">
         <div class="container">
-            <div class="news-shell">
-                <div class="news-main">
-                    <article id="article-root" class="news-article"></article>
-                </div>
+            <div class="news-grid">
+                <main class="news-panel">
+                    <div class="featured-wrap">
+                        <div class="featured-label">Latest Article</div>
+                        <div class="featured-date">Published June 7, 2026</div>
+                        <h2 class="featured-title">China Steel Trade Friction Is Rising Even as Port Execution Stays Strong: What June Buyers Should Do Next</h2>
+                        <p class="featured-excerpt">
+                            OECD's June steel outlook, fresh shipping data, and current import-pushback signals point to a market where cargo can still move efficiently from China, but buyer success depends more on destination risk, documentation discipline, and product-route matching than on headline price alone.
+                        </p>
+                        <p class="featured-cn">
+                            OECD 6月钢铁展望、最新航运数据以及近期进口端压力信号共同表明，中国钢材货物依然具备较强执行能力，但买家能否获得理想结果，正越来越取决于目的地风险判断、单证纪律以及产品与航线的匹配度，而不只是 headline 价格。
+                        </p>
+                        <img class="featured-cover" src="images/2026-06-07-china-steel-trade-friction-port-resilience-cover.png" alt="Chinese export terminal with steel coils, plate cargo, quay cranes, and an outbound cargo ship at dawn">
+                        <div class="featured-actions">
+                            <a class="featured-link" href="news/2026-06-07-china-steel-trade-friction-port-resilience.html">Read the full article</a>
+                            <span class="featured-note">Static page, direct URL, no JS article loader.</span>
+                        </div>
+                    </div>
+                </main>
 
                 <aside class="news-sidebar">
-                    <div class="news-sidebar-title">
-                        <h3>Historical Articles</h3>
-                        <span id="history-count">Latest 4</span>
-                    </div>
-                    <div id="history-list" class="history-list"></div>
-
-                    <div class="news-sidebar-section">
-                        <div class="news-sidebar-heading">
-                            <h4>Categories</h4>
-                            <span id="category-count">0 groups</span>
-                        </div>
-                        <div id="category-list" class="category-chips"></div>
+                    <div class="sidebar-title">
+                        <h3>Recent Coverage</h3>
+                        <span>Static Archive</span>
                     </div>
 
-                    <div class="news-sidebar-section">
-                        <div class="news-sidebar-heading">
-                            <h4 id="category-articles-title">Category Articles</h4>
-                            <span id="category-articles-count">0 posts</span>
-                        </div>
-                        <div id="category-articles-list" class="category-list"></div>
+                    <div class="archive-list">
+                        <article class="archive-card">
+                            <span class="archive-date">2026-06-05</span>
+                            <h4>China's Semi-Finished Export Surge Is Changing June Buying Signals</h4>
+                            <p>Port throughput stayed constructive while excess-capacity pressure remained high, pushing buyers toward tighter product positioning and clearer execution planning.</p>
+                        </article>
+
+                        <article class="archive-card">
+                            <span class="archive-date">2026-06-04</span>
+                            <h4>China's Steel Export Story Is Splitting in 2026</h4>
+                            <p>Semi-finished flows strengthened while higher-scrutiny cargoes required more disciplined documentation, destination planning, and route selection.</p>
+                        </article>
+
+                        <article class="archive-card">
+                            <span class="archive-date">2026-06-03</span>
+                            <h4>China's Flat-Steel Export Window Is Narrower, Not Closed</h4>
+                            <p>June flat-steel buying looked less dependent on a broad market break and more dependent on order quality, target market fit, and port execution.</p>
+                        </article>
+
+                        <article class="archive-card">
+                            <span class="archive-date">2026-06-02</span>
+                            <h4>China Steel Exports Are Re-routing Toward Emerging Markets</h4>
+                            <p>New Africa-bound capacity and route diversification changed how buyers should evaluate product fit, destination demand, and commercial timing.</p>
+                        </article>
+                    </div>
+
+                    <div class="archive-help">
+                        Earlier reporting remains visible here while the older archive is migrated from legacy data-driven rendering into standalone static pages.
                     </div>
                 </aside>
-            </div>
-
-            <div id="news-empty" class="news-empty-panel" style="margin-top: 24px;">
-                <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 14px;">No posts published yet</h3>
-                <p style="color: var(--text-muted); margin-bottom: 24px;">Once the first article is added to <code>news-data.js</code>, it will appear here automatically.</p>
             </div>
         </div>
     </section>
@@ -571,145 +410,38 @@
     </footer>
 
     <script>
-        (async function() {
-            async function loadNewsPosts() {
-                const script = document.createElement('script');
-                const cacheBust = `v=${Date.now()}`;
-                script.src = `news-data.js?${cacheBust}`;
+        (function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
 
-                await new Promise((resolve, reject) => {
-                    script.onload = resolve;
-                    script.onerror = reject;
-                    document.head.appendChild(script);
-                });
+            if (!mobileToggle || !navMenu) return;
 
-                return Array.isArray(window.NEWS_POSTS) ? window.NEWS_POSTS : [];
-            }
-
-            const params = new URLSearchParams(window.location.search);
-            const requestedId = params.get('id');
-            const requestedCategory = params.get('category');
-            const posts = (await loadNewsPosts()).slice().sort((a, b) => {
-                return new Date(b.date) - new Date(a.date);
+            mobileToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', String(!isExpanded));
+                navMenu.classList.toggle('active');
+                this.classList.toggle('active');
+                this.textContent = isExpanded ? '☰' : '✕';
             });
-            const root = document.getElementById('article-root');
-            const historyList = document.getElementById('history-list');
-            const historyCount = document.getElementById('history-count');
-            const categoryCount = document.getElementById('category-count');
-            const categoryList = document.getElementById('category-list');
-            const categoryArticlesTitle = document.getElementById('category-articles-title');
-            const categoryArticlesCount = document.getElementById('category-articles-count');
-            const categoryArticlesList = document.getElementById('category-articles-list');
-            const empty = document.getElementById('news-empty');
-            const latestPosts = posts.slice(0, 4);
 
-            const normalizeCategory = post => {
-                if (!post || !post.category) {
-                    return { slug: 'uncategorized', en: 'Uncategorized', zh: '未分类' };
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.textContent = '☰';
                 }
-                if (typeof post.category === 'string') {
-                    return { slug: post.category, en: post.category, zh: post.category };
-                }
-                return {
-                    slug: post.category.slug || 'uncategorized',
-                    en: post.category.en || post.category.slug || 'Uncategorized',
-                    zh: post.category.zh || post.category.en || post.category.slug || '未分类'
-                };
-            };
-
-            if (!posts.length) {
-                empty.style.display = 'block';
-                document.querySelector('.news-shell').style.display = 'none';
-                return;
-            }
-
-            const requestedArticle = posts.find(post => post.id === requestedId);
-            const fallbackCategory = requestedCategory || (requestedArticle ? normalizeCategory(requestedArticle).slug : normalizeCategory(posts[0]).slug);
-            const categories = posts.reduce((acc, post) => {
-                const category = normalizeCategory(post);
-                if (!acc.some(item => item.slug === category.slug)) {
-                    acc.push(category);
-                }
-                return acc;
-            }, []);
-            const activeCategory = categories.some(category => category.slug === fallbackCategory)
-                ? fallbackCategory
-                : categories[0].slug;
-            const sameCategoryPosts = posts.filter(post => normalizeCategory(post).slug === activeCategory);
-            const activeArticle = requestedArticle && normalizeCategory(requestedArticle).slug === activeCategory
-                ? requestedArticle
-                : (sameCategoryPosts[0] || posts[0]);
-            const blocksHtml = activeArticle.blocks.map(block => {
-                if (block.type === 'heading') {
-                    return `<h2>${block.en}</h2>`;
-                }
-                if (block.type === 'image') {
-                    return `
-                        <figure>
-                            <img src="${block.src}" alt="${block.alt && block.alt.en ? block.alt.en : ''}">
-                            <figcaption>${block.caption && block.caption.en ? block.caption.en : ''}</figcaption>
-                        </figure>
-                    `;
-                }
-                return `<p>${block.en}</p>`;
-            }).join('');
-
-            document.title = activeArticle.title.en + ' | YQ Steel';
-
-            root.innerHTML = `
-                <div class="news-label">${activeArticle.id === posts[0].id ? 'Latest Article' : 'Archive Article'}</div>
-                <div class="news-date">${activeArticle.date}</div>
-                <h1 class="news-title">${activeArticle.title.en}</h1>
-                <div class="news-excerpt">${activeArticle.excerpt && activeArticle.excerpt.en ? activeArticle.excerpt.en : ''}</div>
-                <img class="news-cover" src="${activeArticle.cover}" alt="${activeArticle.coverAlt && activeArticle.coverAlt.en ? activeArticle.coverAlt.en : activeArticle.title.en}">
-                <section class="news-body">${blocksHtml}</section>
-            `;
-
-            historyCount.textContent = latestPosts.length === 1 ? 'Latest 1' : `Latest ${latestPosts.length}`;
-            historyList.innerHTML = latestPosts.map(post => {
-                const category = normalizeCategory(post);
-                const href = `news.html?id=${encodeURIComponent(post.id)}&category=${encodeURIComponent(category.slug)}`;
-                return `
-                <a href="${href}" class="history-card${post.id === activeArticle.id ? ' active' : ''}">
-                    <span class="history-meta">
-                        <span class="history-date">${post.date}</span>
-                        <span class="history-tag">${category.en}</span>
-                    </span>
-                    <span class="history-headline">${post.title.en}</span>
-                    <span class="history-excerpt">${post.excerpt && post.excerpt.en ? post.excerpt.en : ''}</span>
-                </a>
-            `;
-            }).join('');
-
-            categoryCount.textContent = categories.length === 1 ? '1 group' : `${categories.length} groups`;
-            categoryList.innerHTML = categories.map(category => `
-                <a href="news.html?category=${encodeURIComponent(category.slug)}" class="category-chip${category.slug === activeCategory ? ' active' : ''}">
-                    ${category.en}
-                </a>
-            `).join('');
-
-            const currentCategory = categories.find(category => category.slug === activeCategory) || normalizeCategory(activeArticle);
-            categoryArticlesTitle.textContent = currentCategory.en;
-            categoryArticlesCount.textContent = sameCategoryPosts.length === 1 ? '1 post' : `${sameCategoryPosts.length} posts`;
-            categoryArticlesList.innerHTML = sameCategoryPosts.length ? sameCategoryPosts.map(post => `
-                <a href="news.html?id=${encodeURIComponent(post.id)}&category=${encodeURIComponent(currentCategory.slug)}" class="history-card${post.id === activeArticle.id ? ' active' : ''}">
-                    <span class="history-date">${post.date}</span>
-                    <span class="history-headline">${post.title.en}</span>
-                    <span class="history-excerpt">${post.excerpt && post.excerpt.en ? post.excerpt.en : ''}</span>
-                </a>
-            `).join('') : '<div class="category-empty">No articles available in this category yet.</div>';
-        })().catch(error => {
-            console.error('Failed to load news posts:', error);
-            const shell = document.querySelector('.news-shell');
-            const empty = document.getElementById('news-empty');
-            if (shell) shell.style.display = 'none';
-            if (empty) {
-                empty.style.display = 'block';
-                empty.innerHTML = `
-                    <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 14px;">Unable to load the latest posts</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 24px;">The page could not refresh <code>news-data.js</code> just now. Please try again in a moment.</p>
-                `;
-            }
+            });
         })();
     </script>
 </body>
