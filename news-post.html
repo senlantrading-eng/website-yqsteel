@@ -7,12 +7,221 @@
     <meta name="description" content="Read YQ Steel news articles, sourcing commentary, product notes, and export insights.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css?v=1">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <meta name="theme-color" content="#ffffff">
+    <style>
+        :root {
+            --article-paper: #f7f3ea;
+            --article-ink: #1a1f1d;
+            --article-muted: #65706b;
+            --article-line: rgba(26, 31, 29, 0.12);
+            --article-accent: #a54d2d;
+            --article-accent-soft: rgba(165, 77, 45, 0.12);
+            --article-shadow: 0 24px 60px rgba(19, 27, 23, 0.10);
+        }
+
+        body.article-journal {
+            background:
+                radial-gradient(circle at top left, rgba(165, 77, 45, 0.08), transparent 30%),
+                linear-gradient(180deg, #fbf8f1 0%, #f3eee3 100%);
+            color: var(--article-ink);
+        }
+
+        .article-journal .hero {
+            min-height: auto;
+            padding: 148px 0 54px;
+            background:
+                linear-gradient(135deg, rgba(165, 77, 45, 0.08), rgba(26, 31, 29, 0.02)),
+                transparent;
+        }
+
+        .article-shell {
+            display: grid;
+            grid-template-columns: minmax(0, 1.65fr) 320px;
+            gap: 34px;
+            align-items: start;
+            padding-bottom: 84px;
+        }
+
+        .article-main,
+        .article-sidebar {
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid var(--article-line);
+            border-radius: 32px;
+            box-shadow: var(--article-shadow);
+        }
+
+        .article-main {
+            overflow: hidden;
+        }
+
+        .article-wrap {
+            padding: 42px;
+        }
+
+        .article-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: var(--article-accent-soft);
+            color: var(--article-accent);
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .article-date {
+            font-size: 0.95rem;
+            color: var(--article-muted);
+            margin-bottom: 12px;
+        }
+
+        .article-title {
+            font-family: "Manrope", sans-serif;
+            font-size: clamp(2.2rem, 4.5vw, 3.45rem);
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+            color: var(--article-ink);
+            margin-bottom: 18px;
+            max-width: 18ch;
+        }
+
+        .article-subtitle,
+        .article-subtitle-zh {
+            font-size: 1.04rem;
+            line-height: 1.9;
+            color: #48514d;
+            max-width: 64ch;
+        }
+
+        .article-subtitle-zh {
+            margin-top: 14px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid var(--article-line);
+        }
+
+        .article-cover {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 24px;
+            border: 1px solid var(--article-line);
+            margin: 30px 0 28px;
+        }
+
+        .article-body h2 {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.45rem;
+            line-height: 1.32;
+            margin: 36px 0 14px;
+            color: var(--article-ink);
+        }
+
+        .article-body p {
+            font-size: 1.03rem;
+            line-height: 1.95;
+            color: #313a36;
+            margin-bottom: 18px;
+        }
+
+        .article-body figure {
+            margin: 30px 0;
+            padding: 16px;
+            background: #fcfaf5;
+            border: 1px solid var(--article-line);
+            border-radius: 24px;
+        }
+
+        .article-body figure img {
+            width: 100%;
+            display: block;
+            border-radius: 18px;
+        }
+
+        .article-body figcaption {
+            margin-top: 12px;
+            color: var(--article-muted);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        .article-sidebar {
+            position: sticky;
+            top: 124px;
+            padding: 28px;
+        }
+
+        .sidebar-block + .sidebar-block {
+            margin-top: 28px;
+            padding-top: 24px;
+            border-top: 1px solid var(--article-line);
+        }
+
+        .sidebar-block h3 {
+            font-size: 1.08rem;
+            margin-bottom: 12px;
+            color: var(--article-ink);
+        }
+
+        .sidebar-block p,
+        .sidebar-block li {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #53605a;
+        }
+
+        .sidebar-block ul {
+            padding-left: 18px;
+        }
+
+        .article-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--article-accent);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .missing-card {
+            padding: 42px;
+            text-align: center;
+        }
+
+        .missing-card h1 {
+            margin-bottom: 14px;
+        }
+
+        .missing-card p {
+            color: var(--article-muted);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 980px) {
+            .article-shell {
+                grid-template-columns: 1fr;
+            }
+
+            .article-sidebar {
+                position: static;
+            }
+
+            .article-wrap,
+            .missing-card {
+                padding: 28px;
+            }
+        }
+    </style>
 </head>
-<body>
+<body class="article-journal">
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
@@ -32,58 +241,20 @@
         </div>
     </nav>
 
-    <script>
-        (function() {
-            const mobileToggle = document.getElementById('mobileToggle');
-            const navMenu = document.querySelector('.nav-menu');
-
-            mobileToggle.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                this.setAttribute('aria-expanded', !isExpanded);
-                navMenu.classList.toggle('active');
-                this.classList.toggle('active');
-                this.textContent = isExpanded ? '☰' : '✕';
-            });
-
-            document.querySelectorAll('.nav-menu a').forEach(link => {
-                link.addEventListener('click', function() {
-                    navMenu.classList.remove('active');
-                    mobileToggle.classList.remove('active');
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    mobileToggle.textContent = '☰';
-                });
-            });
-
-            document.addEventListener('click', function(e) {
-                if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
-                    navMenu.classList.remove('active');
-                    mobileToggle.classList.remove('active');
-                    mobileToggle.setAttribute('aria-expanded', 'false');
-                    mobileToggle.textContent = '☰';
-                }
-            });
-
-            const params = new URLSearchParams(window.location.search);
-            const id = params.get('id');
-            window.location.replace(id ? `news.html?id=${encodeURIComponent(id)}` : 'news.html');
-        })();
-    </script>
-
-    <main style="padding-top: 120px; padding-bottom: 80px;">
-        <div class="container" style="max-width: 980px;">
-            <div style="margin-bottom: 24px;">
-                <a href="news.html" style="color: var(--primary-600); font-weight: 700;">← Back to News</a>
-            </div>
-
-            <article id="article-root" style="background: var(--bg-primary);"></article>
-            <div id="article-missing" style="display: none; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 18px; padding: 40px; text-align: center;">
-                <h1 style="margin-bottom: 14px;">Article not found</h1>
-                <p style="color: var(--text-muted); margin-bottom: 20px;">The requested news article could not be found in <code>news-data.js</code>.</p>
-                <a href="news.html" class="btn-primary">Back to News</a>
+    <section class="hero">
+        <div class="container">
+            <div id="article-root"></div>
+            <div id="article-missing" style="display: none;">
+                <div class="article-main">
+                    <div class="missing-card">
+                        <h1>Article not found</h1>
+                        <p>The requested article is not available in the current archive.</p>
+                        <a href="news.html" class="btn-primary">Back to News</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -118,5 +289,149 @@
         </div>
     </footer>
 
+    <script src="news-data.js"></script>
+    <script>
+        (function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (mobileToggle && navMenu) {
+                mobileToggle.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', String(!isExpanded));
+                    navMenu.classList.toggle('active');
+                    this.classList.toggle('active');
+                    this.textContent = isExpanded ? '☰' : '✕';
+                });
+
+                document.querySelectorAll('.nav-menu a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        mobileToggle.classList.remove('active');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                        mobileToggle.textContent = '☰';
+                    });
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                        navMenu.classList.remove('active');
+                        mobileToggle.classList.remove('active');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                        mobileToggle.textContent = '☰';
+                    }
+                });
+            }
+
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            const posts = Array.isArray(window.NEWS_POSTS) ? window.NEWS_POSTS : [];
+            const post = posts.find(item => item.id === id);
+            const articleRoot = document.getElementById('article-root');
+            const missingRoot = document.getElementById('article-missing');
+
+            function escapeHtml(value) {
+                return String(value || '')
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#39;');
+            }
+
+            function formatDate(dateString) {
+                const date = new Date(dateString + 'T00:00:00');
+                if (Number.isNaN(date.getTime())) return dateString;
+                return date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+            }
+
+            function buildSidebarBlocks(postData) {
+                const headings = (postData.blocks || [])
+                    .filter(block => block.type === 'heading' && block.en)
+                    .slice(0, 5)
+                    .map(block => `<li>${escapeHtml(block.en)}</li>`)
+                    .join('');
+
+                return `
+                    <div class="sidebar-block">
+                        <h3>Article Focus</h3>
+                        <p>${escapeHtml(postData.excerpt && postData.excerpt.en ? postData.excerpt.en : '')}</p>
+                    </div>
+                    <div class="sidebar-block">
+                        <h3>Key Sections</h3>
+                        <ul>${headings || '<li>Archive article</li>'}</ul>
+                    </div>
+                    <div class="sidebar-block">
+                        <h3>Archive</h3>
+                        <p>Earlier YQ Steel reporting remains available here through the legacy archive reader.</p>
+                    </div>
+                `;
+            }
+
+            function renderBlocks(postData) {
+                return (postData.blocks || []).map(block => {
+                    if (block.type === 'heading') {
+                        return `<h2>${escapeHtml(block.en)}</h2>`;
+                    }
+
+                    if (block.type === 'paragraph') {
+                        return `
+                            <p>${escapeHtml(block.en)}</p>
+                            <p>${escapeHtml(block.zh)}</p>
+                        `;
+                    }
+
+                    if (block.type === 'image') {
+                        return `
+                            <figure>
+                                <img src="${escapeHtml(block.src)}" alt="${escapeHtml(block.alt && block.alt.en)}">
+                                <figcaption>${escapeHtml(block.caption && block.caption.en)}</figcaption>
+                            </figure>
+                        `;
+                    }
+
+                    return '';
+                }).join('');
+            }
+
+            if (!post) {
+                articleRoot.style.display = 'none';
+                missingRoot.style.display = 'block';
+                return;
+            }
+
+            document.title = `${post.title.en} | YQ Steel`;
+            const description = post.excerpt && post.excerpt.en ? post.excerpt.en : 'Read YQ Steel news articles, sourcing commentary, product notes, and export insights.';
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) metaDescription.setAttribute('content', description);
+
+            articleRoot.innerHTML = `
+                <div class="article-shell">
+                    <main class="article-main">
+                        <div class="article-wrap">
+                            <a class="article-back" href="news.html">← Back to News</a>
+                            <div class="article-label">${escapeHtml(post.category && post.category.en ? post.category.en : 'News')}</div>
+                            <div class="article-date">${escapeHtml(formatDate(post.date))}</div>
+                            <h1 class="article-title">${escapeHtml(post.title.en)}</h1>
+                            <p class="article-subtitle">${escapeHtml(post.excerpt && post.excerpt.en)}</p>
+                            <p class="article-subtitle-zh">${escapeHtml(post.excerpt && post.excerpt.zh)}</p>
+                            <img class="article-cover" src="${escapeHtml(post.cover)}" alt="${escapeHtml(post.coverAlt && post.coverAlt.en)}">
+                            <section class="article-body">
+                                ${renderBlocks(post)}
+                            </section>
+                        </div>
+                    </main>
+                    <aside class="article-sidebar">
+                        ${buildSidebarBlocks(post)}
+                    </aside>
+                </div>
+            `;
+        })();
+    </script>
 </body>
 </html>

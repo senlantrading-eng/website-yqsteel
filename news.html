@@ -187,11 +187,6 @@
             opacity: 0.96;
         }
 
-        .featured-note {
-            color: var(--news-muted);
-            font-size: 0.92rem;
-        }
-
         .news-sidebar {
             position: sticky;
             top: 124px;
@@ -251,10 +246,6 @@
             outline: none;
         }
 
-        .archive-card.pending {
-            opacity: 0.78;
-        }
-
         .archive-date {
             display: inline-block;
             margin-bottom: 8px;
@@ -276,31 +267,6 @@
             font-size: 0.94rem;
             line-height: 1.72;
             color: #55605b;
-        }
-
-        .archive-meta {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 10px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: var(--news-accent);
-        }
-
-        .archive-meta.pending {
-            color: var(--news-muted);
-        }
-
-        .archive-help {
-            margin-top: 18px;
-            padding-top: 18px;
-            border-top: 1px solid var(--news-line);
-            color: var(--news-muted);
-            font-size: 0.92rem;
-            line-height: 1.7;
         }
 
         @media (max-width: 980px) {
@@ -367,7 +333,6 @@
                         <img class="featured-cover" src="images/2026-06-08-china-high-value-steel-exports-cover.png" alt="Chinese export terminal handling higher-value steel cargo with coils, plate, cranes, and a vessel at sunrise">
                         <div class="featured-actions">
                             <a class="featured-link" href="news/2026-06-08-china-high-value-steel-exports.html">Read the full article</a>
-                            <span class="featured-note">Static page, direct URL, no JS article loader.</span>
                         </div>
                     </div>
                 </main>
@@ -383,47 +348,37 @@
                             <span class="archive-date">2026-06-07</span>
                             <h4>China Steel Trade Friction Is Rising Even as Port Execution Stays Strong</h4>
                             <p>OECD warnings, firmer destination scrutiny, and resilient port execution shifted June buying discipline away from headline price and toward cleaner order design.</p>
-                            <span class="archive-meta">Open article</span>
                         </a>
 
                         <a class="archive-card archive-card-link" href="news/2026-06-06-china-steel-june-signals.html">
                             <span class="archive-date">2026-06-06</span>
                             <h4>China's June Steel Buying Signals Are Splitting by Channel</h4>
                             <p>Semi-finished exports accelerated while port throughput and excess-capacity pressure pushed buyers to separate June orders by product lane, route quality, and execution burden.</p>
-                            <span class="archive-meta">Open article</span>
                         </a>
 
-                        <article class="archive-card pending">
+                        <a class="archive-card archive-card-link" href="news-post.html?id=2026-06-05-china-semis-port-throughput-buying-signals">
                             <span class="archive-date">2026-06-05</span>
                             <h4>China's Semi-Finished Export Surge Is Changing June Buying Signals</h4>
                             <p>Port throughput stayed constructive while excess-capacity pressure remained high, pushing buyers toward tighter product positioning and clearer execution planning.</p>
-                            <span class="archive-meta pending">Static page pending</span>
-                        </article>
+                        </a>
 
-                        <article class="archive-card pending">
+                        <a class="archive-card archive-card-link" href="news-post.html?id=2026-06-04-china-steel-export-segmentation">
                             <span class="archive-date">2026-06-04</span>
                             <h4>China's Steel Export Story Is Splitting in 2026</h4>
                             <p>Semi-finished flows strengthened while higher-scrutiny cargoes required more disciplined documentation, destination planning, and route selection.</p>
-                            <span class="archive-meta pending">Static page pending</span>
-                        </article>
+                        </a>
 
-                        <article class="archive-card pending">
+                        <a class="archive-card archive-card-link" href="news-post.html?id=2026-06-03-china-flat-steel-execution-window">
                             <span class="archive-date">2026-06-03</span>
                             <h4>China's Flat-Steel Export Window Is Narrower, Not Closed</h4>
                             <p>June flat-steel buying looked less dependent on a broad market break and more dependent on order quality, target market fit, and port execution.</p>
-                            <span class="archive-meta pending">Static page pending</span>
-                        </article>
+                        </a>
 
-                        <article class="archive-card pending">
+                        <a class="archive-card archive-card-link" href="news-post.html?id=2026-06-02-china-steel-africa-routes">
                             <span class="archive-date">2026-06-02</span>
                             <h4>China Steel Exports Are Re-routing Toward Emerging Markets</h4>
                             <p>New Africa-bound capacity and route diversification changed how buyers should evaluate product fit, destination demand, and commercial timing.</p>
-                            <span class="archive-meta pending">Static page pending</span>
-                        </article>
-                    </div>
-
-                    <div class="archive-help">
-                        Earlier reporting remains visible here while the older archive is migrated from legacy data-driven rendering into standalone static pages.
+                        </a>
                     </div>
                 </aside>
             </div>
