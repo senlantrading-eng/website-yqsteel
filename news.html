@@ -109,6 +109,26 @@
             padding: 40px;
         }
 
+        .featured-card-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+
+        .featured-card-link:hover,
+        .featured-card-link:focus-visible {
+            transform: translateY(-1px);
+            outline: none;
+        }
+
+        .featured-card-link:hover .featured-cover,
+        .featured-card-link:focus-visible .featured-cover {
+            box-shadow: 0 16px 34px rgba(141, 63, 37, 0.10);
+            border-color: rgba(165, 77, 45, 0.28);
+        }
+
         .featured-label {
             display: inline-flex;
             align-items: center;
@@ -180,6 +200,7 @@
             color: #fff;
             font-weight: 700;
             box-shadow: 0 16px 34px rgba(141, 63, 37, 0.22);
+            pointer-events: none;
         }
 
         .featured-link:hover {
@@ -234,6 +255,7 @@
             display: block;
             color: inherit;
             text-decoration: none;
+            cursor: pointer;
             transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
         }
 
@@ -320,7 +342,7 @@
         <div class="container">
             <div class="news-grid">
                 <main class="news-panel">
-                    <div class="featured-wrap">
+                    <a class="featured-wrap featured-card-link" href="news/2026-06-08-china-high-value-steel-exports.html">
                         <div class="featured-label">Latest Article</div>
                         <div class="featured-date">Published June 8, 2026</div>
                         <h2 class="featured-title">China's High-Value Steel Exports Are Sending a More Selective June Signal</h2>
@@ -332,9 +354,9 @@
                         </p>
                         <img class="featured-cover" src="images/2026-06-08-china-high-value-steel-exports-cover.png" alt="Chinese export terminal handling higher-value steel cargo with coils, plate, cranes, and a vessel at sunrise">
                         <div class="featured-actions">
-                            <a class="featured-link" href="news/2026-06-08-china-high-value-steel-exports.html">Read the full article</a>
+                            <span class="featured-link">Read the full article</span>
                         </div>
-                    </div>
+                    </a>
                 </main>
 
                 <aside class="news-sidebar">
