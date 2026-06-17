@@ -240,10 +240,103 @@
             color: var(--news-accent);
         }
 
+        .archive-toolbar {
+            display: grid;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .archive-search {
+            position: relative;
+        }
+
+        .archive-search input {
+            width: 100%;
+            min-height: 52px;
+            padding: 0 18px 0 48px;
+            border-radius: 18px;
+            border: 1px solid var(--news-line);
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--news-ink);
+            font: inherit;
+            font-size: 0.95rem;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+        }
+
+        .archive-search input:focus {
+            outline: none;
+            border-color: rgba(165, 77, 45, 0.42);
+            box-shadow: 0 0 0 4px rgba(165, 77, 45, 0.12);
+        }
+
+        .archive-search::before {
+            content: "⌕";
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            color: var(--news-accent);
+        }
+
+        .archive-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .archive-results-count,
+        .archive-hint {
+            font-size: 0.82rem;
+            color: var(--news-muted);
+        }
+
+        .archive-chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .archive-chip {
+            min-height: 36px;
+            padding: 0 14px;
+            border: 1px solid var(--news-line);
+            border-radius: 999px;
+            background: rgba(252, 250, 245, 0.92);
+            color: var(--news-ink);
+            font: inherit;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            transition: border-color 180ms ease, background 180ms ease, color 180ms ease, transform 180ms ease;
+        }
+
+        .archive-chip:hover,
+        .archive-chip:focus-visible {
+            border-color: rgba(165, 77, 45, 0.28);
+            background: rgba(255, 255, 255, 0.98);
+            transform: translateY(-1px);
+            outline: none;
+        }
+
+        .archive-chip.is-active {
+            background: linear-gradient(135deg, #af512f, #8d3f25);
+            border-color: transparent;
+            color: #fff;
+            box-shadow: 0 12px 24px rgba(141, 63, 37, 0.18);
+        }
+
         .archive-list {
             display: flex;
             flex-direction: column;
             gap: 14px;
+        }
+
+        .archive-card[hidden] {
+            display: none;
         }
 
         .archive-card {
@@ -303,6 +396,32 @@
             font-size: 0.86rem;
             font-weight: 700;
             color: var(--news-accent);
+        }
+
+        .archive-empty {
+            display: none;
+            padding: 18px 20px;
+            border-radius: 22px;
+            border: 1px dashed rgba(165, 77, 45, 0.28);
+            background: rgba(255, 250, 246, 0.92);
+        }
+
+        .archive-empty.is-visible {
+            display: block;
+        }
+
+        .archive-empty strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.96rem;
+            color: var(--news-ink);
+        }
+
+        .archive-empty p {
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #55605b;
         }
 
         @media (max-width: 980px) {
@@ -379,7 +498,18 @@
                         <span>Static Archive</span>
                     </div>
 
-                    <div class="archive-list">
+                    <div class="archive-toolbar">
+                        <label class="archive-search" for="archiveSearch">
+                            <input id="archiveSearch" type="search" placeholder="Search by date, title, or topic">
+                        </label>
+                        <div class="archive-meta">
+                            <div class="archive-results-count" id="archiveResultsCount">Showing 11 articles</div>
+                            <div class="archive-hint">Newest first, with month filters.</div>
+                        </div>
+                        <div class="archive-chip-row" id="archiveMonthFilters"></div>
+                    </div>
+
+                    <div class="archive-list" id="archiveList">
                         <a class="archive-card archive-card-link" href="news/2026-06-16-china-steel-trade-screen-destination-discipline.html">
                             <span class="archive-date">2026-06-16</span>
                             <h4>China's Steel Trade Screen Is Hardening and Destination Discipline Matters More</h4>
@@ -457,6 +587,11 @@
                             <span class="archive-cta">Open article →</span>
                         </a>
                     </div>
+
+                    <div class="archive-empty" id="archiveEmptyState" aria-live="polite">
+                        <strong>No matching articles</strong>
+                        <p>Try a different keyword or switch back to All months.</p>
+                    </div>
                 </aside>
             </div>
         </div>
@@ -528,6 +663,80 @@
                     mobileToggle.textContent = '☰';
                 }
             });
+        })();
+
+        (function() {
+            const archiveList = document.getElementById('archiveList');
+            const archiveSearch = document.getElementById('archiveSearch');
+            const archiveMonthFilters = document.getElementById('archiveMonthFilters');
+            const archiveResultsCount = document.getElementById('archiveResultsCount');
+            const archiveEmptyState = document.getElementById('archiveEmptyState');
+
+            if (!archiveList || !archiveSearch || !archiveMonthFilters || !archiveResultsCount || !archiveEmptyState) return;
+
+            const archiveCards = Array.from(archiveList.querySelectorAll('.archive-card-link'));
+            const monthFormatter = new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric' });
+            const monthMap = new Map();
+            let activeMonth = 'all';
+
+            archiveCards.forEach(card => {
+                const dateText = card.querySelector('.archive-date')?.textContent?.trim() || '';
+                const titleText = card.querySelector('h4')?.textContent?.trim() || '';
+                const excerptText = card.querySelector('p')?.textContent?.trim() || '';
+                const monthKey = dateText.slice(0, 7);
+                const [year, month] = monthKey.split('-').map(Number);
+                const monthLabel = year && month ? monthFormatter.format(new Date(year, month - 1, 1)) : monthKey;
+
+                card.dataset.search = `${dateText} ${titleText} ${excerptText}`.toLowerCase();
+                card.dataset.month = monthKey;
+
+                if (!monthMap.has(monthKey)) {
+                    monthMap.set(monthKey, monthLabel);
+                }
+            });
+
+            const makeChip = (label, monthKey) => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = `archive-chip${monthKey === 'all' ? ' is-active' : ''}`;
+                button.textContent = label;
+                button.dataset.month = monthKey;
+                return button;
+            };
+
+            archiveMonthFilters.appendChild(makeChip('All months', 'all'));
+            Array.from(monthMap.entries())
+                .sort((a, b) => b[0].localeCompare(a[0]))
+                .forEach(([monthKey, label]) => archiveMonthFilters.appendChild(makeChip(label, monthKey)));
+
+            const updateArchive = () => {
+                const query = archiveSearch.value.trim().toLowerCase();
+                let visibleCount = 0;
+
+                archiveCards.forEach(card => {
+                    const monthMatch = activeMonth === 'all' || card.dataset.month === activeMonth;
+                    const queryMatch = !query || card.dataset.search.includes(query);
+                    const visible = monthMatch && queryMatch;
+                    card.hidden = !visible;
+                    if (visible) visibleCount += 1;
+                });
+
+                archiveResultsCount.textContent = `Showing ${visibleCount} article${visibleCount === 1 ? '' : 's'}`;
+                archiveEmptyState.classList.toggle('is-visible', visibleCount === 0);
+            };
+
+            archiveMonthFilters.addEventListener('click', event => {
+                const button = event.target.closest('.archive-chip');
+                if (!button) return;
+                activeMonth = button.dataset.month || 'all';
+                archiveMonthFilters.querySelectorAll('.archive-chip').forEach(chip => {
+                    chip.classList.toggle('is-active', chip === button);
+                });
+                updateArchive();
+            });
+
+            archiveSearch.addEventListener('input', updateArchive);
+            updateArchive();
         })();
 
         (function() {
