@@ -299,6 +299,19 @@
             gap: 10px;
         }
 
+        .archive-chip-group {
+            display: grid;
+            gap: 10px;
+        }
+
+        .archive-chip-label {
+            font-size: 0.74rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--news-muted);
+        }
+
         .archive-chip {
             min-height: 36px;
             padding: 0 14px;
@@ -424,6 +437,78 @@
             color: #55605b;
         }
 
+        .archive-controls {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 150px;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .archive-sort {
+            min-height: 52px;
+            padding: 0 16px;
+            border-radius: 18px;
+            border: 1px solid var(--news-line);
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--news-ink);
+            font: inherit;
+            font-size: 0.95rem;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+        }
+
+        .archive-sort:focus {
+            outline: none;
+            border-color: rgba(165, 77, 45, 0.42);
+            box-shadow: 0 0 0 4px rgba(165, 77, 45, 0.12);
+        }
+
+        .archive-active-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            min-height: 22px;
+        }
+
+        .archive-active-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(165, 77, 45, 0.1);
+            color: var(--news-accent);
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+
+        .archive-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .archive-reset {
+            min-height: 38px;
+            padding: 0 14px;
+            border-radius: 999px;
+            border: 1px solid var(--news-line);
+            background: rgba(255, 255, 255, 0.88);
+            color: var(--news-ink);
+            font: inherit;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .archive-reset:hover,
+        .archive-reset:focus-visible {
+            outline: none;
+            border-color: rgba(165, 77, 45, 0.28);
+            background: rgba(255, 255, 255, 0.98);
+        }
+
         @media (max-width: 980px) {
             .news-grid {
                 grid-template-columns: 1fr;
@@ -435,6 +520,10 @@
 
             .featured-wrap {
                 padding: 28px;
+            }
+
+            .archive-controls {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -499,88 +588,106 @@
                     </div>
 
                     <div class="archive-toolbar">
-                        <label class="archive-search" for="archiveSearch">
-                            <input id="archiveSearch" type="search" placeholder="Search by date, title, or topic">
-                        </label>
+                        <div class="archive-controls">
+                            <label class="archive-search" for="archiveSearch">
+                                <input id="archiveSearch" type="search" placeholder="Search by date, title, or topic">
+                            </label>
+                            <select class="archive-sort" id="archiveSort" aria-label="Sort archive">
+                                <option value="newest">Newest first</option>
+                                <option value="oldest">Oldest first</option>
+                                <option value="title">Title A-Z</option>
+                            </select>
+                        </div>
                         <div class="archive-meta">
                             <div class="archive-results-count" id="archiveResultsCount">Showing 11 articles</div>
-                            <div class="archive-hint">Newest first, with month filters.</div>
+                            <div class="archive-hint">Search, then narrow by month or topic.</div>
                         </div>
-                        <div class="archive-chip-row" id="archiveMonthFilters"></div>
+                        <div class="archive-chip-group">
+                            <div class="archive-chip-label">Month</div>
+                            <div class="archive-chip-row" id="archiveMonthFilters"></div>
+                        </div>
+                        <div class="archive-chip-group">
+                            <div class="archive-chip-label">Topic</div>
+                            <div class="archive-chip-row" id="archiveTopicFilters"></div>
+                        </div>
+                        <div class="archive-actions">
+                            <div class="archive-active-filters" id="archiveActiveFilters" aria-live="polite"></div>
+                            <button class="archive-reset" id="archiveReset" type="button">Clear filters</button>
+                        </div>
                     </div>
 
                     <div class="archive-list" id="archiveList">
-                        <a class="archive-card archive-card-link" href="news/2026-06-16-china-steel-trade-screen-destination-discipline.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-16-china-steel-trade-screen-destination-discipline.html" data-tags="trade friction, destination screening, europe, compliance">
                             <span class="archive-date">2026-06-16</span>
                             <h4>China's Steel Trade Screen Is Hardening and Destination Discipline Matters More</h4>
                             <p>Europe-facing scrutiny is getting tougher, pushing steel buyers toward earlier route choices, stricter destination discipline, and cleaner paperwork paths.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-15-china-steel-export-mix-may-momentum.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-15-china-steel-export-mix-may-momentum.html" data-tags="exports, product mix, may momentum, compliance">
                             <span class="archive-date">2026-06-15</span>
                             <h4>China's Steel Export Mix Is Holding May Momentum, but Buyers Need a Cleaner Trade Path</h4>
                             <p>May trade momentum is still helping Chinese supply, but buyers now hold the edge through better product selection, destination fit, and cleaner compliance planning.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-14-china-export-momentum-steel-shipment-discipline.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-14-china-export-momentum-steel-shipment-discipline.html" data-tags="exports, shipment discipline, port execution, logistics">
                             <span class="archive-date">2026-06-14</span>
                             <h4>China's Export Momentum Still Needs Steel Shipment Discipline</h4>
                             <p>May export strength kept China supply active, but buyers now protect value through cleaner packing, paperwork, and port-side shipment discipline.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-13-china-steel-export-selectivity-destination-screen.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-13-china-steel-export-selectivity-destination-screen.html" data-tags="destination screening, exports, market access, risk control">
                             <span class="archive-date">2026-06-13</span>
                             <h4>China's Steel Export Selectivity Is Turning Into Destination Screening</h4>
                             <p>May trade momentum improved, but buyers now need earlier market screening, tighter documentation, and cleaner destination selection before booking steel cargo.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-12-china-steel-export-rebound-trade-wall.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-12-china-steel-export-rebound-trade-wall.html" data-tags="trade friction, exports, rebound, destination screening">
                             <span class="archive-date">2026-06-12</span>
                             <h4>China's Steel Export Rebound Is Running Into a Higher Trade Wall</h4>
                             <p>May shipments improved after a softer early-year run, but OECD capacity and trade-action signals still pointed buyers toward tighter destination screening and cleaner execution.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-11-china-steel-export-selectivity-trade-friction.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-11-china-steel-export-selectivity-trade-friction.html" data-tags="trade friction, exports, selectivity, compliance">
                             <span class="archive-date">2026-06-11</span>
                             <h4>China's Steel Export Selectivity Is Deepening as Trade Friction Keeps Rising</h4>
                             <p>January-May rolled-steel exports softened, but May shipments still rebounded, reinforcing a more selective market where destination risk and compliance path matter more.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-10-china-steel-export-mix-trade-actions.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-10-china-steel-export-mix-trade-actions.html" data-tags="trade actions, exports, product mix, oecd">
                             <span class="archive-date">2026-06-10</span>
                             <h4>China's Steel Export Mix Is Turning More Selective as Trade Actions Climb</h4>
                             <p>Early-2026 export data and OECD trade-action signals pointed buyers toward tighter destination screening, cleaner documentation, and product-specific execution.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-09-china-steel-export-window-port-discipline.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-09-china-steel-export-window-port-discipline.html" data-tags="port execution, exports, paperwork, logistics">
                             <span class="archive-date">2026-06-09</span>
                             <h4>China's Steel Export Window Is Narrower and Port Discipline Matters More</h4>
                             <p>Softer early-2026 export volume and heavier trade pressure made destination screening, paperwork quality, and port execution more decisive than generic low-price tonnage.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-08-china-high-value-steel-exports.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-08-china-high-value-steel-exports.html" data-tags="high-value steel, exports, product mix, destination sensitivity">
                             <span class="archive-date">2026-06-08</span>
                             <h4>China's High-Value Steel Exports Are Sending a More Selective June Signal</h4>
                             <p>April export-mix data, OECD warnings, and destination sensitivity showed why higher-value steel orders now reward cleaner execution more than simple tonnage chasing.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-07-china-steel-trade-friction-port-resilience.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-07-china-steel-trade-friction-port-resilience.html" data-tags="trade friction, port execution, logistics, resilience">
                             <span class="archive-date">2026-06-07</span>
                             <h4>China Steel Trade Friction Is Rising Even as Port Execution Stays Strong</h4>
                             <p>OECD warnings, firmer destination scrutiny, and resilient port execution shifted June buying discipline away from headline price and toward cleaner order design.</p>
                             <span class="archive-cta">Open article →</span>
                         </a>
 
-                        <a class="archive-card archive-card-link" href="news/2026-06-06-china-steel-june-signals.html">
+                        <a class="archive-card archive-card-link" href="news/2026-06-06-china-steel-june-signals.html" data-tags="june signals, market split, semi-finished, route quality">
                             <span class="archive-date">2026-06-06</span>
                             <h4>China's June Steel Buying Signals Are Splitting by Channel</h4>
                             <p>Semi-finished exports accelerated while port throughput and excess-capacity pressure pushed buyers to separate June orders by product lane, route quality, and execution burden.</p>
@@ -669,30 +776,49 @@
             const archiveList = document.getElementById('archiveList');
             const archiveSearch = document.getElementById('archiveSearch');
             const archiveMonthFilters = document.getElementById('archiveMonthFilters');
+            const archiveTopicFilters = document.getElementById('archiveTopicFilters');
             const archiveResultsCount = document.getElementById('archiveResultsCount');
             const archiveEmptyState = document.getElementById('archiveEmptyState');
+            const archiveSort = document.getElementById('archiveSort');
+            const archiveReset = document.getElementById('archiveReset');
+            const archiveActiveFilters = document.getElementById('archiveActiveFilters');
 
-            if (!archiveList || !archiveSearch || !archiveMonthFilters || !archiveResultsCount || !archiveEmptyState) return;
+            if (!archiveList || !archiveSearch || !archiveMonthFilters || !archiveTopicFilters || !archiveResultsCount || !archiveEmptyState || !archiveSort || !archiveReset || !archiveActiveFilters) return;
 
             const archiveCards = Array.from(archiveList.querySelectorAll('.archive-card-link'));
             const monthFormatter = new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric' });
             const monthMap = new Map();
+            const topicMap = new Map();
             let activeMonth = 'all';
+            let activeTopic = 'all';
 
             archiveCards.forEach(card => {
                 const dateText = card.querySelector('.archive-date')?.textContent?.trim() || '';
                 const titleText = card.querySelector('h4')?.textContent?.trim() || '';
                 const excerptText = card.querySelector('p')?.textContent?.trim() || '';
                 const monthKey = dateText.slice(0, 7);
+                const topicTags = (card.dataset.tags || '')
+                    .split(',')
+                    .map(tag => tag.trim())
+                    .filter(Boolean);
                 const [year, month] = monthKey.split('-').map(Number);
                 const monthLabel = year && month ? monthFormatter.format(new Date(year, month - 1, 1)) : monthKey;
 
-                card.dataset.search = `${dateText} ${titleText} ${excerptText}`.toLowerCase();
+                card.dataset.search = `${dateText} ${titleText} ${excerptText} ${topicTags.join(' ')}`.toLowerCase();
                 card.dataset.month = monthKey;
+                card.dataset.timestamp = dateText;
+                card.dataset.title = titleText.toLowerCase();
 
                 if (!monthMap.has(monthKey)) {
                     monthMap.set(monthKey, monthLabel);
                 }
+
+                topicTags.forEach(tag => {
+                    const key = tag.toLowerCase();
+                    if (!topicMap.has(key)) {
+                        topicMap.set(key, tag);
+                    }
+                });
             });
 
             const makeChip = (label, monthKey) => {
@@ -709,20 +835,51 @@
                 .sort((a, b) => b[0].localeCompare(a[0]))
                 .forEach(([monthKey, label]) => archiveMonthFilters.appendChild(makeChip(label, monthKey)));
 
+            archiveTopicFilters.appendChild(makeChip('All topics', 'all'));
+            Array.from(topicMap.entries())
+                .sort((a, b) => a[1].localeCompare(b[1]))
+                .forEach(([topicKey, label]) => archiveTopicFilters.appendChild(makeChip(label, topicKey)));
+
+            const renderActiveFilters = query => {
+                const pills = [];
+                if (query) pills.push(`Search: ${query}`);
+                if (activeMonth !== 'all') pills.push(`Month: ${monthMap.get(activeMonth) || activeMonth}`);
+                if (activeTopic !== 'all') pills.push(`Topic: ${topicMap.get(activeTopic) || activeTopic}`);
+                if (archiveSort.value !== 'newest') {
+                    const sortLabel = archiveSort.options[archiveSort.selectedIndex]?.textContent || archiveSort.value;
+                    pills.push(`Sort: ${sortLabel}`);
+                }
+
+                archiveActiveFilters.innerHTML = pills
+                    .map(text => `<span class="archive-active-pill">${text}</span>`)
+                    .join('');
+            };
+
             const updateArchive = () => {
                 const query = archiveSearch.value.trim().toLowerCase();
-                let visibleCount = 0;
+                const visibleCards = [];
 
                 archiveCards.forEach(card => {
                     const monthMatch = activeMonth === 'all' || card.dataset.month === activeMonth;
+                    const topicMatch = activeTopic === 'all' || (card.dataset.tags || '').toLowerCase().includes(activeTopic);
                     const queryMatch = !query || card.dataset.search.includes(query);
-                    const visible = monthMatch && queryMatch;
+                    const visible = monthMatch && topicMatch && queryMatch;
                     card.hidden = !visible;
-                    if (visible) visibleCount += 1;
+                    if (visible) visibleCards.push(card);
                 });
 
+                const sorter = archiveSort.value;
+                visibleCards.sort((a, b) => {
+                    if (sorter === 'oldest') return a.dataset.timestamp.localeCompare(b.dataset.timestamp);
+                    if (sorter === 'title') return a.dataset.title.localeCompare(b.dataset.title);
+                    return b.dataset.timestamp.localeCompare(a.dataset.timestamp);
+                });
+                visibleCards.forEach(card => archiveList.appendChild(card));
+
+                const visibleCount = visibleCards.length;
                 archiveResultsCount.textContent = `Showing ${visibleCount} article${visibleCount === 1 ? '' : 's'}`;
                 archiveEmptyState.classList.toggle('is-visible', visibleCount === 0);
+                renderActiveFilters(query);
             };
 
             archiveMonthFilters.addEventListener('click', event => {
@@ -735,7 +892,31 @@
                 updateArchive();
             });
 
+            archiveTopicFilters.addEventListener('click', event => {
+                const button = event.target.closest('.archive-chip');
+                if (!button) return;
+                activeTopic = button.dataset.month || 'all';
+                archiveTopicFilters.querySelectorAll('.archive-chip').forEach(chip => {
+                    chip.classList.toggle('is-active', chip === button);
+                });
+                updateArchive();
+            });
+
             archiveSearch.addEventListener('input', updateArchive);
+            archiveSort.addEventListener('change', updateArchive);
+            archiveReset.addEventListener('click', () => {
+                activeMonth = 'all';
+                activeTopic = 'all';
+                archiveSearch.value = '';
+                archiveSort.value = 'newest';
+                archiveMonthFilters.querySelectorAll('.archive-chip').forEach((chip, index) => {
+                    chip.classList.toggle('is-active', index === 0);
+                });
+                archiveTopicFilters.querySelectorAll('.archive-chip').forEach((chip, index) => {
+                    chip.classList.toggle('is-active', index === 0);
+                });
+                updateArchive();
+            });
             updateArchive();
         })();
 
