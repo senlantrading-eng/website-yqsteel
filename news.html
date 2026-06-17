@@ -88,13 +88,15 @@
 
         .news-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.95fr);
-            gap: 36px;
+            grid-template-columns: 1fr;
+            gap: 28px;
             align-items: start;
         }
 
         .news-panel,
         .news-sidebar {
+            position: relative;
+            isolation: isolate;
             background: rgba(255, 255, 255, 0.82);
             border: 1px solid var(--news-line);
             border-radius: 32px;
@@ -211,9 +213,10 @@
         }
 
         .news-sidebar {
-            position: sticky;
-            top: 124px;
-            padding: 28px;
+            position: relative;
+            top: auto;
+            z-index: 3;
+            padding: 34px;
         }
 
         .sidebar-title {
@@ -244,6 +247,8 @@
             display: grid;
             gap: 14px;
             margin-bottom: 18px;
+            position: relative;
+            z-index: 4;
         }
 
         .archive-search {
@@ -297,6 +302,8 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            position: relative;
+            z-index: 4;
         }
 
         .archive-chip-group {
@@ -324,6 +331,7 @@
             font-weight: 700;
             letter-spacing: 0.03em;
             cursor: pointer;
+            pointer-events: auto;
             transition: border-color 180ms ease, background 180ms ease, color 180ms ease, transform 180ms ease;
         }
 
@@ -343,9 +351,11 @@
         }
 
         .archive-list {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 14px;
+            position: relative;
+            z-index: 3;
         }
 
         .archive-card[hidden] {
@@ -361,9 +371,11 @@
 
         .archive-card-link {
             display: block;
+            height: 100%;
             color: inherit;
             text-decoration: none;
             cursor: pointer;
+            pointer-events: auto;
             touch-action: manipulation;
             -webkit-tap-highlight-color: transparent;
             transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
@@ -487,6 +499,8 @@
             align-items: center;
             gap: 12px;
             flex-wrap: wrap;
+            position: relative;
+            z-index: 4;
         }
 
         .archive-reset {
@@ -510,12 +524,9 @@
         }
 
         @media (max-width: 980px) {
-            .news-grid {
-                grid-template-columns: 1fr;
-            }
-
             .news-sidebar {
                 position: static;
+                padding: 28px;
             }
 
             .featured-wrap {
@@ -523,6 +534,10 @@
             }
 
             .archive-controls {
+                grid-template-columns: 1fr;
+            }
+
+            .archive-list {
                 grid-template-columns: 1fr;
             }
         }
